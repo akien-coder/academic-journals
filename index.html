@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Academic Journals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="eyebrow">RESEARCH MONITOR · ACADEMIC LITERATURE</div>
+      <div class="headline"><div><h1>Research Paper <span>Watch</span></h1><p>論文の発見に集中する。原題のまま、毎日更新。</p></div><div class="update" id="update">データ読み込み中</div></div>
+    </header>
+    <main>
+      <div class="metrics" aria-label="収集状況">
+        <div class="metric"><span>登録論文</span><strong id="total">—</strong></div>
+        <div class="metric"><span>未確認の新着</span><strong id="new-total">—</strong></div>
+        <div class="metric"><span>保存済み</span><strong id="saved-total">—</strong></div>
+        <div class="metric"><span>登録媒体</span><strong id="source-total">20</strong></div>
+      </div>
+      <div class="syncbar">
+        <div><strong id="sync-status">同期：未接続</strong><span id="sync-detail">★保存と新着確認はGitHubの非公開リポジトリに同期します。</span></div>
+        <div class="sync-actions"><button id="sync-refresh" class="subtle-btn" hidden>今すぐ同期</button><button id="sync-toggle" class="subtle-btn">同期設定</button></div>
+      </div>
+      <section class="sync-panel" id="sync-panel" hidden aria-label="GitHub同期の設定">
+        <h2>GitHubで個人データを同期</h2>
+        <p>保存先は<strong>別のPrivateリポジトリ</strong>です。サイトが置かれたPublicリポジトリには保存しません。</p>
+        <form id="sync-form">
+          <label>GitHubユーザー名<input id="sync-owner" autocomplete="username" required placeholder="your-github-name"></label>
+          <label>非公開リポジトリ名<input id="sync-repo" required placeholder="academic-journals-private"></label>
+          <label>Fine-grained personal access token<input id="sync-token" type="password" autocomplete="off" required placeholder="github_pat_..."></label>
+          <label class="remember"><input type="checkbox" id="sync-remember"> この端末に認証キーを保存する（共有PCでは選ばない）</label>
+          <div class="sync-form-actions"><button type="submit" class="confirm" id="sync-connect">接続して読み込む</button><button type="button" class="subtle-btn" id="sync-disconnect">この端末の接続を解除</button></div>
+        </form>
+        <p class="sync-warning">認証キーの権限は、<strong>この非公開リポジトリだけ</strong>に限定し、Contents: Read and write を指定してください。GitHub認証キーを公開リポジトリのファイルやチャットには貼り付けないでください。スマホ等では端末ごとに設定します。</p>
+      </section>
+      <nav class="tabs" aria-label="表示切り替え">
+        <button class="tab active" data-view="new">新着 <span id="new-label"></span></button>
+        <button class="tab" data-view="all">すべて</button>
+        <button class="tab" data-view="keyword">キーワード該当</button>
+        <button class="tab" data-view="issues">巻号別</button>
+        <button class="tab" data-view="saved">★ 保存済み</button>
+      </nav>
+      <div class="filters">
+        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="タイトル・著者・雑誌を検索" aria-label="論文検索"></label>
+        <label><span class="sr-only">雑誌</span><select id="journal"><option value="">すべての媒体</option></select></label>
+        <label><span class="sr-only">分野</span><select id="topic"><option value="">すべての研究分野</option></select></label>
+        <label><span class="sr-only">期間</span><select id="range"><option value="">全期間</option><option value="7">追加から7日以内</option><option value="30">追加から30日以内</option></select></label>
+        <label><span class="sr-only">並び順</span><select id="sort"><option value="added">追加が新しい順</option><option value="published">公開日が新しい順</option><option value="title">タイトル順</option></select></label>
+      </div>
+      <div class="list-head"><div><strong id="list-title">新着論文</strong><span id="result-count"> — </span></div><button class="confirm" id="confirm">今回の新着を確認済みにする ✓</button></div>
+      <div id="notice" role="status" class="notice" hidden></div>
+      <div id="papers" class="papers" aria-live="polite"></div>
+      <div id="empty" class="empty" hidden></div>
+      <div class="loadmore"><button id="more" hidden>さらに表示する</button></div>
+    </main>
+    <footer><div><strong>Academic Journals</strong> · 学術論文メタデータ収集</div><div>Crossref / OpenAlex / <a href="https://www.jstage.jst.go.jp/" target="_blank" rel="noopener noreferrer">Powered by J-STAGE</a> / RePEc</div><small>掲載先の論文ページを開き、必要な論文だけEdgeのPaperpile拡張機能で保存できます。サイト内の★と新着確認状態は、接続したGitHubの非公開リポジトリに同期します。</small></footer>
+  </div>
+  <script src="sync.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
