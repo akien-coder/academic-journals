@@ -1,1 +1,112 @@
-{"updated_at":null,"sources":{}}
+{
+  "updated_at": "2026-10-27T13:36:19+00:00",
+  "sources": {
+    "crossref:regional-studies": {
+      "ok": true,
+      "count": 65
+    },
+    "crossref:journal-economic-geography": {
+      "ok": true,
+      "count": 48
+    },
+    "crossref:economic-geography": {
+      "ok": true,
+      "count": 9
+    },
+    "crossref:cambridge-regions": {
+      "ok": true,
+      "count": 32
+    },
+    "crossref:european-planning": {
+      "ok": true,
+      "count": 113
+    },
+    "jstage:jaeg": {
+      "ok": true,
+      "count": 70
+    },
+    "jstage:chiikikeizai": {
+      "ok": true,
+      "count": 21
+    },
+    "jstage:jasve": {
+      "ok": true,
+      "count": 36
+    },
+    "jstage:soshikikagaku": {
+      "ok": true,
+      "count": 53
+    },
+    "crossref:research-policy": {
+      "ok": false,
+      "error": "https://api.crossref.org/journals/1873-7625/works: 404 Client Error: Not Found for url: https://api.crossref.org/journals/1873-7625/works?filter=from-pub-date%3A2026-04-30%2Ctype%3Ajournal-article&rows=300&cursor=%2A&select=DOI%2Ctitle%2Cty"
+    },
+    "crossref:fennia": {
+      "ok": true,
+      "count": 24
+    },
+    "crossref:geoforum": {
+      "ok": false,
+      "error": "https://api.crossref.org/journals/1872-9398/works: 404 Client Error: Not Found for url: https://api.crossref.org/journals/1872-9398/works?filter=from-pub-date%3A2026-04-30%2Ctype%3Ajournal-article&rows=300&cursor=%2A&select=DOI%2Ctitle%2Cty"
+    },
+    "crossref:tesg": {
+      "ok": true,
+      "count": 37
+    },
+    "crossref:industry-innovation": {
+      "ok": true,
+      "count": 33
+    },
+    "crossref:zfw": {
+      "ok": true,
+      "count": 6
+    },
+    "crossref:growth-change": {
+      "ok": true,
+      "count": 30
+    },
+    "crossref:rural-studies": {
+      "ok": false,
+      "error": "https://api.crossref.org/journals/1873-1392/works: 404 Client Error: Not Found for url: https://api.crossref.org/journals/1873-1392/works?filter=from-pub-date%3A2026-04-30%2Ctype%3Ajournal-article&rows=300&cursor=%2A&select=DOI%2Ctitle%2Cty"
+    },
+    "crossref:environment-planning-a": {
+      "ok": true,
+      "count": 39
+    },
+    "crossref:socio-economic-review": {
+      "ok": true,
+      "count": 44
+    },
+    "repec:peeg": {
+      "ok": true,
+      "count": 120
+    },
+    "openalex:regional": {
+      "ok": true,
+      "count": 100
+    },
+    "openalex:peripheral": {
+      "ok": true,
+      "count": 0
+    },
+    "openalex:entrepreneurship": {
+      "ok": true,
+      "count": 200
+    },
+    "openalex:institutional": {
+      "ok": true,
+      "count": 1
+    },
+    "openalex:bio": {
+      "ok": true,
+      "count": 8
+    },
+    "openalex:endogenous": {
+      "ok": true,
+      "count": 25
+    }
+  },
+  "total_before": 0,
+  "total_after": 1106,
+  "new_papers": 1106
+}
