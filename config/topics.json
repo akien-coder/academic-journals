@@ -1,8 +1,0 @@
-[
-  {"id":"regional","label":"地域経済・経済地理","queries":["regional economic development","economic geography regional development"]},
-  {"id":"peripheral","label":"周辺地域・地方都市","queries":["peripheral regions innovation","small cities regional development"]},
-  {"id":"entrepreneurship","label":"起業・イノベーション","queries":["entrepreneurial ecosystems","regional innovation systems"]},
-  {"id":"institutional","label":"制度・産業発展","queries":["institutional change regional development","regional industrial path creation"]},
-  {"id":"bio","label":"バイオ産業","queries":["biotechnology clusters","bioeconomy regional development"]},
-  {"id":"endogenous","label":"内発的発展・地域社会","queries":["endogenous regional development","community-led local development"]}
-]
