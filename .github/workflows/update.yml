@@ -1,0 +1,44 @@
+name: Collect research papers
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 毎朝7:00（日本時間）
+    - cron: '0 22 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: paper-updater
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Collect metadata
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          CROSSREF_MAILTO: ${{ secrets.CROSSREF_MAILTO }}
+        run: python scripts/collect.py
+
+      - name: Commit metadata only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/papers.json data/status.json data/state.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update research paper metadata'
+            git push
+          fi
