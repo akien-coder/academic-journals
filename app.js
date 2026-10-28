@@ -1,6 +1,6 @@
 'use strict';
 const CREDENTIALS={settings:'rpw_sync_settings_v1',rememberedToken:'rpw_sync_device_token_v1',sessionToken:'rpw_sync_session_token_v1'};
-const state={papers:[],archive:{},journals:[],topics:[],status:null,view:'new',visible:50,search:'',journal:'',topic:'',range:'',sort:'added',saved:new Set(),ack:'1970-01-01T00:00:00Z'};
+const state={papers:[],archive:{},journals:[],status:null,view:'new',visible:50,search:'',journal:'',range:'',sort:'added',saved:new Set(),ack:'1970-01-01T00:00:00Z'};
 const sync={gateway:null,connected:false,busy:false,message:'未接続',error:false};
 function load(k,fallback){try{const x=localStorage.getItem(k);return x?JSON.parse(x):fallback}catch{return fallback}}
 function store(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}}
@@ -18,7 +18,6 @@ function paperItem(p){
  const card=el('article','paper'),body=el('div','paper-main'),top=el('div','paper-top');
  if(isNew(p))top.append(badge('NEW','new'));
  if(p.kind==='working-paper')top.append(badge('WORKING PAPER','wp'));
- if((p.tags||[]).length)top.append(badge('KEYWORD','topic'));
  top.append(el('span','',formatDate(p.published)));
  body.append(top,link(p.title,p.url,'title-link'));
  const meta=el('div','paper-meta');const j=el('strong','',p.journal||'掲載媒体不明');meta.append(j);
@@ -27,6 +26,8 @@ function paperItem(p){
  if(p.doi){meta.append(document.createTextNode(' · '));meta.append(link('DOI',`https://doi.org/${p.doi}`));}
  if(validUrl(p.oa_url)){meta.append(document.createTextNode(' · '));meta.append(link('OA版',p.oa_url));}
  body.append(meta);
+ if(p.summary_ja){const sum=el('p','summary-ja',p.summary_ja);body.append(sum);}
+ else{body.append(el('p','summary-unavailable','日本語要約なし（抄録未取得・未処理）'));}
  const star=el('button','star',state.saved.has(p.id)?'★':'☆');star.type='button';star.title=state.saved.has(p.id)?'一時保存を解除':'あとで見るために一時保存';star.setAttribute('aria-label',star.title);star.setAttribute('aria-pressed',String(state.saved.has(p.id)));
  star.disabled=sync.busy;
  star.addEventListener('click',()=>{
@@ -43,9 +44,7 @@ function selectedPapers(){
  let list=available.filter(p=>{
   if(state.view==='new'&&!isNew(p))return false;
   if(state.view==='saved'&&!state.saved.has(p.id))return false;
-  if(state.view==='keyword'&&!(p.tags||[]).length)return false;
   if(state.journal&&p.journal_id!==state.journal)return false;
-  if(state.topic&&!(p.tags||[]).includes(state.topic))return false;
   if(state.range&&asDate(p.first_seen)<Date.now()-Number(state.range)*864e5)return false;
   if(state.search){const hay=[p.title,p.journal,...(p.authors||[]),p.doi].join(' ').toLocaleLowerCase();if(!hay.includes(state.search))return false;}
   return true;
@@ -71,7 +70,7 @@ function showEmpty(title,detail){const empty=$('empty');empty.hidden=false;empty
 function render(){
  const total=state.papers.length,unseen=state.papers.filter(isNew).length,saved=state.saved.size;
  $('total').textContent=total.toLocaleString('ja-JP');$('new-total').textContent=unseen.toLocaleString('ja-JP');$('saved-total').textContent=saved.toLocaleString('ja-JP');$('new-label').textContent=unseen?'('+unseen+')':'';
- const labels={new:'新着論文',all:'すべての論文',keyword:'キーワード該当',saved:'保存済み',issues:'巻号別'};
+ const labels={new:'新着論文',all:'すべての論文',saved:'保存済み',issues:'巻号別'};
  $('list-title').textContent=labels[state.view];document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.view===state.view));
  $('confirm').hidden=state.view!=='new'||!unseen; $('confirm').disabled=sync.busy;
  $('papers').replaceChildren();$('empty').hidden=true;const list=selectedPapers();
@@ -84,9 +83,9 @@ function render(){
 function makeOptions(select,rows){for(const p of rows){const op=el('option','',p.title||p.label);op.value=p.id;select.append(op);}}
 async function init(){
  try{
-  const [papers,journals,topics,status]=await Promise.all(['data/papers.json','config/journals.json','config/topics.json','data/status.json'].map(async name=>{const res=await fetch(name+'?v='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error(name+' HTTP '+res.status);return res.json()}));
-  state.papers=Array.isArray(papers)?papers:[];state.journals=journals;state.topics=topics;state.status=status;
-  makeOptions($('journal'),journals);makeOptions($('topic'),topics);
+  const [papers,journals,status]=await Promise.all(['data/papers.json','config/journals.json','data/status.json'].map(async name=>{const res=await fetch(name+'?v='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error(name+' HTTP '+res.status);return res.json()}));
+  state.papers=Array.isArray(papers)?papers:[];state.journals=journals;state.status=status;
+  makeOptions($('journal'),journals);
   if(status.updated_at){$('update').textContent='最終収集 '+new Date(status.updated_at).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});}else $('update').textContent='初回収集前';
   const problems=Object.entries(status.sources||{}).filter(([,v])=>!v.ok);
   if(problems.length){$('notice').hidden=false;$('notice').textContent=`注意：${problems.length}件の取得先でエラーがあります。前回までの論文データは保持しています。詳細は data/status.json を確認してください。`;}
@@ -94,7 +93,7 @@ async function init(){
  }catch(err){$('update').textContent='読込エラー';showEmpty('サイトデータを読み込めません',str(err)+'。ローカルでは python -m http.server 8000 で起動してください。');}
 }
 document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{state.view=b.dataset.view;state.visible=50;render()}));
-for(const [id,key] of [['search','search'],['journal','journal'],['topic','topic'],['range','range'],['sort','sort']])$(id).addEventListener('input',e=>{state[key]=str(e.target.value).toLocaleLowerCase();state.visible=50;render()});
+for(const [id,key] of [['search','search'],['journal','journal'],['range','range'],['sort','sort']])$(id).addEventListener('input',e=>{state[key]=str(e.target.value).toLocaleLowerCase();state.visible=50;render()});
 $('more').addEventListener('click',()=>{state.visible+=50;render()});
 // The GitHub repository is the sole source of truth for bookmarks and acknowledgements.
 // Local storage contains only optional device credentials, never paper state.

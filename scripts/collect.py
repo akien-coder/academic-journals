@@ -27,6 +27,8 @@ SESSION = requests.Session()
 SESSION.headers.update(HEADERS)
 MAX_RECORDS = 12000
 MAX_PAGES = 8
+MAX_GEMINI_SUMMARIES = 20  # Do not exceed daily quota; unprocessed entries carry forward
+MAX_ABSTRACT_LOOKUPS = 50  # Extra metadata lookups for older records per daily run
 
 
 def read_json(path, default):
@@ -120,8 +122,10 @@ def crossref_item(raw, journal):
                       date_parts(raw.get('issued')))
     authors = [' '.join(filter(None, [a.get('given'), a.get('family')])).strip()
                for a in raw.get('author', [])]
-    return core(title, journal['title'], raw.get('URL'), raw.get('DOI'), authors,
-                published, raw.get('volume'), raw.get('issue'), 'Crossref')
+    paper = core(title, journal['title'], raw.get('URL'), raw.get('DOI'), authors,
+                 published, raw.get('volume'), raw.get('issue'), 'Crossref')
+    paper['_abstract'] = strip_markup(raw.get('abstract'))[:12000]
+    return paper
 
 
 def since_state(state_key, state, initial_days=180, overlap_days=4):
@@ -143,7 +147,7 @@ def crossref_collect(journal, state):
     base_url = f"https://api.crossref.org/journals/{journal['issn']}/works"
     filters = f'{filter_name}:{start.isoformat()},type:journal-article'
     params = {'filter': filters, 'rows': 300, 'cursor': '*',
-              'select': 'DOI,title,type,author,URL,published-online,published-print,published,issued,volume,issue'}
+              'select': 'DOI,title,type,author,URL,published-online,published-print,published,issued,volume,issue,abstract'}
     email = os.getenv('CROSSREF_MAILTO', '').strip()
     if email:
         params['mailto'] = email
@@ -209,8 +213,10 @@ def jstage_parse(xml_text, journal):
         published = xml_first(entry, 'published', 'pubdate', 'publicationdate', 'coverdate', 'date')[:10]
         volume = xml_first(entry, 'volume')
         issue = xml_first(entry, 'number', 'issue')
-        results.append(core(title, journal['title'], url, doi, authors, published,
-                            volume, issue, 'J-STAGE'))
+        paper = core(title, journal['title'], url, doi, authors, published,
+                     volume, issue, 'J-STAGE')
+        paper['_abstract'] = strip_markup(xml_first(entry, 'summary', 'abstract'))[:12000]
+        results.append(paper)
     # The API can return error information as a valid XML document.
     errors = [direct_text(e) for e in root.iter() if localname(e.tag) in ('error', 'err_msg')]
     if errors:
@@ -225,38 +231,6 @@ def jstage_collect(journal):
               'start': 1, 'count': 200}
     result = fetch('https://api.jstage.jst.go.jp/searchapi/do', params, xml=True)
     return jstage_parse(result, journal)
-
-
-def openalex_collect(topic):
-    api_key = os.getenv('OPENALEX_API_KEY', '').strip()
-    results = []
-    since = TODAY - timedelta(days=75)
-    for query in topic['queries']:
-        params = {
-            'search': '"' + query + '"',
-            'filter': f'from_publication_date:{since.isoformat()},type:article|review',
-            'per_page': 100, 'page': 1,
-            'sort': 'publication_date:desc'
-        }
-        if api_key:
-            params['api_key'] = api_key
-        response = fetch('https://api.openalex.org/works', params)
-        for raw in response.get('results', []):
-            if not raw.get('display_name'):
-                continue
-            loc = raw.get('primary_location') or {}
-            source = loc.get('source') or {}
-            authors = [(a.get('author') or {}).get('display_name', '') for a in raw.get('authorships', [])]
-            doi = normalize_doi(raw.get('doi', ''))
-            link = first(raw.get('doi'), loc.get('landing_page_url'), raw.get('id'))
-            paper = core(raw['display_name'], source.get('display_name') or 'Unknown journal', link,
-                         doi, [a for a in authors if a], raw.get('publication_date', ''),
-                         '', '', 'OpenAlex', [topic['id']])
-            paper['issns'] = source.get('issn') or []
-            paper['oa_url'] = (raw.get('best_oa_location') or {}).get('landing_page_url') or ''
-            results.append(paper)
-        time.sleep(0.25)
-    return results
 
 
 def repec_collect(journal):
@@ -306,16 +280,129 @@ def merge(existing, incoming, journal_by_issn):
     return existing
 
 
+
+def lookup_abstract(paper):
+    """Look up a specific DOI; never run topical paper searches."""
+    doi = normalize_doi(paper.get('doi'))
+    if not doi:
+        return ''
+    # Crossref may contain the original publisher's abstract.
+    try:
+        record = fetch('https://api.crossref.org/works/' + quote(doi, safe='/()'))
+        text = strip_markup((record.get('message') or {}).get('abstract'))
+        if text:
+            return text[:12000]
+    except Exception as exc:
+        logging.warning('Abstract unavailable from Crossref for %s: %s', doi, str(exc)[:90])
+    # OpenAlex is used only as a DOI metadata fallback, NOT for keyword harvesting.
+    key = os.getenv('OPENALEX_API_KEY', '').strip()
+    if key:
+        try:
+            record = fetch('https://api.openalex.org/works/https://doi.org/' + quote(doi, safe='/'),
+                           {'api_key': key})
+            inverted = record.get('abstract_inverted_index') or {}
+            words = [(position, word) for word, positions in inverted.items() for position in positions]
+            words.sort()
+            return ' '.join(word for _, word in words)[:12000]
+        except Exception as exc:
+            logging.warning('Abstract unavailable from OpenAlex for %s: %s', doi, str(exc)[:90])
+    return ''
+
+
+def gemini_summary(abstract, paper, api_key):
+    """Brief, grounded Japanese synopsis generated from an available abstract."""
+    url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent'
+    prompt = (
+        '以下は学術論文の抄録です。日本語で100〜150字の簡潔な要約を書いてください。'
+        '対象、方法、主要な知見を抄録にある範囲で述べ、存在しない情報・数値・結論は補わない。'
+        '抄録が研究計画だけなら結論を捏造しない。原題の日本語訳や前置き、箇条書きは不要。\n'
+        'タイトル（照合用）: ' + paper.get('title', '')[:300] + '\n'
+        '抄録: ' + abstract[:11000]
+    )
+    response = requests.post(
+        url, headers={'x-goog-api-key': api_key, 'Content-Type': 'application/json'},
+        json={'contents': [{'role': 'user', 'parts': [{'text': prompt}]}],
+              'generationConfig': {'temperature': 0.1, 'maxOutputTokens': 400}},
+        timeout=45
+    )
+    if response.status_code == 429:
+        raise RuntimeError('Gemini free-tier rate limit reached (429)')
+    if response.status_code in (401, 403):
+        raise RuntimeError('Gemini API key rejected or model unavailable (HTTP ' + str(response.status_code) + ')')
+    response.raise_for_status()
+    body = response.json()
+    parts = ((body.get('candidates') or [{}])[0].get('content') or {}).get('parts') or []
+    out = ' '.join(p.get('text', '') for p in parts).strip().strip('「」')
+    if not out:
+        raise RuntimeError('Gemini returned no text')
+    return out[:400]
+
+
+def summarize_records(papers, abstracts, report):
+    """Daily quota + caching: keep old summaries, skip records without abstract."""
+    api_key = os.getenv('GEMINI_API_KEY', '').strip()
+    stats = {'enabled': bool(api_key), 'generated': 0, 'abstract_not_found': 0,
+             'failed': 0, 'model': 'gemini-2.5-flash-lite', 'max_per_run': MAX_GEMINI_SUMMARIES}
+    report['summaries'] = stats
+    if not api_key:
+        return
+    lookups = 0
+    attempts = 0
+    now_iso = TODAY.isoformat()
+    for p in sorted(papers, key=lambda p: (p.get('first_seen', ''), p.get('published', '')), reverse=True):
+        if attempts >= MAX_GEMINI_SUMMARIES or lookups >= MAX_ABSTRACT_LOOKUPS:
+            break
+        if p.get('summary_ja'):
+            continue
+        # A previous negative abstract lookup is retried monthly rather than daily.
+        checked = p.get('abstract_checked_at')
+        abstract = abstracts.get(key_of(p), '')
+        if checked and not abstract:
+            try:
+                if date.fromisoformat(checked) > TODAY - timedelta(days=30):
+                    continue
+            except ValueError:
+                pass
+        if not abstract:
+            lookups += 1
+            abstract = lookup_abstract(p)
+        if not abstract:
+            p['abstract_checked_at'] = now_iso
+            stats['abstract_not_found'] += 1
+            continue
+        attempts += 1
+        try:
+            p['summary_ja'] = gemini_summary(abstract, p, api_key)
+            p['summary_model'] = 'gemini-2.5-flash-lite'
+            p.pop('abstract_checked_at', None)
+            stats['generated'] += 1
+            time.sleep(2.4)  # gentle pacing for free-tier per-minute limits
+        except Exception as exc:
+            logging.warning('Gemini summary skipped for %s: %s', p.get('doi') or p['id'], str(exc)[:160])
+            stats['failed'] += 1
+            if isinstance(exc, RuntimeError) and ('429' in str(exc) or 'key rejected' in str(exc)):
+                stats['paused_reason'] = str(exc)
+                break
+            # Other failures must not stop collection or erase existing summaries.
+    stats['pending'] = sum(not p.get('summary_ja') and not p.get('abstract_checked_at') for p in papers)
+    stats['attempted'] = attempts
+
+
 def main():
     logging.basicConfig(level=logging.INFO, format='%(levelname)s %(message)s')
     journals = read_json(ROOT / 'config/journals.json', [])
-    topics = read_json(ROOT / 'config/topics.json', [])
     old = read_json(DATA / 'papers.json', [])
+    original_total = len(old)
     state = read_json(DATA / 'state.json', {'collectors': {}})
     before = len(old)
+    # Historic keyword-only records are removed; bookmarked copies remain in Private GitHub.
+    registered = {j['id'] for j in journals}
+    old = [p for p in old if p.get('journal_id') in registered]
     mapping = {key_of(p): p for p in old}
+    abstracts = {}
     issn_to_id = {val: j['id'] for j in journals for val in (j.get('issn'), j.get('print_issn')) if val}
-    report = {'updated_at': NOW.isoformat(timespec='seconds'), 'sources': {}, 'total_before': before}
+    report = {'updated_at': NOW.isoformat(timespec='seconds'), 'sources': {}, 'total_before': before,
+              'removed_keyword_only': original_total - before}
     total_new = 0
 
     def ingest(papers, chosen=None):
@@ -331,6 +418,9 @@ def main():
                 if match:
                     paper['journal_id'] = match
             key = key_of(paper)
+            if paper.get('_abstract'):
+                abstracts[key] = paper['_abstract']
+            paper.pop('_abstract', None)  # Never publish raw abstracts to Pages
             if key not in mapping:
                 mapping[key] = merge({}, paper, issn_to_id)
                 mapping[key]['id'] = key
@@ -357,18 +447,8 @@ def main():
             report['sources'][label] = {'ok': False, 'error': str(exc)[:240]}
         time.sleep(0.45)
 
-    for topic in topics:
-        label = 'openalex:' + topic['id']
-        try:
-            papers = openalex_collect(topic)
-            ingest(papers)
-            state.setdefault('collectors', {})[label] = {'success_date': TODAY.isoformat()}
-            report['sources'][label] = {'ok': True, 'count': len(papers)}
-        except Exception as exc:
-            logging.exception('Failed: %s', label)
-            report['sources'][label] = {'ok': False, 'error': str(exc)[:240]}
-
     recent = sorted(mapping.values(), key=lambda p: (p.get('first_seen') or '', p.get('published') or ''), reverse=True)[:MAX_RECORDS]
+    summarize_records(recent, abstracts, report)
     report['total_after'] = len(recent)
     report['new_papers'] = total_new
     write_json(DATA / 'papers.json', recent)

@@ -11,7 +11,7 @@
   <div class="page">
     <header class="topbar">
       <div class="eyebrow">RESEARCH MONITOR · ACADEMIC LITERATURE</div>
-      <div class="headline"><div><h1>Academic <span>Journals</span></h1><p>論文の発見に集中する。原題のまま、毎日更新。</p></div><div class="update" id="update">データ読み込み中</div></div>
+      <div class="headline"><div><h1>Academic <span>Journals</span></h1><p>論文の発見に集中する。原題と簡潔な日本語要約。毎朝7時に更新。</p></div><div class="update" id="update">データ読み込み中</div></div>
     </header>
     <main>
       <div class="metrics" aria-label="収集状況">
@@ -39,14 +39,13 @@
       <nav class="tabs" aria-label="表示切り替え">
         <button class="tab active" data-view="new">新着 <span id="new-label"></span></button>
         <button class="tab" data-view="all">すべて</button>
-        <button class="tab" data-view="keyword">キーワード該当</button>
+        
         <button class="tab" data-view="issues">巻号別</button>
         <button class="tab" data-view="saved">★ 保存済み</button>
       </nav>
       <div class="filters">
         <label class="search"><span>⌕</span><input id="search" type="search" placeholder="タイトル・著者・雑誌を検索" aria-label="論文検索"></label>
         <label><span class="sr-only">雑誌</span><select id="journal"><option value="">すべての媒体</option></select></label>
-        <label><span class="sr-only">分野</span><select id="topic"><option value="">すべての研究分野</option></select></label>
         <label><span class="sr-only">期間</span><select id="range"><option value="">全期間</option><option value="7">追加から7日以内</option><option value="30">追加から30日以内</option></select></label>
         <label><span class="sr-only">並び順</span><select id="sort"><option value="added">追加が新しい順</option><option value="published">公開日が新しい順</option><option value="title">タイトル順</option></select></label>
       </div>
@@ -56,7 +55,7 @@
       <div id="empty" class="empty" hidden></div>
       <div class="loadmore"><button id="more" hidden>さらに表示する</button></div>
     </main>
-    <footer><div><strong>Academic Journals</strong> · 学術論文メタデータ収集</div><div>Crossref / OpenAlex / <a href="https://www.jstage.jst.go.jp/" target="_blank" rel="noopener noreferrer">Powered by J-STAGE</a> / RePEc</div><small>掲載先の論文ページを開き、必要な論文だけEdgeのPaperpile拡張機能で保存できます。サイト内の★と新着確認状態は、接続したGitHubの非公開リポジトリに同期します。</small></footer>
+    <footer><div><strong>Academic Journals</strong> · 学術論文メタデータ収集</div><div>Crossref / <a href="https://www.jstage.jst.go.jp/" target="_blank" rel="noopener noreferrer">Powered by J-STAGE</a> / RePEc</div><small>掲載先の論文ページを開き、必要な論文だけEdgeのPaperpile拡張機能で保存できます。サイト内の★と新着確認状態は、接続したGitHubの非公開リポジトリに同期します。</small></footer>
   </div>
   <script src="sync.js" defer></script>
   <script src="app.js" defer></script>
