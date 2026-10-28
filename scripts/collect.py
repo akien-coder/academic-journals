@@ -311,7 +311,7 @@ def lookup_abstract(paper):
 
 def gemini_summary(abstract, paper, api_key):
     """Brief, grounded Japanese synopsis generated from an available abstract."""
-    url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent'
+    url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent'
     prompt = (
         '以下は学術論文の抄録です。日本語で100〜150字の簡潔な要約を書いてください。'
         '対象、方法、主要な知見を抄録にある範囲で述べ、存在しない情報・数値・結論は補わない。'
@@ -322,12 +322,12 @@ def gemini_summary(abstract, paper, api_key):
     response = requests.post(
         url, headers={'x-goog-api-key': api_key, 'Content-Type': 'application/json'},
         json={'contents': [{'role': 'user', 'parts': [{'text': prompt}]}],
-              'generationConfig': {'temperature': 0.1, 'maxOutputTokens': 400}},
+              'generationConfig': {'temperature': 0.1, 'maxOutputTokens': 600}},
         timeout=45
     )
     if response.status_code == 429:
         raise RuntimeError('Gemini free-tier rate limit reached (429)')
-    if response.status_code in (401, 403):
+    if response.status_code in (401, 403, 404):
         raise RuntimeError('Gemini API key rejected or model unavailable (HTTP ' + str(response.status_code) + ')')
     response.raise_for_status()
     body = response.json()
@@ -342,7 +342,7 @@ def summarize_records(papers, abstracts, report):
     """Daily quota + caching: keep old summaries, skip records without abstract."""
     api_key = os.getenv('GEMINI_API_KEY', '').strip()
     stats = {'enabled': bool(api_key), 'generated': 0, 'abstract_not_found': 0,
-             'failed': 0, 'model': 'gemini-2.5-flash-lite', 'max_per_run': MAX_GEMINI_SUMMARIES}
+             'failed': 0, 'model': 'gemini-3.5-flash-lite', 'max_per_run': MAX_GEMINI_SUMMARIES}
     report['summaries'] = stats
     if not api_key:
         return
@@ -373,14 +373,14 @@ def summarize_records(papers, abstracts, report):
         attempts += 1
         try:
             p['summary_ja'] = gemini_summary(abstract, p, api_key)
-            p['summary_model'] = 'gemini-2.5-flash-lite'
+            p['summary_model'] = 'gemini-3.5-flash-lite'
             p.pop('abstract_checked_at', None)
             stats['generated'] += 1
             time.sleep(2.4)  # gentle pacing for free-tier per-minute limits
         except Exception as exc:
             logging.warning('Gemini summary skipped for %s: %s', p.get('doi') or p['id'], str(exc)[:160])
             stats['failed'] += 1
-            if isinstance(exc, RuntimeError) and ('429' in str(exc) or 'key rejected' in str(exc)):
+            if isinstance(exc, RuntimeError) and ('429' in str(exc) or 'key rejected' in str(exc) or 'model unavailable' in str(exc)):
                 stats['paused_reason'] = str(exc)
                 break
             # Other failures must not stop collection or erase existing summaries.
