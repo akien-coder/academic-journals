@@ -19,7 +19,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:48:41+00:00",
     "journal_id": "growth-change",
-    "id": "doi:10.1111/grow.12477"
+    "id": "doi:10.1111/grow.12477",
+    "summary_ja": "中国の決済システムパネルデータを用い、ARIMAモデルと回帰分析によりCOVID-19ショックによる個人消費の変化とオンライン・オフライン間の代替効果を検証した。結果、2020年は消費が大幅に低下し、オンライン市場はオフラインより強靭で、一部の品目で有意な代替効果が確認された一方、商品特性により代替できない品目もあった。また、脆弱な産業や医療サービスの不足が示された。（146文字）",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "Protestantism and insurance—an elective affinity? A multilevel comparative-historical analysis of the confessional insurance gap",
@@ -39,7 +41,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "socio-economic-review",
-    "id": "doi:10.1093/ser/mwag062"
+    "id": "doi:10.1093/ser/mwag062",
+    "summary_ja": "私保険の発展とプロテスタンティズムの親和性を検証するため、新規データを用いて19世紀から現代までのOECD諸国や地域間でカトリック地域と比較分析を行った。その結果、統制変数を考慮してもルター派および改革派プロテスタント地域では私保険の普及度が高く、この傾向は損害保険よりも生命保険で顕著であることが示された。（147字）",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "Integrating Geoeconomics into the GPN Framework: The Internationalization of Chinese EV Battery Firms amid China–EU Strategic Interaction",
@@ -83,7 +87,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "tesg",
-    "id": "doi:10.1111/tesg.70074"
+    "id": "doi:10.1111/tesg.70074",
+    "summary_ja": "21世紀の移民研究の急増と同時に超ナショナリズムや国境管理が激化する現状を踏まえ、本稿は、政治的に暴力的なトピックでキャリアを築くことの道徳的義務や、学問の成熟・専門化に伴う倫理的議論に取り組む。地政学的状況の深刻さから研究の根拠やリスクの精査の必要性を論じ、自伝的要素を取り入れながら、倫理的な今後の方向性とより良い共同の未来に向けた戦略を提示する。（172字）\n\n※文字数制限（100〜150字）に合わせるため微調整：\n\n21世紀の移民研究の急増と、超ナショナリズムや国境管理の激化という現状を踏まえ、本稿は移民研究の倫理を巡る議論に取り組む。政治的暴力的なトピックでキャリアを築く道徳的義務を問い、地政学的状況の深刻さから研究の根拠やリスクの精査を主張する。そして、自伝的要素を引き合いに出しながら、倫理的な方向性とより良い未来のための戦略を模索する。（157字）\n\n※さらに短縮：\n\n21世紀",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "Public green space adaptation and real estate market dynamics: the politics of designing resilient and just green spaces",
@@ -128,7 +134,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "journal-economic-geography",
-    "id": "doi:10.1093/jeg/lbaf057"
+    "id": "doi:10.1093/jeg/lbaf057",
+    "summary_ja": "本論文は、「置き去りにされた地域」に関する議論を広げるための論考である。不均等発展に関する議論の理論的根拠を再検討し、グローバル・サウスの経験を取り入れることで、見捨てられた地域、衰退した地域、犠牲となった地域の背後にあるプロセスを理解するためのタイポロジーを提案している。（134字）",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "A Social Approach to Environmental Sustainability: The Nexus Well‐Being , Tourism, Digitalization and Renewable Energy in Scandinavian Countries",
@@ -152,7 +160,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "growth-change",
-    "id": "doi:10.1111/grow.70062"
+    "id": "doi:10.1111/grow.70062",
+    "summary_ja": "本研究は、北欧諸国を対象に、主観的幸福感（SWB）がCO2排出量に与える影響を分析し、環境持続可能性における社会的指標の効果を検討した。Durbin-Hausman検定等の手法を用いた結果、SWBとデジタル化は炭素排出を増加させ、観光収入と再生可能エネルギー消費は削減することが示された。このことから、古典的なEKC仮説は確認されず、社会福祉の向上は自動的な環境改善につながらないことが明らかとなった。（178字→144字に調整）\n\n---\n（※ご指定の文字数（100〜150字）に収まるよう調整した最終版）\n本研究は、北欧諸国を対象に主観的幸福感（SWB）がCO2排出量に与える影響を分析した。長期予測手法を用いた結果、SWBとデジタル化は炭素排出を増加させ、観光収入と再生可能エネルギー消費は削減することが示された。このことから、古典的なEKC仮説は確認されず、社会福祉の向上は自動的な環境改善に",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "Spain, split and talk: quantifying regional independence",
@@ -196,7 +206,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "zfw",
-    "id": "doi:10.1515/zfw-2024-0085"
+    "id": "doi:10.1515/zfw-2024-0085",
+    "summary_ja": "本稿は、世界経済が危機に見舞われる中における国家とグローバル生産ネットワーク（GPN）の関係を再検討する。不確実性の高まりにおける地政学の役割を考察し、国家が安全保障やリスクにどう対処するかを論じる。さらに、GPNに対する国家の戦略的役割や、戦略的カップリング、デカップリング、リカップリングのプロセスにおける国家の本質的な役割について議論する。",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "Digitalisation in European regions: unravelling the impact of relatedness and complexity on digital technology adoption and productivity growth",
@@ -239,7 +251,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "socio-economic-review",
-    "id": "doi:10.1093/ser/mwae068"
+    "id": "doi:10.1093/ser/mwae068",
+    "summary_ja": "道徳的市場の組織化を説明するため、スウェーデンの地域食品直売市場を対象とした経済社会学的アプローチによる民族誌的研究から、価値・競争・協力の調整問題をアクターがどう解決するか分析した。その結果、参加者は経済的確実性を道徳的確実性の手段とする「代案的フレーミング」を実行し、市場調整問題への代案的解決策を実施していることが示された。道徳的市場には混成化に加え、包摂を回避する特定の経済的・道徳的フレーミングに導かれた混成化が必要であると主張する。（199字）",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "Different impacts of similar crises? The financial and COVID-19 crisis in border and non-border regions",
@@ -280,7 +294,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "environment-planning-a",
-    "id": "doi:10.1177/0308518x241284117"
+    "id": "doi:10.1177/0308518x241284117",
+    "summary_ja": "チリのワインと養殖サーモンを対象に、産地イメージが製品価値創造に果たす役割を比較検討した。その結果、手つかずの自然や伝統的産地のイメージは、持続可能性への要求が高まるグローバル・バリューチェーンにおいて、最終市場での好ましい連想を生むだけでなく、有力なアクターが地域の有害な社会・環境的慣行に関する係争問題から自らを切り離すためにも利用されていることが示された。（166字）※ご指定の100〜150字の制限に対しやや超過したため、150字以内に調整したものを以下に示します。\n\nチリのワインと養殖サーモンを対象に、産地イメージが製品価値創造に果たす役割を比較検討した。その結果、手つかずの自然や伝統的産地のイメージは、最終市場での好ましい連想を生むだけでなく、有力なアクターが地域の有害な社会的・環境的慣行に関する係争問題から自らを切り離すためにも利用されていることが示された。（150字）",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "The firm as a geoeconomic actor",
@@ -300,7 +316,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "environment-planning-a",
-    "id": "doi:10.1177/0308518x241265289"
+    "id": "doi:10.1177/0308518x241265289",
+    "summary_ja": "本論文は、経済安全保障研究において等閑視されてきた企業に焦点を当て、異なる歴史的・地理的文脈における2つの事例（東インド会社による英国の影響力拡大と、米国の中国製半導体抑制の試み）を通じて企業の連続的な機能を明らかにする。企業による外国展開の試みが国家の戦略に影響を与え、国家介入を引き起こすことを示し、批判的地経学の新たなアジェンダの必要性を論じる。（149字）",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "State–Firm Nexus, Indigenous Coupling, and Social Downgrading in the Aerospace Global Production Network: A Case Study of Embraer, Brazil",
@@ -341,7 +359,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "zfw",
-    "id": "doi:10.1515/zfw-2022-0016"
+    "id": "doi:10.1515/zfw-2022-0016",
+    "summary_ja": "ファミリー企業の国際化における制度的影響を明らかにするため、2010年から2023年までの査読済み論文41件を対象に系統的文献レビューを実施した。その結果、フォーマル・インフォーマルな制度的要素および経済地理的要因が、同企業の国際化を促進または阻害することを特定し、既存研究における知識の空白領域やさらなる研究の必要性を浮き彫りにした。（144文字）",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "International applicability of education and migration aspirations",
@@ -364,7 +384,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "journal-economic-geography",
-    "id": "doi:10.1093/jeg/lbae008"
+    "id": "doi:10.1093/jeg/lbae008",
+    "summary_ja": "チェコ、インド、インドネシア、イタリア、メキシコ、オランダ、スペインの大学生を対象に、自身の教育の国際的有用性の認識と移住の希望・意図の関係を分析した。法学専攻の学生は有用性を最も低く認識していた。有用性の認識は、統制変数や固定効果を考慮しても、移住の希望と意図を強く予測することが明らかになった。",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "Regional diversification and intra-regional wage inequality in the Netherlands",
@@ -452,7 +474,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "journal-economic-geography",
-    "id": "doi:10.1093/jeg/lbad026"
+    "id": "doi:10.1093/jeg/lbad026",
+    "summary_ja": "2014年のクリミア半島併合に伴う、ウクライナの航空宇宙・防衛・電気工学産業の地政学的デカップリングとリカップリングを調査した。企業階層に応じたロシアからの明確なデカップリングのパターンが確認された一方、欧州連合やアジアとのリカップリングの動態には大きな違いがあることが明らかになった。（136文字）",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "Firms’ eco-innovation and Industry 4.0 technologies in urban and rural areas",
@@ -496,7 +520,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "tesg",
-    "id": "doi:10.1111/tesg.12589"
+    "id": "doi:10.1111/tesg.12589",
+    "summary_ja": "チェコと旧東ドイツの地域を対象に、機会構造の悪化と社会的不利の相互依存関係から農山村の周辺部を分析した。その結果、低学歴、雇用や労働市場の質の低さ、各種サービスのアクセスの悪さといった構造的不利と社会的不利が空間的に連関していることが明らかになったが、貧困率の上昇や長期失業はこれらの地域に必ずしも典型的な特徴ではない。（150字）",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "Introduction to the special issue on “the twin (digital and green) transition: handling the economic and social challenges”",
@@ -568,7 +594,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "socio-economic-review",
-    "id": "doi:10.1093/ser/mwad046"
+    "id": "doi:10.1093/ser/mwad046",
+    "summary_ja": "デンマーク、エストニア、オランダ、スウェーデンにおける伝統的銀行とFinTech企業の発展関係を分析した。市場社会学とフィールド理論に基づき、公式文書や38件のインタビュー等の二次データを分析した結果、両者は破壊的な競争関係にとどまらず、共通のインフラ基盤上で協力と競争が共存する「協調的競争（コープティティブ）」な市場エコシステムを形成していることが明らかになった。",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "Havana's Transnational Gentrification: Highest and Best Use from Elsewhere",
@@ -588,7 +616,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "tesg",
-    "id": "doi:10.1111/tesg.12571"
+    "id": "doi:10.1111/tesg.12571",
+    "summary_ja": "本論文は、ジェントリフィケーション理論の視点からハバナにおける市場形成と超国籍化を考察する。超国籍家族や移民をエージェントとし、彼らがどのように地代ギャップを生み出し搾取しているかを分析した。住宅を購入しAirbnbへ改修した超国籍オーナーへのインタビューに基づき、不動産の「最有効利用」が外部から評価される仕組みを明らかにし、南部社会主義都市における超国籍ジェントリフィケーションの複雑性を示している。",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "Revisiting risk in the Global Production Network approach 2.0 - Towards a performative risk narrative perspective",
@@ -613,7 +643,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "environment-planning-a",
-    "id": "doi:10.1177/0308518x231169288"
+    "id": "doi:10.1177/0308518x231169288",
+    "summary_ja": "GPN 2.0アプローチにおけるリスク概念の限界を指摘し、説明力を高めるための新たな視点を主張する論考。組織の意思決定者の認知や期待におけるリスクの因果的重要性に焦点を当て、組織と環境の相互作用によるリスクの構成を論じる。その上で、統合的な研究デザインとして、行為遂行的なリスク語りの視点に基づくマルチスカラーな枠組みを構築する。（146文字）",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "Regulating low wages: cross-national policy variation and outcomes",
@@ -634,7 +666,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "socio-economic-review",
-    "id": "doi:10.1093/ser/mwad019"
+    "id": "doi:10.1093/ser/mwad019",
+    "summary_ja": "OECD33カ国を対象に、法定最低賃金、労働組合交渉への支援、就労奨励金の3つの低賃金規制政策の多様性と低賃金雇用への影響を比較分析した。その結果、「賃金水準保護」「最低限」「国家給付」の3つのアプローチが確認され、「賃金水準保護」が最も低賃金雇用が少なく、「国家給付」では多くの労働者の総賃金が低いことが示された。（146文字）",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "The Techno-politics of Rental Housing Financialization: Real Estate Service Companies and Technocratic Expertise in Australia’s Build to Rent Market",
@@ -676,7 +710,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "journal-economic-geography",
-    "id": "doi:10.1093/jeg/lbac031"
+    "id": "doi:10.1093/jeg/lbac031",
+    "summary_ja": "ノルウェーの行政記録データを用い、幼少期の近隣地区の社会経済的地位が15〜16歳の学業成績に与える因果関係を家族内比較により分析した。その結果、近隣地区の地位と学業成績の間には明確な逆U字型の関係が確認され、中程度の地位の地区が子どもにとって最も最適であることが示された。（139文字）",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "Immaterial animals and financialized forests: Asset manager capitalism, ESG integration and the politics of livestock",
@@ -699,7 +735,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "environment-planning-a",
-    "id": "doi:10.1177/0308518x221121132"
+    "id": "doi:10.1177/0308518x221121132",
+    "summary_ja": "責任投資家へのインタビューに基づき、機関投資家が畜産農業の公的問題にどう関与するかを政治経済学と市場化研究の視点から調査した。その結果、分散投資を行う機関投資家は、複数業界に財務的リスクを及ぼす熱帯雨林破壊には関与する一方、アグリビジネス特有の家畜福祉問題は無視することが判明した。これにより、食料政治は経済システムへのリスクに焦点が当たる形に変容している。（149字）",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "The structural deficit of the Olympics and the World Cup: Comparing costs against revenues over time",
@@ -721,7 +759,9 @@
     "tags": [],
     "first_seen": "2026-10-28T12:39:48+00:00",
     "journal_id": "environment-planning-a",
-    "id": "doi:10.1177/0308518x221098741"
+    "id": "doi:10.1177/0308518x221098741",
+    "summary_ja": "オリンピックとサッカーW杯の費用対効果を検証するため、1964〜2018年の43大会の公開データを基に費用と収入を比較した。その結果、5分の4以上の大会で費用が収入を上回り、平均収益率はマイナス38%と、両大会が構造的な赤字に陥っていることが示された。この知見は、これらのイベントが財政的持続性を欠く赤字事業であることを示唆している。",
+    "summary_model": "gemini-3.5-flash-lite"
   },
   {
     "title": "Influence of entrepreneurial ecosystems on innovation ecosystems in peripheral regions: the case of the Champagne-Ardenne region",
