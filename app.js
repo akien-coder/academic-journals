@@ -1,6 +1,6 @@
 'use strict';
 const CREDENTIALS={settings:'rpw_sync_settings_v1',rememberedToken:'rpw_sync_device_token_v1',sessionToken:'rpw_sync_session_token_v1'};
-const state={papers:[],archive:{},journals:[],status:null,view:'new',visible:50,search:'',journal:'',range:'',sort:'added',saved:new Set(),ack:'1970-01-01T00:00:00Z'};
+const state={papers:[],archive:{},journals:[],status:null,view:'online',visible:30,search:'',journal:'',range:'',sort:'added',saved:new Set(),ack:'1970-01-01T00:00:00Z'};
 const sync={gateway:null,connected:false,busy:false,message:'未接続',error:false};
 function load(k,fallback){try{const x=localStorage.getItem(k);return x?JSON.parse(x):fallback}catch{return fallback}}
 function store(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}}
@@ -15,13 +15,13 @@ function exactOrMonthEnd(s){
  return asDate(s);
 }
 function recentlyPublished(p){
- const day=exactOrMonthEnd(p.published),issue=exactOrMonthEnd(p.issue_published);
- const limit=Date.now()-90*86400000;
- // A title may be old Online First but newly assigned to a recent issue.
- return (day>=limit&&day<=Date.now()+7*86400000) ||
-        (p.latest_issue&&issue>=limit&&issue<=Date.now()+7*86400000);
+ const day=exactOrMonthEnd(p.published);
+ return day>=Date.now()-90*86400000 && day<=Date.now()+7*86400000;
 }
-function isNew(p){return recentlyPublished(p)&&asDate(p.first_seen)>asDate(state.ack)}
+function isNew(p){return (isOnlineFirst(p)||isLatestIssue(p))&&recentlyPublished(p)&&asDate(p.first_seen)>asDate(state.ack)}
+function isOnlineFirst(p){return p.kind!=='working-paper'&&!(p.volume&&p.issue)}
+function isLatestIssue(p){return !!(p.latest_issue&&p.volume&&p.issue)}
+function feedIssueDate(p){return exactOrMonthEnd(p.issue_published)||exactOrMonthEnd(p.published)}
 function truncateAuthors(list){const arr=(list||[]).filter(Boolean);return arr.slice(0,4).join(', ')+(arr.length>4?' ほか':'')}
 function el(tag,className,text){const o=document.createElement(tag);if(className)o.className=className;if(text!==undefined)o.textContent=text;return o}
 function badge(text,kind){return el('span','badge '+(kind||''),text)}
@@ -54,14 +54,19 @@ function selectedPapers(){
    if(!available.some(p=>p.id===id)&&state.archive[id])available.push({id,...state.archive[id]});
  }
  let list=available.filter(p=>{
-  if(state.view==='new'&&!isNew(p))return false;
+  if(state.view==='online'&&!isOnlineFirst(p))return false;
+  if(state.view==='latest'&&!isLatestIssue(p))return false;
   if(state.view==='saved'&&!state.saved.has(p.id))return false;
   if(state.journal&&p.journal_id!==state.journal)return false;
   if(state.range&&asDate(p.first_seen)<Date.now()-Number(state.range)*864e5)return false;
   if(state.search){const hay=[p.title,p.journal,...(p.authors||[]),p.doi].join(' ').toLocaleLowerCase();if(!hay.includes(state.search))return false;}
   return true;
  });
- list.sort((a,b)=>state.sort==='published'?asDate(b.published)-asDate(a.published):state.sort==='title'?a.title.localeCompare(b.title):asDate(b.first_seen)-asDate(a.first_seen));
+ // The two headline feeds are always shown in precisely the same order as
+ // the Gemini summarization priority; no user sort setting can change that.
+ if(state.view==='online')list.sort((a,b)=>exactOrMonthEnd(b.published)-exactOrMonthEnd(a.published)||asDate(b.first_seen)-asDate(a.first_seen)||(b.id||'').localeCompare(a.id||''));
+ else if(state.view==='latest')list.sort((a,b)=>feedIssueDate(b)-feedIssueDate(a)||exactOrMonthEnd(b.published)-exactOrMonthEnd(a.published)||asDate(b.first_seen)-asDate(a.first_seen)||(b.id||'').localeCompare(a.id||''));
+ else list.sort((a,b)=>state.sort==='published'?asDate(b.published)-asDate(a.published):state.sort==='title'?a.title.localeCompare(b.title):asDate(b.first_seen)-asDate(a.first_seen));
  return list;
 }
 function showIssues(list){
@@ -81,16 +86,18 @@ function showIssues(list){
 function showEmpty(title,detail){const empty=$('empty');empty.hidden=false;empty.replaceChildren(el('strong','',title),el('span','',detail||''));}
 function render(){
  const total=state.papers.length,unseen=state.papers.filter(isNew).length,saved=state.saved.size;
- $('total').textContent=total.toLocaleString('ja-JP');$('new-total').textContent=unseen.toLocaleString('ja-JP');$('saved-total').textContent=saved.toLocaleString('ja-JP');$('new-label').textContent=unseen?'('+unseen+')':'';
- const labels={new:'新着論文',all:'すべての論文',saved:'保存済み',issues:'巻号別'};
- $('list-title').textContent=labels[state.view];document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.view===state.view));
- $('confirm').hidden=state.view!=='new'||!unseen; $('confirm').disabled=sync.busy;
- $('papers').replaceChildren();$('empty').hidden=true;const list=selectedPapers();
- if(state.view==='issues'){showIssues(list);return}
- $('result-count').textContent=`${list.length.toLocaleString('ja-JP')}件`;
- for(const p of list.slice(0,state.visible))$('papers').append(paperItem(p));
- $('more').hidden=list.length<=state.visible;
- if(!list.length)showEmpty(total?'該当する論文はありません':'まだ論文データがありません',total?'検索条件を変えるか「すべて」で確認してください。':'初回はGitHub Actionsの「Collect research papers」を手動実行してください。');
+ $('total').textContent=total.toLocaleString('ja-JP');$('new-total').textContent=unseen.toLocaleString('ja-JP');$('saved-total').textContent=saved.toLocaleString('ja-JP');
+ const labels={online:'Online First / Advance Access',latest:'最新号（New Issue）',all:'すべての論文',saved:'保存済み'};
+ $('list-title').textContent=labels[state.view]||'論文一覧';document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.view===state.view));
+ $('confirm').hidden=!(state.view==='online'||state.view==='latest')||!unseen; $('confirm').disabled=sync.busy;
+ $('papers').replaceChildren();$('empty').hidden=true;
+ const list=selectedPapers();const headline=(state.view==='online'||state.view==='latest');
+ const limit=headline?30:state.visible;
+ $('result-count').textContent=headline?` 最新30本（該当 ${list.length.toLocaleString('ja-JP')}件）`:` ${list.length.toLocaleString('ja-JP')}件`;
+ $('sort').disabled=headline;
+ for(const p of list.slice(0,limit))$('papers').append(paperItem(p));
+ $('more').hidden=headline||list.length<=state.visible;
+ if(!list.length)showEmpty(total?'該当する論文はありません':'まだ論文データがありません',total?'雑誌を変更するか「すべて」で確認してください。':'初回はGitHub Actionsの「Collect research papers」を手動実行してください。');
 }
 function makeOptions(select,rows){for(const p of rows){const op=el('option','',p.title||p.label);op.value=p.id;select.append(op);}}
 async function init(){

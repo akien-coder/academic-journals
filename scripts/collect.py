@@ -30,7 +30,9 @@ MAX_RECORDS = 12000
 MAX_PAGES = 8
 # Operational ceiling, NOT a claim about the project's Google API quota.
 # A quota HTTP 429 stops summarization without enabling paid billing.
-MAX_GEMINI_SUMMARIES = max(1, min(200, int(os.getenv('GEMINI_MAX_SUMMARIES', '80'))))
+MAX_GEMINI_SUMMARIES = max(1, min(120, int(os.getenv('GEMINI_MAX_SUMMARIES', '30'))))
+SUMMARY_START_DATE = date(2026, 10, 29)  # JST. No automatic backfill of old records.
+FEED_LIMIT = 30
 MAX_ABSTRACT_LOOKUPS = 120
 RECENT_DAYS = 90
 
@@ -131,7 +133,10 @@ def crossref_item(raw, journal):
     # The *online* date is the first-publication date. Print date can be much
     # later; it is needed to recognize a new journal issue without making
     # decades-old online-first articles look like newly published papers.
-    paper['issue_published'] = date_parts(raw.get('published-print'))
+    paper['issue_published'] = first(
+        date_parts(raw.get('published-print')),
+        date_parts(raw.get('published')) if raw.get('issue') and raw.get('volume') else ''
+    )
     paper['_abstract'] = strip_markup(raw.get('abstract'))[:12000]
     return paper
 
@@ -358,6 +363,34 @@ def keep_recent_and_latest_issue(papers):
     return kept
 
 
+def is_online_first(paper):
+    """No confirmed volume/issue assignment (an imperfect but conservative proxy)."""
+    return paper.get('kind') != 'working-paper' and not (paper.get('volume') and paper.get('issue'))
+
+
+def is_latest_issue_article(paper):
+    return bool(paper.get('latest_issue') and paper.get('volume') and paper.get('issue'))
+
+
+def top_feed_papers(papers):
+    """Same deterministic order used in the browser, with one DOI appearing in one feed."""
+    online = sorted((p for p in papers if is_online_first(p)),
+                    key=lambda p: (pub_date(p.get('published')) or date.min,
+                                   p.get('first_seen') or '', p.get('id') or ''), reverse=True)[:FEED_LIMIT]
+    issue = sorted((p for p in papers if is_latest_issue_article(p)),
+                   key=lambda p: (pub_date(p.get('issue_published')) or pub_date(p.get('published')) or date.min,
+                                  pub_date(p.get('published')) or date.min,
+                                  p.get('first_seen') or '', p.get('id') or ''), reverse=True)[:FEED_LIMIT]
+    return online, issue
+
+
+def first_seen_on_or_after(paper, cutoff=SUMMARY_START_DATE):
+    try:
+        return date.fromisoformat((paper.get('first_seen') or '')[:10]) >= cutoff
+    except ValueError:
+        return False
+
+
 def lookup_abstract(paper):
     """Look up a specific DOI; never run topical paper searches."""
     doi = normalize_doi(paper.get('doi'))
@@ -416,26 +449,36 @@ def gemini_summary(abstract, paper, api_key):
 
 
 def summarize_records(papers, abstracts, report):
-    """Daily quota + caching: keep old summaries, skip records without abstract."""
+    """Prioritize the two visible top-30 feeds, only for newly discovered papers."""
     api_key = os.getenv('GEMINI_API_KEY', '').strip()
+    online_top, issue_top = top_feed_papers(papers)
     stats = {'enabled': bool(api_key), 'generated': 0, 'abstract_not_found': 0,
-             'failed': 0, 'model': 'gemini-3.5-flash-lite', 'max_per_run': MAX_GEMINI_SUMMARIES}
+             'failed': 0, 'model': 'gemini-3.5-flash-lite',
+             'max_per_run': MAX_GEMINI_SUMMARIES,
+             'per_feed_limit': FEED_LIMIT, 'summary_start_date': SUMMARY_START_DATE.isoformat(),
+             'online_first_top': len(online_top), 'latest_issue_top': len(issue_top)}
     report['summaries'] = stats
+    candidates = []
+    seen = set()
+    # Online First first, then latest issues. Never translate the same DOI twice.
+    for p in online_top + issue_top:
+        ident = key_of(p)
+        if ident not in seen:
+            candidates.append(p)
+            seen.add(ident)
+    eligible = [p for p in candidates if first_seen_on_or_after(p) and is_recent(p)]
+    stats['eligible_new_top_papers'] = len(eligible)
+    stats['pending'] = sum(not p.get('summary_ja') for p in eligible)
     if not api_key:
         return
-    # Latest-issue exceptions are retained for browsing, but old online-first
-    # papers must never consume the Gemini budget.
-    eligible = [p for p in papers if is_recent(p)]
-    stats['eligible_recent_papers'] = len(eligible)
     lookups = 0
     attempts = 0
     now_iso = TODAY.isoformat()
-    for p in sorted(eligible, key=lambda p: (p.get('first_seen', ''), p.get('published', '')), reverse=True):
+    for p in eligible:
         if attempts >= MAX_GEMINI_SUMMARIES or lookups >= MAX_ABSTRACT_LOOKUPS:
             break
         if p.get('summary_ja'):
             continue
-        # A previous negative abstract lookup is retried monthly rather than daily.
         checked = p.get('abstract_checked_at')
         abstract = abstracts.get(key_of(p), '')
         if checked and not abstract:
@@ -457,14 +500,13 @@ def summarize_records(papers, abstracts, report):
             p['summary_model'] = 'gemini-3.5-flash-lite'
             p.pop('abstract_checked_at', None)
             stats['generated'] += 1
-            time.sleep(2.4)  # gentle pacing for free-tier per-minute limits
+            time.sleep(2.4)
         except Exception as exc:
             logging.warning('Gemini summary skipped for %s: %s', p.get('doi') or p['id'], str(exc)[:160])
             stats['failed'] += 1
             if isinstance(exc, RuntimeError) and ('429' in str(exc) or 'key rejected' in str(exc) or 'model unavailable' in str(exc)):
                 stats['paused_reason'] = str(exc)
                 break
-            # Other failures must not stop collection or erase existing summaries.
     stats['pending'] = sum(not p.get('summary_ja') and not p.get('abstract_checked_at') for p in eligible)
     stats['attempted'] = attempts
 
@@ -539,6 +581,9 @@ def main():
     report['retention_days'] = RECENT_DAYS
     report['removed_out_of_window'] = len(candidates) - len(recent)
     report['latest_issues_observed'] = len(newest_issue_keys(candidates))
+    online_top, issue_top = top_feed_papers(recent)
+    report['online_first_top'] = len(online_top)
+    report['latest_issue_top'] = len(issue_top)
     summarize_records(recent, abstracts, report)
     report['total_after'] = len(recent)
     report['new_papers'] = sum(p.get('first_seen', '').startswith(TODAY.isoformat()) for p in recent)
