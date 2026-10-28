@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-28T13:31:41+00:00",
+  "updated_at": "2026-10-28T14:37:36+00:00",
   "sources": {
     "crossref:regional-studies": {
       "ok": true,
-      "count": 343
+      "count": 347
     },
     "crossref:journal-economic-geography": {
       "ok": true,
@@ -11,7 +11,7 @@
     },
     "crossref:economic-geography": {
       "ok": true,
-      "count": 235
+      "count": 236
     },
     "crossref:cambridge-regions": {
       "ok": true,
@@ -19,7 +19,7 @@
     },
     "crossref:european-planning": {
       "ok": true,
-      "count": 304
+      "count": 306
     },
     "jstage:jaeg": {
       "ok": true,
@@ -71,33 +71,39 @@
     },
     "crossref:environment-planning-a": {
       "ok": true,
-      "count": 380
+      "count": 383
     },
     "crossref:socio-economic-review": {
       "ok": true,
-      "count": 246
+      "count": 253
     },
     "repec:peeg": {
       "ok": true,
       "count": 120
     }
   },
-  "total_before": 1756,
+  "total_before": 423,
   "removed_keyword_only": 0,
   "retention_days": 90,
-  "removed_out_of_window": 3266,
+  "removed_out_of_window": 2982,
   "latest_issues_observed": 12,
+  "online_first_top": 30,
+  "latest_issue_top": 30,
   "summaries": {
     "enabled": true,
-    "generated": 67,
-    "abstract_not_found": 63,
-    "failed": 1,
+    "generated": 0,
+    "abstract_not_found": 0,
+    "failed": 0,
     "model": "gemini-3.5-flash-lite",
-    "max_per_run": 80,
-    "eligible_recent_papers": 241,
-    "pending": 110,
-    "attempted": 68
+    "max_per_run": 30,
+    "per_feed_limit": 30,
+    "summary_start_date": "2026-10-29",
+    "online_first_top": 30,
+    "latest_issue_top": 30,
+    "eligible_new_top_papers": 0,
+    "pending": 0,
+    "attempted": 0
   },
-  "total_after": 423,
-  "new_papers": 108
+  "total_after": 430,
+  "new_papers": 115
 }
