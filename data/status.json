@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-10-28T12:58:47+00:00",
+  "updated_at": "2026-10-28T13:31:41+00:00",
   "sources": {
     "crossref:regional-studies": {
       "ok": true,
-      "count": 143
+      "count": 343
     },
     "crossref:journal-economic-geography": {
       "ok": true,
-      "count": 76
+      "count": 276
     },
     "crossref:economic-geography": {
       "ok": true,
-      "count": 35
+      "count": 235
     },
     "crossref:cambridge-regions": {
       "ok": true,
-      "count": 56
+      "count": 256
     },
     "crossref:european-planning": {
       "ok": true,
-      "count": 104
+      "count": 304
     },
     "jstage:jaeg": {
       "ok": true,
@@ -39,43 +39,43 @@
     },
     "crossref:research-policy": {
       "ok": false,
-      "error": "https://api.crossref.org/journals/1873-7625/works: 404 Client Error: Not Found for url: https://api.crossref.org/journals/1873-7625/works?filter=from-pub-date%3A2026-05-01%2Ctype%3Ajournal-article&rows=300&cursor=%2A&select=DOI%2Ctitle%2Cty"
+      "error": "https://api.crossref.org/journals/1873-7625/works: 404 Client Error: Not Found for url: https://api.crossref.org/journals/1873-7625/works?filter=from-pub-date%3A2026-07-30%2Ctype%3Ajournal-article&rows=300&cursor=%2A&select=DOI%2Ctitle%2Cty"
     },
     "crossref:fennia": {
       "ok": true,
-      "count": 3
+      "count": 203
     },
     "crossref:geoforum": {
       "ok": false,
-      "error": "https://api.crossref.org/journals/1872-9398/works: 404 Client Error: Not Found for url: https://api.crossref.org/journals/1872-9398/works?filter=from-pub-date%3A2026-05-01%2Ctype%3Ajournal-article&rows=300&cursor=%2A&select=DOI%2Ctitle%2Cty"
+      "error": "https://api.crossref.org/journals/1872-9398/works: 404 Client Error: Not Found for url: https://api.crossref.org/journals/1872-9398/works?filter=from-pub-date%3A2026-07-30%2Ctype%3Ajournal-article&rows=300&cursor=%2A&select=DOI%2Ctitle%2Cty"
     },
     "crossref:tesg": {
       "ok": true,
-      "count": 21
+      "count": 221
     },
     "crossref:industry-innovation": {
       "ok": true,
-      "count": 45
+      "count": 245
     },
     "crossref:zfw": {
       "ok": true,
-      "count": 3
+      "count": 95
     },
     "crossref:growth-change": {
       "ok": true,
-      "count": 33
+      "count": 233
     },
     "crossref:rural-studies": {
       "ok": false,
-      "error": "https://api.crossref.org/journals/1873-1392/works: 404 Client Error: Not Found for url: https://api.crossref.org/journals/1873-1392/works?filter=from-pub-date%3A2026-05-01%2Ctype%3Ajournal-article&rows=300&cursor=%2A&select=DOI%2Ctitle%2Cty"
+      "error": "https://api.crossref.org/journals/1873-1392/works: 404 Client Error: Not Found for url: https://api.crossref.org/journals/1873-1392/works?filter=from-pub-date%3A2026-07-30%2Ctype%3Ajournal-article&rows=300&cursor=%2A&select=DOI%2Ctitle%2Cty"
     },
     "crossref:environment-planning-a": {
       "ok": true,
-      "count": 178
+      "count": 380
     },
     "crossref:socio-economic-review": {
       "ok": true,
-      "count": 46
+      "count": 246
     },
     "repec:peeg": {
       "ok": true,
@@ -84,16 +84,20 @@
   },
   "total_before": 1756,
   "removed_keyword_only": 0,
+  "retention_days": 90,
+  "removed_out_of_window": 3266,
+  "latest_issues_observed": 12,
   "summaries": {
     "enabled": true,
-    "generated": 20,
-    "abstract_not_found": 0,
-    "failed": 0,
+    "generated": 67,
+    "abstract_not_found": 63,
+    "failed": 1,
     "model": "gemini-3.5-flash-lite",
-    "max_per_run": 20,
-    "pending": 1721,
-    "attempted": 20
+    "max_per_run": 80,
+    "eligible_recent_papers": 241,
+    "pending": 110,
+    "attempted": 68
   },
-  "total_after": 1756,
-  "new_papers": 0
+  "total_after": 423,
+  "new_papers": 108
 }
