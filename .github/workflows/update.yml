@@ -30,6 +30,7 @@ jobs:
       - name: Collect metadata
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CROSSREF_MAILTO: ${{ secrets.CROSSREF_MAILTO }}
         run: python scripts/collect.py
 
