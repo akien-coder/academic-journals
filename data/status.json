@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-10-28T12:39:48+00:00",
+  "updated_at": "2026-10-28T12:48:41+00:00",
   "sources": {
     "crossref:regional-studies": {
       "ok": true,
-      "count": 204
+      "count": 143
     },
     "crossref:journal-economic-geography": {
       "ok": true,
-      "count": 109
+      "count": 76
     },
     "crossref:economic-geography": {
       "ok": true,
-      "count": 43
+      "count": 35
     },
     "crossref:cambridge-regions": {
       "ok": true,
-      "count": 65
+      "count": 56
     },
     "crossref:european-planning": {
       "ok": true,
-      "count": 143
+      "count": 104
     },
     "jstage:jaeg": {
       "ok": true,
@@ -51,19 +51,19 @@
     },
     "crossref:tesg": {
       "ok": true,
-      "count": 25
+      "count": 21
     },
     "crossref:industry-innovation": {
       "ok": true,
-      "count": 63
+      "count": 45
     },
     "crossref:zfw": {
       "ok": true,
-      "count": 4
+      "count": 3
     },
     "crossref:growth-change": {
       "ok": true,
-      "count": 41
+      "count": 33
     },
     "crossref:rural-studies": {
       "ok": false,
@@ -71,29 +71,29 @@
     },
     "crossref:environment-planning-a": {
       "ok": true,
-      "count": 230
+      "count": 178
     },
     "crossref:socio-economic-review": {
       "ok": true,
-      "count": 70
+      "count": 46
     },
     "repec:peeg": {
       "ok": true,
       "count": 120
     }
   },
-  "total_before": 1950,
+  "total_before": 1755,
   "removed_keyword_only": 0,
   "summaries": {
     "enabled": true,
     "generated": 0,
-    "abstract_not_found": 15,
+    "abstract_not_found": 0,
     "failed": 20,
     "model": "gemini-2.5-flash-lite",
     "max_per_run": 20,
-    "pending": 1740,
+    "pending": 1741,
     "attempted": 20
   },
-  "total_after": 1755,
-  "new_papers": 146
+  "total_after": 1756,
+  "new_papers": 1
 }
