@@ -8,6 +8,7 @@ import os
 import re
 import time
 from datetime import date, datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from urllib.parse import quote, urljoin
 import xml.etree.ElementTree as ET
@@ -18,7 +19,7 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data'
 NOW = datetime.now(timezone.utc)
-TODAY = NOW.date()
+TODAY = datetime.now(ZoneInfo("Asia/Tokyo")).date()
 HEADERS = {
     'User-Agent': 'ResearchPaperWatch/1.0 (academic metadata monitor; personal use; contact set via CROSSREF_MAILTO)',
     'Accept': 'application/json, application/xml, text/xml, text/html;q=0.9,*/*;q=0.5'
@@ -27,8 +28,11 @@ SESSION = requests.Session()
 SESSION.headers.update(HEADERS)
 MAX_RECORDS = 12000
 MAX_PAGES = 8
-MAX_GEMINI_SUMMARIES = 20  # Do not exceed daily quota; unprocessed entries carry forward
-MAX_ABSTRACT_LOOKUPS = 50  # Extra metadata lookups for older records per daily run
+# Operational ceiling, NOT a claim about the project's Google API quota.
+# A quota HTTP 429 stops summarization without enabling paid billing.
+MAX_GEMINI_SUMMARIES = max(1, min(200, int(os.getenv('GEMINI_MAX_SUMMARIES', '80'))))
+MAX_ABSTRACT_LOOKUPS = 120
+RECENT_DAYS = 90
 
 
 def read_json(path, default):
@@ -124,11 +128,15 @@ def crossref_item(raw, journal):
                for a in raw.get('author', [])]
     paper = core(title, journal['title'], raw.get('URL'), raw.get('DOI'), authors,
                  published, raw.get('volume'), raw.get('issue'), 'Crossref')
+    # The *online* date is the first-publication date. Print date can be much
+    # later; it is needed to recognize a new journal issue without making
+    # decades-old online-first articles look like newly published papers.
+    paper['issue_published'] = date_parts(raw.get('published-print'))
     paper['_abstract'] = strip_markup(raw.get('abstract'))[:12000]
     return paper
 
 
-def since_state(state_key, state, initial_days=180, overlap_days=4):
+def since_state(state_key, state, initial_days=RECENT_DAYS, overlap_days=4):
     previous = (state.get('collectors', {}).get(state_key) or {}).get('success_date')
     if previous:
         try:
@@ -166,6 +174,20 @@ def crossref_collect(journal, state):
         time.sleep(0.35)
     else:
         logging.warning('Crossref cap hit for %s: check truncated records', journal['id'])
+
+    # Also sample the most recently printed journal articles, which catches
+    # new issue assignment of papers first published online >90 days ago.
+    # It does not guarantee a complete publisher table of contents.
+    try:
+        latest_params = {'filter': 'type:journal-article', 'sort': 'published-print',
+                         'order': 'desc', 'rows': 200, 'select': params['select']}
+        if email:
+            latest_params['mailto'] = email
+        latest = fetch(base_url, latest_params)
+        results.extend(p for x in latest.get('message', {}).get('items', [])
+                       if (p := crossref_item(x, journal)) is not None)
+    except Exception as exc:
+        logging.warning('Recent-issue lookup failed for %s: %s', journal['id'], str(exc)[:120])
     return results
 
 
@@ -215,6 +237,9 @@ def jstage_parse(xml_text, journal):
         issue = xml_first(entry, 'number', 'issue')
         paper = core(title, journal['title'], url, doi, authors, published,
                      volume, issue, 'J-STAGE')
+        # For J-STAGE, the issue article's publication date is used as the
+        # best available issue date when volume and issue are present.
+        paper['issue_published'] = published if volume and issue else ''
         paper['_abstract'] = strip_markup(xml_first(entry, 'summary', 'abstract'))[:12000]
         results.append(paper)
     # The API can return error information as a valid XML document.
@@ -266,9 +291,9 @@ def merge(existing, incoming, journal_by_issn):
     if not existing:
         incoming.pop('issns', None)
         return incoming
-    for key in ('title', 'journal', 'url', 'doi', 'authors', 'published', 'volume', 'issue', 'oa_url', 'kind', 'series_id'):
+    for key in ('title', 'journal', 'url', 'doi', 'authors', 'published', 'issue_published', 'volume', 'issue', 'oa_url', 'kind', 'series_id'):
         value = incoming.get(key)
-        if value and (not existing.get(key) or key in ('volume', 'issue')):
+        if value and (not existing.get(key) or key in ('volume', 'issue', 'issue_published')):
             existing[key] = value
     for key in ('sources', 'tags'):
         existing[key] = list(dict.fromkeys(existing.get(key, []) + incoming.get(key, [])))
@@ -279,6 +304,58 @@ def merge(existing, incoming, journal_by_issn):
         existing['journal_id'] = known_id
     return existing
 
+
+def pub_date(value):
+    """Use precise dates; month-only dates get the last day of the month."""
+    if not isinstance(value, str):
+        return None
+    value = value.strip()
+    if re.fullmatch(r'\d{4}-\d{2}', value):
+        try:
+            first = date.fromisoformat(value + '-01')
+            next_month = date(first.year + (first.month == 12), first.month % 12 + 1, 1)
+            return next_month - timedelta(days=1)
+        except ValueError:
+            return None
+    if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', value):
+        return None
+    try:
+        return date.fromisoformat(value)
+    except ValueError:
+        return None
+
+
+def is_recent(paper):
+    published = pub_date(paper.get('published'))
+    return bool(published and TODAY - timedelta(days=RECENT_DAYS) <= published <= TODAY + timedelta(days=7))
+
+
+def newest_issue_keys(papers):
+    """Most recently dated *observed* issue by journal; no false TOC claim."""
+    latest = {}
+    for p in papers:
+        if not p.get('journal_id') or not p.get('volume') or not p.get('issue'):
+            continue
+        dated = pub_date(p.get('issue_published'))
+        if not dated or dated > TODAY + timedelta(days=7):
+            continue
+        journal = p['journal_id']
+        key = (journal, str(p['volume']), str(p['issue']))
+        current = latest.get(journal)
+        if not current or dated > current[0] or (dated == current[0] and key > current[1]):
+            latest[journal] = (dated, key)
+    return {value[1] for value in latest.values()}
+
+
+def keep_recent_and_latest_issue(papers):
+    issue_keys = newest_issue_keys(papers)
+    kept = []
+    for p in papers:
+        key = (p.get('journal_id'), str(p.get('volume', '')), str(p.get('issue', '')))
+        if is_recent(p) or key in issue_keys:
+            p['latest_issue'] = key in issue_keys
+            kept.append(p)
+    return kept
 
 
 def lookup_abstract(paper):
@@ -346,10 +423,14 @@ def summarize_records(papers, abstracts, report):
     report['summaries'] = stats
     if not api_key:
         return
+    # Latest-issue exceptions are retained for browsing, but old online-first
+    # papers must never consume the Gemini budget.
+    eligible = [p for p in papers if is_recent(p)]
+    stats['eligible_recent_papers'] = len(eligible)
     lookups = 0
     attempts = 0
     now_iso = TODAY.isoformat()
-    for p in sorted(papers, key=lambda p: (p.get('first_seen', ''), p.get('published', '')), reverse=True):
+    for p in sorted(eligible, key=lambda p: (p.get('first_seen', ''), p.get('published', '')), reverse=True):
         if attempts >= MAX_GEMINI_SUMMARIES or lookups >= MAX_ABSTRACT_LOOKUPS:
             break
         if p.get('summary_ja'):
@@ -384,7 +465,7 @@ def summarize_records(papers, abstracts, report):
                 stats['paused_reason'] = str(exc)
                 break
             # Other failures must not stop collection or erase existing summaries.
-    stats['pending'] = sum(not p.get('summary_ja') and not p.get('abstract_checked_at') for p in papers)
+    stats['pending'] = sum(not p.get('summary_ja') and not p.get('abstract_checked_at') for p in eligible)
     stats['attempted'] = attempts
 
 
@@ -401,8 +482,8 @@ def main():
     mapping = {key_of(p): p for p in old}
     abstracts = {}
     issn_to_id = {val: j['id'] for j in journals for val in (j.get('issn'), j.get('print_issn')) if val}
-    report = {'updated_at': NOW.isoformat(timespec='seconds'), 'sources': {}, 'total_before': before,
-              'removed_keyword_only': original_total - before}
+    report = {'updated_at': NOW.isoformat(timespec='seconds'), 'sources': {}, 'total_before': original_total,
+              'removed_keyword_only': original_total - len(old)}
     total_new = 0
 
     def ingest(papers, chosen=None):
@@ -447,16 +528,25 @@ def main():
             report['sources'][label] = {'ok': False, 'error': str(exc)[:240]}
         time.sleep(0.45)
 
-    recent = sorted(mapping.values(), key=lambda p: (p.get('first_seen') or '', p.get('published') or ''), reverse=True)[:MAX_RECORDS]
+    # Never erase the existing dataset on a completely failed collection run.
+    if not any(entry['ok'] for entry in report['sources'].values()):
+        raise SystemExit('All providers failed; existing data not overwritten')
+
+    candidates = list(mapping.values())
+    recent = sorted(keep_recent_and_latest_issue(candidates),
+                    key=lambda p: (p.get('first_seen') or '', p.get('published') or ''),
+                    reverse=True)[:MAX_RECORDS]
+    report['retention_days'] = RECENT_DAYS
+    report['removed_out_of_window'] = len(candidates) - len(recent)
+    report['latest_issues_observed'] = len(newest_issue_keys(candidates))
     summarize_records(recent, abstracts, report)
     report['total_after'] = len(recent)
-    report['new_papers'] = total_new
+    report['new_papers'] = sum(p.get('first_seen', '').startswith(TODAY.isoformat()) for p in recent)
     write_json(DATA / 'papers.json', recent)
     write_json(DATA / 'state.json', state)
     write_json(DATA / 'status.json', report)
-    logging.info('Stored %d records (%d newly collected)', len(recent), total_new)
-    if not any(entry['ok'] for entry in report['sources'].values()):
-        raise SystemExit('All providers failed; retained existing data, check API/network')
+    logging.info('Stored %d recent/latest-issue records, removed %d aged records',
+                 len(recent), report['removed_out_of_window'])
 
 
 if __name__ == '__main__':

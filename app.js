@@ -9,7 +9,19 @@ function validUrl(s){try{const u=new URL(s);return /^https?:$/.test(u.protocol)?
 function formatDate(s){if(!s)return '日付未登録';return s.slice(0,10).replaceAll('-','/').replace(/\/$/,'')}
 function str(s){return String(s||'')}
 function asDate(s){if(!s)return 0;const fixed=s.length===4?s+'-01-01':s.length===7?s+'-01':s;return Date.parse(fixed)||0}
-function isNew(p){return asDate(p.first_seen)>asDate(state.ack)}
+function exactOrMonthEnd(s){
+ if(!s||s.length===4)return 0; // year-only publication dates cannot establish recency
+ if(s.length===7){const [y,m]=s.split('-').map(Number);return Date.UTC(y,m,0)}
+ return asDate(s);
+}
+function recentlyPublished(p){
+ const day=exactOrMonthEnd(p.published),issue=exactOrMonthEnd(p.issue_published);
+ const limit=Date.now()-90*86400000;
+ // A title may be old Online First but newly assigned to a recent issue.
+ return (day>=limit&&day<=Date.now()+7*86400000) ||
+        (p.latest_issue&&issue>=limit&&issue<=Date.now()+7*86400000);
+}
+function isNew(p){return recentlyPublished(p)&&asDate(p.first_seen)>asDate(state.ack)}
 function truncateAuthors(list){const arr=(list||[]).filter(Boolean);return arr.slice(0,4).join(', ')+(arr.length>4?' ほか':'')}
 function el(tag,className,text){const o=document.createElement(tag);if(className)o.className=className;if(text!==undefined)o.textContent=text;return o}
 function badge(text,kind){return el('span','badge '+(kind||''),text)}
