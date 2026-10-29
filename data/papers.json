@@ -1,5 +1,147 @@
 [
   {
+    "title": "People, places, and firms: improving our understanding of wage and productivity disparities",
+    "journal": "Journal of Economic Geography",
+    "url": "https://doi.org/10.1093/jeg/lbag078",
+    "doi": "10.1093/jeg/lbag078",
+    "authors": [
+      "Yadira Gómez-Hernández",
+      "Henry G Overman"
+    ],
+    "published": "2026-10-29",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-10-29T22:27:56+00:00",
+    "issue_published": "",
+    "journal_id": "journal-economic-geography",
+    "id": "doi:10.1093/jeg/lbag078",
+    "latest_issue": false,
+    "summary_ja": "多くの国で存在する賃金と生産性の空間的格差の要因と影響について、都市経済学の主要な視点である労働者の選別と都市密度の生産性効果を踏まえ、本論考は、選別の重要性には合意がある一方で、他の次元の格差解明は不十分であり、多くの方法論的課題が未解決であると主張する。（132文字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "When peripheral cities go viral: Platform interception, digital participation and the reconfiguration of city branding",
+    "journal": "Environment and Planning A: Economy and Space",
+    "url": "https://doi.org/10.1177/0308518x261491600",
+    "doi": "10.1177/0308518x261491600",
+    "authors": [
+      "Xiaoyue Deng",
+      "Shenjing He"
+    ],
+    "published": "2026-10-29",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-10-29T22:27:56+00:00",
+    "issue_published": "",
+    "journal_id": "environment-planning-a",
+    "id": "doi:10.1177/0308518x261491600",
+    "latest_issue": false,
+    "summary_ja": "本研究は、デジタルプラットフォームが都市ブランディングを再構築するメカニズムを解明するため、物理的・仮想的補完フレームワークを提案し、中国の周縁都市・榕江の事例分析を行った。その結果、プラットフォームは大規模な参加を可能にして関係者の力学を変える一方、アルゴリズムによる不均衡な制御を強化し、都市ブランディングにおける新たな参加のパラドックスをもたらしていることが示された。（149文字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Discontent in ‘left-behind places’? How perception of space and local political climate matter for the success of right-wing populism in rural areas of Germany",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2587811",
+    "doi": "10.1080/00343404.2025.2587811",
+    "authors": [
+      "Larissa Deppisch",
+      "Andreas Klärner"
+    ],
+    "published": "2025-12-15",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-10-29T22:27:56+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2587811",
+    "latest_issue": true
+  },
+  {
+    "title": "Universities as strategic navigators: place leadership in the Guangdong-Hong Kong-Macao Greater Bay Area",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2567917",
+    "doi": "10.1080/00343404.2025.2567917",
+    "authors": [
+      "Tatiana Fumasoli",
+      "Fumi Kitagawa"
+    ],
+    "published": "2025-11-10",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-10-29T22:27:56+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2567917",
+    "latest_issue": true
+  },
+  {
+    "title": "Structural and agentic powers in university-based regional innovation across Chinese core and non-core cities",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2555873",
+    "doi": "10.1080/00343404.2025.2555873",
+    "authors": [
+      "Yang Liu",
+      "Wenying Fu",
+      "Daniel Schiller"
+    ],
+    "published": "2025-10-02",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-10-29T22:27:56+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2555873",
+    "latest_issue": true
+  },
+  {
+    "title": "Contribution to the theory of territorial development: a territorial innovations approach",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2023.2193218",
+    "doi": "10.1080/00343404.2023.2193218",
+    "authors": [
+      "André Torre"
+    ],
+    "published": "2023-05-11",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-10-29T22:27:56+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2023.2193218",
+    "latest_issue": true
+  },
+  {
     "title": "Lectio praecursoria: Fire, peat, and power: governing socio-environmental change in Indonesia’s oil palm frontier",
     "journal": "Fennia – International Journal of Geography",
     "url": "https://doi.org/10.11143/fennia.181641",
@@ -3364,7 +3506,8 @@
     "first_seen": "2026-10-27T22:24:50+00:00",
     "journal_id": "regional-studies",
     "id": "doi:10.1080/00343404.2022.2106362",
-    "latest_issue": true
+    "latest_issue": true,
+    "issue_published": "2025-12-31"
   },
   {
     "title": "Geopoliticizing the Firm: Embraer, Corporate Nationality, and the Geopolitical Constitution of Contracts, Capabilities, and Markets",
@@ -8827,93 +8970,6 @@
     "id": "doi:10.1111/tesg.70101",
     "issue_published": "2026-09",
     "latest_issue": true
-  },
-  {
-    "title": "Human capital for the knowledge economy: upskill journeys in advanced capitalist democracies",
-    "journal": "Regional Studies",
-    "url": "https://doi.org/10.1080/00343404.2026.2694266",
-    "doi": "10.1080/00343404.2026.2694266",
-    "authors": [
-      "Steven Ballantyne"
-    ],
-    "published": "2026-07-31",
-    "volume": "60",
-    "issue": "1",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "regional-studies",
-    "id": "doi:10.1080/00343404.2026.2694266",
-    "issue_published": "2026-12-31",
-    "latest_issue": false
-  },
-  {
-    "title": "Assessing the 15-minute city in socialist-era housing estates: a multi-threshold pedestrian analysis in Kraków, Poland",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2705979",
-    "doi": "10.1080/09654313.2026.2705979",
-    "authors": [
-      "Rita Łabuz",
-      "Daniel Baldwin Hess"
-    ],
-    "published": "2026-07-31",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2705979",
-    "latest_issue": false
-  },
-  {
-    "title": "Making Geography Matter. The Past and Present of a Changing Discipline.NoelCastree, TrevorBarnes and JenniferSalmond, eds., Abingdon and New York, 2025: Routledge, 416 pp., ISBN 9781032380513, £41.99 (paperback), ISBN 9781032380506, £155 (hardback), ISBN 9781003343240, £33.59 (ebook).",
-    "journal": "Tijdschrift voor Economische en Sociale Geografie",
-    "url": "https://doi.org/10.1111/tesg.70099",
-    "doi": "10.1111/tesg.70099",
-    "authors": [
-      "James D. Sidaway"
-    ],
-    "published": "2026-07-31",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "tesg",
-    "id": "doi:10.1111/tesg.70099",
-    "latest_issue": false
-  },
-  {
-    "title": "Balancing productivity and employment in the digital age: empirical evidence from Italy’s Transition 4.0 program",
-    "journal": "Industry and Innovation",
-    "url": "https://doi.org/10.1080/13662716.2026.2710704",
-    "doi": "10.1080/13662716.2026.2710704",
-    "authors": [
-      "Giulia Palma",
-      "Francesco Scotti"
-    ],
-    "published": "2026-07-31",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "industry-innovation",
-    "id": "doi:10.1080/13662716.2026.2710704",
-    "latest_issue": false
   },
   {
     "title": "Is There an Urban Inclusivity Premium? Gender Wage Gaps Across Brazil's Urban Hierarchy",
