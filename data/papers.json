@@ -1,5 +1,78 @@
 [
   {
+    "title": "Two decades of research on regional economic resilience: publication trends, conceptual approaches, methodological practices, and key resilience dimensions",
+    "journal": "ZFW – Advances in Economic Geography",
+    "url": "https://doi.org/10.1515/zfw-2026-0006",
+    "doi": "10.1515/zfw-2026-0006",
+    "authors": [
+      "Jesse Sutton",
+      "Sébastien Breau"
+    ],
+    "published": "2026-10-30",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-10-30T22:25:08+00:00",
+    "issue_published": "",
+    "journal_id": "zfw",
+    "id": "doi:10.1515/zfw-2026-0006",
+    "latest_issue": false,
+    "summary_ja": "経済地理学等における地域経済レジリエンス研究の動向を把握するため、2005年から2026年までの204本の論文を対象に、出版動向、概念的アプローチ、研究手法、レジリエンスの次元を範囲レビューにより分析した。その結果、概念面では進化論的アプローチが主流である一方、その中核である頑健性の次元が実証的に十分に探求されていないという乖離が明らかになった。（162字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Directionality and subsidiarity: sustainability challenges in regional development policy",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2492171",
+    "doi": "10.1080/00343404.2025.2492171",
+    "authors": [
+      "Markus Grillitsch",
+      "Lars Coenen",
+      "Kevin Morgan"
+    ],
+    "published": "2025-05-12",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-10-30T22:25:08+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2492171",
+    "latest_issue": true
+  },
+  {
+    "title": "Disruptive innovation and spatial inequality",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2022.2076824",
+    "doi": "10.1080/00343404.2022.2076824",
+    "authors": [
+      "Tom Kemeny",
+      "Sergio Petralia",
+      "Michael Storper"
+    ],
+    "published": "2022-07-20",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-10-30T22:25:08+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2022.2076824",
+    "latest_issue": true
+  },
+  {
     "title": "People, places, and firms: improving our understanding of wage and productivity disparities",
     "journal": "Journal of Economic Geography",
     "url": "https://doi.org/10.1093/jeg/lbag078",
