@@ -1,5 +1,55 @@
 [
   {
+    "title": "Creative destruction revisited: regional impacts of natural disasters beyond GDP",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2546973",
+    "doi": "10.1080/00343404.2025.2546973",
+    "authors": [
+      "Stefano Clò",
+      "Lorenzo Ciulla",
+      "Federico Martellozzo",
+      "Alessio Gatto",
+      "Samuele Segoni"
+    ],
+    "published": "2025-09-23",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-10-31T22:23:40+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2546973",
+    "latest_issue": true
+  },
+  {
+    "title": "The new geography of remote jobs in Europe",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2352526",
+    "doi": "10.1080/00343404.2024.2352526",
+    "authors": [
+      "Davide Luca",
+      "Cem Özgüzel",
+      "Zhiwu Wei"
+    ],
+    "published": "2024-06-06",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-10-31T22:23:40+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2352526",
+    "latest_issue": true
+  },
+  {
     "title": "Two decades of research on regional economic resilience: publication trends, conceptual approaches, methodological practices, and key resilience dimensions",
     "journal": "ZFW – Advances in Economic Geography",
     "url": "https://doi.org/10.1515/zfw-2026-0006",
@@ -8972,52 +9022,6 @@
     "first_seen": "2026-10-27T13:36:19+00:00",
     "journal_id": "industry-innovation",
     "id": "doi:10.1080/13662716.2026.2710708",
-    "latest_issue": false
-  },
-  {
-    "title": "How (do) industrial districts and value chain positioning affect firm sustainability orientation? Evidence from the Italian fashion industry",
-    "journal": "Journal of Economic Geography",
-    "url": "https://doi.org/10.1093/jeg/lbag052",
-    "doi": "10.1093/jeg/lbag052",
-    "authors": [
-      "Silvia Rita Sedita",
-      "Amir Maghssudipour",
-      "Thomas Bassetti"
-    ],
-    "published": "2026-08-02",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "journal-economic-geography",
-    "id": "doi:10.1093/jeg/lbag052",
-    "latest_issue": false
-  },
-  {
-    "title": "Sustainable Accessibility to Social Infrastructure in the Barcelona Metropolitan Area: A Spatial Approach",
-    "journal": "Tijdschrift voor Economische en Sociale Geografie",
-    "url": "https://doi.org/10.1111/tesg.70103",
-    "doi": "10.1111/tesg.70103",
-    "authors": [
-      "Raymond Lagonigro",
-      "Ricardo Iglesias‐Pascual",
-      "Joan Carles Martori"
-    ],
-    "published": "2026-08-02",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "tesg",
-    "id": "doi:10.1111/tesg.70103",
     "latest_issue": false
   },
   {
