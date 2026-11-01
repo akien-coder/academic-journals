@@ -1,5 +1,102 @@
 [
   {
+    "title": "Towards a Marshall-based theory of research and technology organisations: the role of regional policy to address the varieties of knowledge",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2579625",
+    "doi": "10.1080/00343404.2025.2579625",
+    "authors": [
+      "Guendalina Anzolin",
+      "Eoin O’Sullivan"
+    ],
+    "published": "2025-11-24",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-01T22:23:17+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2579625",
+    "latest_issue": true
+  },
+  {
+    "title": "The impact of local social capital on different types of entrepreneurship",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2502645",
+    "doi": "10.1080/00343404.2025.2502645",
+    "authors": [
+      "Tomasz Mickiewicz",
+      "Anastasia Ri",
+      "Neha Prashar",
+      "Mark Hart"
+    ],
+    "published": "2025-06-12",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-01T22:23:17+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2502645",
+    "latest_issue": true
+  },
+  {
+    "title": "Employment imbalances in EU regions: technological dependence or high-tech trade centrality?",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2392794",
+    "doi": "10.1080/00343404.2024.2392794",
+    "authors": [
+      "Ariel L. Wirkierman",
+      "Tommaso Ciarli",
+      "Maria Savona"
+    ],
+    "published": "2024-09-02",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-01T22:23:17+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2392794",
+    "latest_issue": true
+  },
+  {
+    "title": "Technology, resources and geography in a paradigm shift: the case of critical and conflict materials in ICTs",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2022.2077326",
+    "doi": "10.1080/00343404.2022.2077326",
+    "authors": [
+      "Andreas Diemer",
+      "Simona Iammarino",
+      "Richard Perkins",
+      "Axel Gros"
+    ],
+    "published": "2022-07-08",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-01T22:23:17+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2022.2077326",
+    "latest_issue": true
+  },
+  {
     "title": "Creative destruction revisited: regional impacts of natural disasters beyond GDP",
     "journal": "Regional Studies",
     "url": "https://doi.org/10.1080/00343404.2025.2546973",
@@ -8975,53 +9072,6 @@
     "first_seen": "2026-10-27T13:36:19+00:00",
     "journal_id": "environment-planning-a",
     "id": "doi:10.1177/0308518x261468165",
-    "latest_issue": false
-  },
-  {
-    "title": "Protection of cultural values in local spatial plans of medium-sized towns in Mazovia, Poland",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2703714",
-    "doi": "10.1080/09654313.2026.2703714",
-    "authors": [
-      "Małgorzata Denis",
-      "Justyna Zdunek-Wielgołaska",
-      "Anna Majewska",
-      "Łukasz Kuzak",
-      "Przemysław Bielski"
-    ],
-    "published": "2026-08-03",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2703714",
-    "latest_issue": false
-  },
-  {
-    "title": "Intermediaries, indirect local ties, and innovation output: evidence from an interfirm R&D alliance network during the emergence of the biopharmaceutical industry",
-    "journal": "Industry and Innovation",
-    "url": "https://doi.org/10.1080/13662716.2026.2710708",
-    "doi": "10.1080/13662716.2026.2710708",
-    "authors": [
-      "Ning Wang",
-      "John Hagedoorn"
-    ],
-    "published": "2026-08-03",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "industry-innovation",
-    "id": "doi:10.1080/13662716.2026.2710708",
     "latest_issue": false
   },
   {
