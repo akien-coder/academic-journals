@@ -1,5 +1,245 @@
 [
   {
+    "title": "Peripheral participation, metropolitan ownership: core and periphery configurations in Japan’s Green Transformation technological paths",
+    "journal": "Journal of Economic Geography",
+    "url": "https://doi.org/10.1093/jeg/lbag075",
+    "doi": "10.1093/jeg/lbag075",
+    "authors": [
+      "Sebastián Baeza-González",
+      "Natsuki Kamakura"
+    ],
+    "published": "2026-11-02",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-02T22:28:25+00:00",
+    "issue_published": "",
+    "journal_id": "journal-economic-geography",
+    "id": "doi:10.1093/jeg/lbag075",
+    "latest_issue": false,
+    "summary_ja": "日本のグリーン・トランスフォーメーションに関する62技術を対象に、特許出願人の本社所在地と空間・ネットワーク参加を区別し、カーネル密度推定、コア・ペリフェリーネットワーク、メインパス分析を用いて発明活動の配置を調査した。その結果、4つの技術参加形態が確認されたが、主要な特許・企業間のリンクの多くは三大都市圏に本社を置く企業によるものであり、技術的経路への参加と所有権の間には乖離が存在することが示された。（186字）\n※字数制限（100〜150字）に収めるため調整します。\n\n日本のグリーン・トランスフォーメーションに関する62技術を対象に、特許出願人の本社所在地と空間・ネットワーク参加を区別し、各種分析を用いて発明活動の配置を調査した。その結果、4つの技術参加形態が確認されたが、主要な特許と企業のリンクの多くは三大都市圏の本社企業によるものであり、技術的経路への参加と所有権の間には乖離が存在",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "When climate change enters the market: California wildfires and the homeowners insurance crisis",
+    "journal": "Socio-Economic Review",
+    "url": "https://doi.org/10.1093/ser/mwag064",
+    "doi": "10.1093/ser/mwag064",
+    "authors": [
+      "Edoardo Di Vincenzo"
+    ],
+    "published": "2026-11-02",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-02T22:28:25+00:00",
+    "issue_published": "",
+    "journal_id": "socio-economic-review",
+    "id": "doi:10.1093/ser/mwag064",
+    "latest_issue": false,
+    "summary_ja": "カリフォルニア州の郵便番号別データを用い、気候変動が住宅火災保険の引受慣行に与える影響と影響を受ける地域を分析した。2017～2018年の山火事以降、高リスク地域では補償の急激な喪失と最終手段の保険への依存が急増した。さらに、これらの影響は低所得地域でより顕著であり、経済的脆弱性と不十分な補償リスクが重複していることが示された。（149文字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Client-focused software development: cooperation, control and resistance in a high-skill service triangle",
+    "journal": "Socio-Economic Review",
+    "url": "https://doi.org/10.1093/ser/mwag070",
+    "doi": "10.1093/ser/mwag070",
+    "authors": [
+      "Ian Hill",
+      "Clive Trusson",
+      "Matt Vidal"
+    ],
+    "published": "2026-11-02",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-02T22:28:25+00:00",
+    "issue_published": "",
+    "journal_id": "socio-economic-review",
+    "id": "doi:10.1093/ser/mwag070",
+    "latest_issue": false,
+    "summary_ja": "14社のソフトウェア開発チームを対象とした比較ケーススタディ及びインタビュー等を通じ、労働管理の矛盾とサービス・トライアングルにおける顧客、管理者、労働者の関係性を分析した。管理者は労働者のエンパワーメントを重視する一方、開発者に詳細な管理を試みる顧客に対し、要求の緩和や拒絶によって顧客を制御しようとしていたことが明らかになった。（147字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Do place-based policies shape the industrial diversification path in underdeveloped cities? Evidence from China’s development zone policy",
+    "journal": "Industry and Innovation",
+    "url": "https://doi.org/10.1080/13662716.2026.2662860",
+    "doi": "10.1080/13662716.2026.2662860",
+    "authors": [
+      "Zhiyuan Zhong",
+      "Qiang Wu"
+    ],
+    "published": "2026-04-23",
+    "volume": "33",
+    "issue": "9",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-02T22:28:25+00:00",
+    "issue_published": "2026-10-21",
+    "journal_id": "industry-innovation",
+    "id": "doi:10.1080/13662716.2026.2662860",
+    "latest_issue": true
+  },
+  {
+    "title": "Tax incentives and intra-group shifting of R&D activities",
+    "journal": "Industry and Innovation",
+    "url": "https://doi.org/10.1080/13662716.2026.2637185",
+    "doi": "10.1080/13662716.2026.2637185",
+    "authors": [
+      "Xiaoyong Dai",
+      "Mengqi Wang"
+    ],
+    "published": "2026-03-01",
+    "volume": "33",
+    "issue": "9",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-02T22:28:25+00:00",
+    "issue_published": "2026-10-21",
+    "journal_id": "industry-innovation",
+    "id": "doi:10.1080/13662716.2026.2637185",
+    "latest_issue": true
+  },
+  {
+    "title": "Government funding and firms’ non-funded innovation trajectory",
+    "journal": "Industry and Innovation",
+    "url": "https://doi.org/10.1080/13662716.2026.2630357",
+    "doi": "10.1080/13662716.2026.2630357",
+    "authors": [
+      "Zhiyuan Yu"
+    ],
+    "published": "2026-02-23",
+    "volume": "33",
+    "issue": "9",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-02T22:28:25+00:00",
+    "issue_published": "2026-10-21",
+    "journal_id": "industry-innovation",
+    "id": "doi:10.1080/13662716.2026.2630357",
+    "latest_issue": true
+  },
+  {
+    "title": "I am a champion: does China’s hidden champion policy increase firms’ innovation competence?",
+    "journal": "Industry and Innovation",
+    "url": "https://doi.org/10.1080/13662716.2025.2578856",
+    "doi": "10.1080/13662716.2025.2578856",
+    "authors": [
+      "Ren Lu",
+      "Ting Xia",
+      "Daguo Lv",
+      "Torger Reve",
+      "Mei Chen"
+    ],
+    "published": "2025-10-25",
+    "volume": "33",
+    "issue": "9",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-02T22:28:25+00:00",
+    "issue_published": "2026-10-21",
+    "journal_id": "industry-innovation",
+    "id": "doi:10.1080/13662716.2025.2578856",
+    "latest_issue": true
+  },
+  {
+    "title": "Persistence and change in regional entrepreneurship performance: a three-economy comparison",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2474033",
+    "doi": "10.1080/00343404.2025.2474033",
+    "authors": [
+      "Michael Fritsch",
+      "Jonathan Potter",
+      "Haifeng Qian",
+      "Georgios Fotopoulos"
+    ],
+    "published": "2025-04-10",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-02T22:28:25+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2474033",
+    "latest_issue": true
+  },
+  {
+    "title": "Regional implications of the Italian inner areas strategy",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2441228",
+    "doi": "10.1080/00343404.2024.2441228",
+    "authors": [
+      "Dante Di Matteo"
+    ],
+    "published": "2025-01-29",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-02T22:28:25+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2441228",
+    "latest_issue": true
+  },
+  {
+    "title": "Protected areas and local economic development",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2430346",
+    "doi": "10.1080/00343404.2024.2430346",
+    "authors": [
+      "Chloé Duvivier",
+      "Claire Bussière",
+      "Etienne Polge"
+    ],
+    "published": "2025-01-02",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-02T22:28:25+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2430346",
+    "latest_issue": true
+  },
+  {
     "title": "Towards a Marshall-based theory of research and technology organisations: the role of regional policy to address the varieties of knowledge",
     "journal": "Regional Studies",
     "url": "https://doi.org/10.1080/00343404.2025.2579625",
@@ -1535,54 +1775,6 @@
     "issue_published": "2025-12-31",
     "journal_id": "regional-studies",
     "id": "doi:10.1080/00343404.2025.2533472",
-    "latest_issue": true
-  },
-  {
-    "title": "Cyclical carbon productivity and the role of innovation",
-    "journal": "Industry and Innovation",
-    "url": "https://doi.org/10.1080/13662716.2025.2545350",
-    "doi": "10.1080/13662716.2025.2545350",
-    "authors": [
-      "Terhi Maczulskij",
-      "Paolo Fornaro"
-    ],
-    "published": "2025-08-20",
-    "volume": "33",
-    "issue": "8",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-28T13:31:41+00:00",
-    "issue_published": "2026-09-14",
-    "journal_id": "industry-innovation",
-    "id": "doi:10.1080/13662716.2025.2545350",
-    "latest_issue": true
-  },
-  {
-    "title": "Mapping critical raw materials in green technologies",
-    "journal": "Industry and Innovation",
-    "url": "https://doi.org/10.1080/13662716.2025.2522451",
-    "doi": "10.1080/13662716.2025.2522451",
-    "authors": [
-      "Francesco de Cunzo",
-      "Davide Consoli",
-      "François Perruchas",
-      "Angelica Sbardella"
-    ],
-    "published": "2025-08-14",
-    "volume": "33",
-    "issue": "8",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-28T13:31:41+00:00",
-    "issue_published": "2026-09-14",
-    "journal_id": "industry-innovation",
-    "id": "doi:10.1080/13662716.2025.2522451",
     "latest_issue": true
   },
   {
@@ -3208,31 +3400,6 @@
     "latest_issue": true
   },
   {
-    "title": "Trains of thought: High-Speed Rail and innovation in China",
-    "journal": "Industry and Innovation",
-    "url": "https://doi.org/10.1080/13662716.2025.2541679",
-    "doi": "10.1080/13662716.2025.2541679",
-    "authors": [
-      "Georgios Tsiachtsiras",
-      "Deyun Yin",
-      "Ernest Miguelez",
-      "Rosina Moreno"
-    ],
-    "published": "2025-08-14",
-    "volume": "33",
-    "issue": "8",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T22:24:50+00:00",
-    "journal_id": "industry-innovation",
-    "id": "doi:10.1080/13662716.2025.2541679",
-    "issue_published": "2026-09-14",
-    "latest_issue": true
-  },
-  {
     "title": "Digital transformation of wholesale incumbents in China’s regional markets of imported fresh fruits",
     "journal": "Regional Studies",
     "url": "https://doi.org/10.1080/00343404.2025.2516095",
@@ -3252,30 +3419,6 @@
     "first_seen": "2026-10-27T22:24:50+00:00",
     "journal_id": "regional-studies",
     "id": "doi:10.1080/00343404.2025.2516095",
-    "latest_issue": true
-  },
-  {
-    "title": "Regional capabilities and co-invention networks for technological diversification: evidence from Brazil",
-    "journal": "Industry and Innovation",
-    "url": "https://doi.org/10.1080/13662716.2025.2518190",
-    "doi": "10.1080/13662716.2025.2518190",
-    "authors": [
-      "Mariane Santos Françoso",
-      "Vanessa de Lima Avanci",
-      "Nicholas Spyridon Vonortas"
-    ],
-    "published": "2025-06-12",
-    "volume": "33",
-    "issue": "8",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T22:24:50+00:00",
-    "journal_id": "industry-innovation",
-    "id": "doi:10.1080/13662716.2025.2518190",
-    "issue_published": "2026-09-14",
     "latest_issue": true
   },
   {
@@ -5160,8 +5303,8 @@
       "Sascha Rexhäuser"
     ],
     "published": "2026-10-04",
-    "volume": "",
-    "issue": "",
+    "volume": "33",
+    "issue": "9",
     "kind": "article",
     "sources": [
       "Crossref"
@@ -5170,8 +5313,9 @@
     "first_seen": "2026-10-27T13:36:19+00:00",
     "journal_id": "industry-innovation",
     "id": "doi:10.1080/13662716.2026.2737780",
-    "latest_issue": false,
-    "abstract_checked_at": "2026-10-28"
+    "latest_issue": true,
+    "abstract_checked_at": "2026-10-28",
+    "issue_published": "2026-10-21"
   },
   {
     "title": "Rising market power and its political discontents",
@@ -9029,50 +9173,6 @@
     "id": "doi:10.1111/tesg.70102",
     "issue_published": "2026-09",
     "latest_issue": true
-  },
-  {
-    "title": "Mapping the European twin transition: an evolutionary perspective on green and digital regional development",
-    "journal": "Industry and Innovation",
-    "url": "https://doi.org/10.1080/13662716.2026.2713109",
-    "doi": "10.1080/13662716.2026.2713109",
-    "authors": [
-      "Sina Saenger",
-      "Sebastian Losacker",
-      "Stefan Hennemann"
-    ],
-    "published": "2026-08-04",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "industry-innovation",
-    "id": "doi:10.1080/13662716.2026.2713109",
-    "latest_issue": false
-  },
-  {
-    "title": "Numerical translations and labor conditions in China’s honey supply chain",
-    "journal": "Environment and Planning A: Economy and Space",
-    "url": "https://doi.org/10.1177/0308518x261468165",
-    "doi": "10.1177/0308518x261468165",
-    "authors": [
-      "Haohui Cai"
-    ],
-    "published": "2026-08-04",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "environment-planning-a",
-    "id": "doi:10.1177/0308518x261468165",
-    "latest_issue": false
   },
   {
     "title": "Military Gap Years: Youth, Security and Futures",

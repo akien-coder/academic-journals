@@ -1,55 +1,55 @@
 {
   "collectors": {
     "crossref:regional-studies": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "crossref:journal-economic-geography": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "crossref:economic-geography": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "crossref:cambridge-regions": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "crossref:european-planning": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "jstage:jaeg": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "jstage:chiikikeizai": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "jstage:jasve": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "jstage:soshikikagaku": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "crossref:fennia": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "crossref:tesg": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "crossref:industry-innovation": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "crossref:zfw": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "crossref:growth-change": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "crossref:environment-planning-a": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "crossref:socio-economic-review": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "repec:peeg": {
-      "success_date": "2026-11-02"
+      "success_date": "2026-11-03"
     },
     "openalex:regional": {
       "success_date": "2026-10-27"
