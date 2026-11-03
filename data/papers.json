@@ -1,5 +1,399 @@
 [
   {
+    "title": "Foundational economy, geography and ‘left behind places’",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2026.2739242",
+    "doi": "10.1080/00343404.2026.2739242",
+    "authors": [
+      "Andy Pike",
+      "Maryame Amarouche",
+      "Vincent Béal",
+      "Nicolas Cauchi-Duval",
+      "Rachel Franklin",
+      "Nadir Kinossian",
+      "Thilo Lang",
+      "Tim Leibert",
+      "Danny MacKinnon",
+      "Nora Nafaa",
+      "Max Rousseau",
+      "Jeroen Royer",
+      "Serhii Svynarets",
+      "John Tomaney",
+      "Sanne Velthuis"
+    ],
+    "published": "2026-11-03",
+    "volume": "60",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "2026-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2026.2739242",
+    "latest_issue": false
+  },
+  {
+    "title": "The impact of geographical and technological proximity on knowledge spillovers from formal standards",
+    "journal": "Journal of Economic Geography",
+    "url": "https://doi.org/10.1093/jeg/lbag076",
+    "doi": "10.1093/jeg/lbag076",
+    "authors": [
+      "Peiyu Zhan",
+      "Silvia Massini",
+      "Mabel Sánchez-Barrioluengo"
+    ],
+    "published": "2026-11-03",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "",
+    "journal_id": "journal-economic-geography",
+    "id": "doi:10.1093/jeg/lbag076",
+    "latest_issue": false,
+    "summary_ja": "米国の情報通信技術産業を対象に、公式標準の公開が技術知識の波及効果における地理的・技術的近接性の重要性に与える影響を分析した。その結果、技術的近接性は場所を問わず大きな知識波及効果をもたらす一方、地理的近接性は技術的近接性が低い場合に相補的な利点をもたらすことが示され、両者の微妙な相互作用が明らかにされた。（150字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Polycrisis and labour agency in global production networks: evidence from Bangladesh’s apparel industry",
+    "journal": "Journal of Economic Geography",
+    "url": "https://doi.org/10.1093/jeg/lbag079",
+    "doi": "10.1093/jeg/lbag079",
+    "authors": [
+      "Aysha Siddika"
+    ],
+    "published": "2026-11-03",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "",
+    "journal_id": "journal-economic-geography",
+    "id": "doi:10.1093/jeg/lbag079",
+    "latest_issue": false,
+    "summary_ja": "本研究は、時系列的に不均等な複合危機がグローバル生産ネットワーク内の労働者の主体性に与える影響を空間時間的枠組みから解明する。バングラデシュのアパレル産業を対象とした質的ケーススタディにより、ラナ・プラザの事故、COVID-19、気候危機が相互作用し、正当性、収益性、社会的再生産の圧力を通じて労働者の機会構造を再編成し、その主体性を変化させたことを示した。（148字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Sorting, training, and careers: public and private universities as complementary providers of doctoral education",
+    "journal": "Industry and Innovation",
+    "url": "https://doi.org/10.1080/13662716.2026.2754431",
+    "doi": "10.1080/13662716.2026.2754431",
+    "authors": [
+      "Stefan Buechele",
+      "Matthias Huegel",
+      "Valon Kadriu",
+      "Johannes Koenig"
+    ],
+    "published": "2026-11-03",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "",
+    "journal_id": "industry-innovation",
+    "id": "doi:10.1080/13662716.2026.2754431",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-04"
+  },
+  {
+    "title": "Bitter aftertaste? The effect of Brexit on British craft beer export",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2698004",
+    "doi": "10.1080/09654313.2026.2698004",
+    "authors": [
+      "Ignazio Cabras",
+      "Franziska Sohns"
+    ],
+    "published": "2026-07-16",
+    "volume": "34",
+    "issue": "11",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "2026-11-02",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2698004",
+    "latest_issue": true
+  },
+  {
+    "title": "Diverse agencies in reconfiguring regional innovation systems amid path decline: the Piedmontese automotive crisis",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2695296",
+    "doi": "10.1080/09654313.2026.2695296",
+    "authors": [
+      "Calvin De Jesus",
+      "Maximilian Benner"
+    ],
+    "published": "2026-07-10",
+    "volume": "34",
+    "issue": "11",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "2026-11-02",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2695296",
+    "latest_issue": true
+  },
+  {
+    "title": "Are city playgrounds truly for everyone? Comparative assessment of inclusive design in Austria and Türkiye",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2691919",
+    "doi": "10.1080/09654313.2026.2691919",
+    "authors": [
+      "Ayşe Duru",
+      "Dicle Akay"
+    ],
+    "published": "2026-07-08",
+    "volume": "34",
+    "issue": "11",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "2026-11-02",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2691919",
+    "latest_issue": true
+  },
+  {
+    "title": "From strategies to results. Assessing the role of contemporary art for tourism development in Turin",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2693745",
+    "doi": "10.1080/09654313.2026.2693745",
+    "authors": [
+      "Sara Bonini Baraldi",
+      "Francesco Grasso",
+      "Simone Napolitano"
+    ],
+    "published": "2026-07-08",
+    "volume": "34",
+    "issue": "11",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "2026-11-02",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2693745",
+    "latest_issue": true
+  },
+  {
+    "title": "Revisiting the growth–inequality nexus in Italian regions: inter-regional inequality and regional traps",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2693151",
+    "doi": "10.1080/09654313.2026.2693151",
+    "authors": [
+      "Wajid Ali",
+      "Cristina Brasili",
+      "Pinuccia P. Calia"
+    ],
+    "published": "2026-07-02",
+    "volume": "34",
+    "issue": "11",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "2026-11-02",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2693151",
+    "latest_issue": true
+  },
+  {
+    "title": "Characterizing collaboration dynamics in a social innovation ecosystem: exploring HORIZON Europe as a regional booster",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2693155",
+    "doi": "10.1080/09654313.2026.2693155",
+    "authors": [
+      "Marta Ferrer-Serrano",
+      "Stefano Rodighiero"
+    ],
+    "published": "2026-07-02",
+    "volume": "34",
+    "issue": "11",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "2026-11-02",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2693155",
+    "latest_issue": true
+  },
+  {
+    "title": "The political economy of fringe-belt alienation: iconic rebranding and morphological cost in a Mediterranean port city",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2691256",
+    "doi": "10.1080/09654313.2026.2691256",
+    "authors": [
+      "Tolga Ünlü"
+    ],
+    "published": "2026-07-01",
+    "volume": "34",
+    "issue": "11",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "2026-11-02",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2691256",
+    "latest_issue": true
+  },
+  {
+    "title": "Regional integration or investment attractiveness? FDI dynamics in the EUSAIR macro-region",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2690175",
+    "doi": "10.1080/09654313.2026.2690175",
+    "authors": [
+      "Daniele Bregoli",
+      "Donato Iacobucci"
+    ],
+    "published": "2026-06-29",
+    "volume": "34",
+    "issue": "11",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "2026-11-02",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2690175",
+    "latest_issue": true
+  },
+  {
+    "title": "Governing circular cities: the case of innovative plot handover process",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2689672",
+    "doi": "10.1080/09654313.2026.2689672",
+    "authors": [
+      "Markus Laine",
+      "Ari-Veikko Anttiroiko",
+      "Akseli Tiensuu",
+      "Aku Puskala"
+    ],
+    "published": "2026-06-23",
+    "volume": "34",
+    "issue": "11",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "2026-11-02",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2689672",
+    "latest_issue": true
+  },
+  {
+    "title": "Collaborative governance in Swedish municipal food systems planning: starting conditions, institutional design, and facilitative leadership",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2686278",
+    "doi": "10.1080/09654313.2026.2686278",
+    "authors": [
+      "Malin Andersson",
+      "Madeleine Granvik",
+      "Izabelle Egnell"
+    ],
+    "published": "2026-06-18",
+    "volume": "34",
+    "issue": "11",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "2026-11-02",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2686278",
+    "latest_issue": true
+  },
+  {
+    "title": "The emergence of a ‘twin transition’ scientific knowledge base in the European regions",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2355998",
+    "doi": "10.1080/00343404.2024.2355998",
+    "authors": [
+      "Giacomo Damioli",
+      "Stefano Bianchini",
+      "Claudia Ghisetti"
+    ],
+    "published": "2024-06-12",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2355998",
+    "latest_issue": true
+  },
+  {
+    "title": "The twin innovation transitions of European regions",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2309176",
+    "doi": "10.1080/00343404.2024.2309176",
+    "authors": [
+      "Giorgio Fazio",
+      "Sara Maioli",
+      "Nirat Rujimora"
+    ],
+    "published": "2024-03-11",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-03T22:28:37+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2309176",
+    "latest_issue": true
+  },
+  {
     "title": "Peripheral participation, metropolitan ownership: core and periphery configurations in Japan’s Green Transformation technological paths",
     "journal": "Journal of Economic Geography",
     "url": "https://doi.org/10.1093/jeg/lbag075",
@@ -9063,96 +9457,6 @@
     "latest_issue": false
   },
   {
-    "title": "Going separate ways: spatial sorting by education, work, and real income in the USA since 1970",
-    "journal": "Journal of Economic Geography",
-    "url": "https://doi.org/10.1093/jeg/lbag050",
-    "doi": "10.1093/jeg/lbag050",
-    "authors": [
-      "Anthony Frigon",
-      "Michael Storper"
-    ],
-    "published": "2026-08-05",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "journal-economic-geography",
-    "id": "doi:10.1093/jeg/lbag050",
-    "latest_issue": false
-  },
-  {
-    "title": "Courts, contracts, and international trade: judicial enforcement and global value chain participation",
-    "journal": "Journal of Economic Geography",
-    "url": "https://doi.org/10.1093/jeg/lbag057",
-    "doi": "10.1093/jeg/lbag057",
-    "authors": [
-      "Pierluigi Murro",
-      "Valentina Peruzzi"
-    ],
-    "published": "2026-08-05",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "journal-economic-geography",
-    "id": "doi:10.1093/jeg/lbag057",
-    "latest_issue": false
-  },
-  {
-    "title": "Extreme weather events and firms’ eco-innovation: the role of psychological distance",
-    "journal": "Industry and Innovation",
-    "url": "https://doi.org/10.1080/13662716.2026.2714309",
-    "doi": "10.1080/13662716.2026.2714309",
-    "authors": [
-      "Enrique Acebo",
-      "José-Ángel Miguel-Dávila",
-      "Lizbeth Gutiérrez-Rodríguez"
-    ],
-    "published": "2026-08-05",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "industry-innovation",
-    "id": "doi:10.1080/13662716.2026.2714309",
-    "latest_issue": false
-  },
-  {
-    "title": "Adoption of circular economy innovations: the role of Artificial Intelligence",
-    "journal": "Industry and Innovation",
-    "url": "https://doi.org/10.1080/13662716.2026.2713753",
-    "doi": "10.1080/13662716.2026.2713753",
-    "authors": [
-      "Dirk Czarnitzki",
-      "Robin Lepers",
-      "Maikel Pellens"
-    ],
-    "published": "2026-08-05",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "industry-innovation",
-    "id": "doi:10.1080/13662716.2026.2713753",
-    "latest_issue": false
-  },
-  {
     "title": "Response to ‘Military Gap Years’",
     "journal": "Tijdschrift voor Economische en Sociale Geografie",
     "url": "https://doi.org/10.1111/tesg.70102",
@@ -9598,31 +9902,6 @@
     "latest_issue": true
   },
   {
-    "title": "The renewal capacity of regional cities in Finland: an indicator-based assessment and stakeholder perspectives",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2684767",
-    "doi": "10.1080/09654313.2026.2684767",
-    "authors": [
-      "Teemu Makkonen",
-      "Tommi Inkinen",
-      "Sinikukka Pyykkönen",
-      "Noora Koski"
-    ],
-    "published": "2026-06-23",
-    "volume": "34",
-    "issue": "10",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2684767",
-    "issue_published": "2026-10-03",
-    "latest_issue": true
-  },
-  {
     "title": "Universities’ Offshore Campuses as a Geopolitical Strategy Under the Knowledge-Based Economy",
     "journal": "Economic Geography",
     "url": "https://doi.org/10.1080/00130095.2026.2673883",
@@ -9647,76 +9926,6 @@
     "latest_issue": true
   },
   {
-    "title": "Space and the precariat: labour and land uses in Neoliberal cities and regions",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2684772",
-    "doi": "10.1080/09654313.2026.2684772",
-    "authors": [
-      "Emil Israel",
-      "Nadav Rozenzwaige"
-    ],
-    "published": "2026-06-18",
-    "volume": "34",
-    "issue": "10",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2684772",
-    "issue_published": "2026-10-03",
-    "latest_issue": true
-  },
-  {
-    "title": "Galata – the urban form in the comparative analysis of maps of two periods",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2684588",
-    "doi": "10.1080/09654313.2026.2684588",
-    "authors": [
-      "Elif Ceren Tay",
-      "Yasemen Say Özer"
-    ],
-    "published": "2026-06-18",
-    "volume": "34",
-    "issue": "10",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2684588",
-    "issue_published": "2026-10-03",
-    "latest_issue": true
-  },
-  {
-    "title": "Carbon-washing sustainable mobility: the case of Metro Mondego in Coimbra, Portugal",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2680150",
-    "doi": "10.1080/09654313.2026.2680150",
-    "authors": [
-      "Gustavo García López",
-      "Afonso Nuno Martins",
-      "Adelino Gonçalves"
-    ],
-    "published": "2026-06-18",
-    "volume": "34",
-    "issue": "10",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2680150",
-    "issue_published": "2026-10-03",
-    "latest_issue": true
-  },
-  {
     "title": "The service transition as double fix: Mass low-end employment, gendered care economies, and the limits of global growth",
     "journal": "Environment and Planning A: Economy and Space",
     "url": "https://doi.org/10.1177/0308518x261453754",
@@ -9737,78 +9946,6 @@
     "journal_id": "environment-planning-a",
     "id": "doi:10.1177/0308518x261453754",
     "issue_published": "2026-10",
-    "latest_issue": true
-  },
-  {
-    "title": "Evaluating inclusive policy: a comparative study of Antwerp, Rotterdam and Gothenburg",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2685283",
-    "doi": "10.1080/09654313.2026.2685283",
-    "authors": [
-      "Run Zhao",
-      "Warda Belabas",
-      "Jurian Edelenbos",
-      "Martin De Jong"
-    ],
-    "published": "2026-06-15",
-    "volume": "34",
-    "issue": "10",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2685283",
-    "issue_published": "2026-10-03",
-    "latest_issue": true
-  },
-  {
-    "title": "Regional banks and industrial employment – findings from a comparison of European countries",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2684546",
-    "doi": "10.1080/09654313.2026.2684546",
-    "authors": [
-      "Franz Flögel",
-      "Stefan Gärtner",
-      "Stefanos Ioannou"
-    ],
-    "published": "2026-06-15",
-    "volume": "34",
-    "issue": "10",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2684546",
-    "issue_published": "2026-10-03",
-    "latest_issue": true
-  },
-  {
-    "title": "Zero-sum thinking in regional development? – Green and/or inclusive socio-economic development dynamics in challenged regions",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2684488",
-    "doi": "10.1080/09654313.2026.2684488",
-    "authors": [
-      "Simon Baumgartinger-Seiringer",
-      "Balázs Páger"
-    ],
-    "published": "2026-06-15",
-    "volume": "34",
-    "issue": "10",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2684488",
-    "issue_published": "2026-10-03",
     "latest_issue": true
   },
   {
@@ -9908,28 +10045,6 @@
     "latest_issue": true
   },
   {
-    "title": "Technological diversification through global value chains in European regions",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2684528",
-    "doi": "10.1080/09654313.2026.2684528",
-    "authors": [
-      "Eduardo Hernández-Rodríguez"
-    ],
-    "published": "2026-06-08",
-    "volume": "34",
-    "issue": "10",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2684528",
-    "issue_published": "2026-10-03",
-    "latest_issue": true
-  },
-  {
     "title": "Soil carbon markets for climate change mitigation? Pragmatic economists and matters of concern",
     "journal": "Environment and Planning A: Economy and Space",
     "url": "https://doi.org/10.1177/0308518x261453753",
@@ -9999,30 +10114,6 @@
     "journal_id": "cambridge-regions",
     "id": "doi:10.1093/cjres/rsag016",
     "issue_published": "2026-10-10",
-    "latest_issue": true
-  },
-  {
-    "title": "How urban planning can reduce energy consumption – Eight Planning Principles",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2676615",
-    "doi": "10.1080/09654313.2026.2676615",
-    "authors": [
-      "Rasmus Nedergård Steffansen",
-      "Kristian Olesen",
-      "Kim Van Dam"
-    ],
-    "published": "2026-06-04",
-    "volume": "34",
-    "issue": "10",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2676615",
-    "issue_published": "2026-10-03",
     "latest_issue": true
   },
   {
@@ -10182,30 +10273,6 @@
     "journal_id": "socio-economic-review",
     "id": "doi:10.1093/ser/mwag029",
     "issue_published": "2026-07-01",
-    "latest_issue": true
-  },
-  {
-    "title": "Assessing regional efficiency of the creative economy: a territorial development perspective in Spain",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2677703",
-    "doi": "10.1080/09654313.2026.2677703",
-    "authors": [
-      "Iván Boal",
-      "María Del Carmen Pérez González",
-      "Francisco Javier Maza Ávila"
-    ],
-    "published": "2026-05-25",
-    "volume": "34",
-    "issue": "10",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2677703",
-    "issue_published": "2026-10-03",
     "latest_issue": true
   },
   {
@@ -10394,30 +10461,6 @@
     "journal_id": "socio-economic-review",
     "id": "doi:10.1093/ser/mwag021",
     "issue_published": "2026-07-01",
-    "latest_issue": true
-  },
-  {
-    "title": "The efficiency of Structural Funds for business innovation across sectors and regions: an analysis of the COMPETE Programme in Portugal",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2665752",
-    "doi": "10.1080/09654313.2026.2665752",
-    "authors": [
-      "Diego Sande-Veiga",
-      "Francisco Carballo-Cruz",
-      "Luís Carvalho"
-    ],
-    "published": "2026-05-06",
-    "volume": "34",
-    "issue": "10",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2665752",
-    "issue_published": "2026-10-03",
     "latest_issue": true
   }
 ]
