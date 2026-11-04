@@ -1,5 +1,132 @@
 [
   {
+    "title": "Towards an Ambivalence framework: decision-making on skills and training in global reproduction networks",
+    "journal": "Journal of Economic Geography",
+    "url": "https://doi.org/10.1093/jeg/lbag074",
+    "doi": "10.1093/jeg/lbag074",
+    "authors": [
+      "Erika Faigen",
+      "Tiago Teixeira",
+      "Roseline Wanjiru"
+    ],
+    "published": "2026-11-04",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-04T22:36:51+00:00",
+    "issue_published": "",
+    "journal_id": "journal-economic-geography",
+    "id": "doi:10.1093/jeg/lbag074",
+    "latest_issue": false,
+    "summary_ja": "グローバル生産ネットワーク論の社会的再生産への不備を補うため、パワー、両面価値、条約理論を統合した「両面価値フレームワーク」を構築した。生産と社会的再生産の共構成に基づき、訓練に関する意思決定に焦点を当ててその説明力をブラジルの有機稲作の事例で概説した。（128字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Urban densification to support climate adaptation: balancing costs and agglomeration benefits in the Netherlands",
+    "journal": "Journal of Economic Geography",
+    "url": "https://doi.org/10.1093/jeg/lbag077",
+    "doi": "10.1093/jeg/lbag077",
+    "authors": [
+      "Yashvant R Premchand",
+      "Peter Mulder"
+    ],
+    "published": "2026-11-04",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-04T22:36:51+00:00",
+    "issue_published": "",
+    "journal_id": "journal-economic-geography",
+    "id": "doi:10.1093/jeg/lbag077",
+    "latest_issue": false,
+    "summary_ja": "オランダを対象に、住宅需要と気候リスクを踏まえ、集積の経済性と適応コストを比較する枠組みを構築した。地価を代理変数とした集積便益と洪水・地盤沈下対策コストを組み合わせて空間的トレードオフを分析した。その結果、高コスト地域でも高密度都市は正の厚生効果を生む一方、低密度集落は損失をもたらし、気候適応が都市の高密度化の必要性を高めることが示された。（147字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Irresponsible regional future-making: fast forward as if there were no crises?",
+    "journal": "Cambridge Journal of Regions, Economy and Society",
+    "url": "https://doi.org/10.1093/cjres/rsag042",
+    "doi": "10.1093/cjres/rsag042",
+    "authors": [
+      "Maximilian Benner",
+      "Erika Faigen",
+      "Annemarie Lechte",
+      "Michaela Trippl"
+    ],
+    "published": "2026-11-04",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-04T22:36:51+00:00",
+    "issue_published": "",
+    "journal_id": "cambridge-regions",
+    "id": "doi:10.1093/cjres/rsag042",
+    "latest_issue": false,
+    "summary_ja": "本論文は、持続可能性を求める複数の世界危機にもかかわらず、多くの地域で描かれる未来が空間・時間・集団間で負の影響を転嫁する「無責任なもの」になっている現象を考察する。過去の継続である未来や急進的な変革を目指す未来の双方において、こうした無責任な未来がいかにして出現するかについて、言論制度主義の「イデア的権力」の概念と権力関係の役割を用いて議論している。（165字）\n\n※文字数制限（100〜150字）に近づけるための調整版：\n本論文は、多重の世界的危機が存在する現在、多くの地域で描かれる未来が負の影響を転嫁する「無責任なもの」になっている現象を考察する。過去の継続や急進的変革を目指す地域におけるこうした未来がいかにして出現するかについて、言論制度主義の「イデア的権力」の概念と権力関係の役割を用いて議論している。（149字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Firms’ competitiveness and willingness to accept external equity in industrial districts",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2746059",
+    "doi": "10.1080/09654313.2026.2746059",
+    "authors": [
+      "Isabel Díez Vial",
+      "José Antonio Clemente-Almendros",
+      "Jose Antonio Belso-Martinez"
+    ],
+    "published": "2026-11-04",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-04T22:36:51+00:00",
+    "issue_published": "",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2746059",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-05"
+  },
+  {
+    "title": "Exploring the mechanisms of platform empowered cluster development: evidence from the case of Taobao villages in rural China",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2306330",
+    "doi": "10.1080/00343404.2024.2306330",
+    "authors": [
+      "Han Chu",
+      "Robert Hassink",
+      "Weigang Liu"
+    ],
+    "published": "2024-02-23",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-04T22:36:51+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2306330",
+    "latest_issue": true
+  },
+  {
     "title": "Can cultural and creative cities be low-carbon? Greenhouse gas emissions in European Union cities",
     "journal": "European Planning Studies",
     "url": "https://doi.org/10.1080/09654313.2026.2755004",
@@ -9627,29 +9754,6 @@
     "first_seen": "2026-10-27T13:36:19+00:00",
     "journal_id": "socio-economic-review",
     "id": "doi:10.1093/ser/mwag036",
-    "latest_issue": false
-  },
-  {
-    "title": "Put in context – how inventor personality shapes inventive activity",
-    "journal": "Industry and Innovation",
-    "url": "https://doi.org/10.1080/13662716.2026.2711847",
-    "doi": "10.1080/13662716.2026.2711847",
-    "authors": [
-      "Stefan Wagner",
-      "Karin Hoisl",
-      "Joseph Monroe"
-    ],
-    "published": "2026-08-06",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "industry-innovation",
-    "id": "doi:10.1080/13662716.2026.2711847",
     "latest_issue": false
   },
   {
