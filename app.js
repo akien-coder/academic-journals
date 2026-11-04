@@ -19,9 +19,9 @@ function recentlyPublished(p){
  return day>=Date.now()-90*86400000 && day<=Date.now()+7*86400000;
 }
 function isNew(p){return (isOnlineFirst(p)||isLatestIssue(p))&&recentlyPublished(p)&&asDate(p.first_seen)>asDate(state.ack)}
-function isOnlineFirst(p){return p.kind!=='working-paper'&&!(p.volume&&p.issue)}
-function isLatestIssue(p){return !!(p.latest_issue&&p.volume&&p.issue)}
-function feedIssueDate(p){return exactOrMonthEnd(p.issue_published)||exactOrMonthEnd(p.published)}
+function isOnlineFirst(p){return p.kind!=='working-paper'&&!p.latest_issue&&(p.ahead_of_current_issue||!(p.volume&&p.issue))}
+function isLatestIssue(p){return !!(p.latest_issue&&p.volume&&p.issue_source_url)}
+function feedIssueDate(p){return exactOrMonthEnd(p.issue_release)||exactOrMonthEnd(p.issue_published)||exactOrMonthEnd(p.published)}
 function truncateAuthors(list){const arr=(list||[]).filter(Boolean);return arr.slice(0,4).join(', ')+(arr.length>4?' ほか':'')}
 function el(tag,className,text){const o=document.createElement(tag);if(className)o.className=className;if(text!==undefined)o.textContent=text;return o}
 function badge(text,kind){return el('span','badge '+(kind||''),text)}
@@ -30,13 +30,15 @@ function paperItem(p){
  const card=el('article','paper'),body=el('div','paper-main'),top=el('div','paper-top');
  if(isNew(p))top.append(badge('NEW','new'));
  if(p.kind==='working-paper')top.append(badge('WORKING PAPER','wp'));
- top.append(el('span','',formatDate(p.published)));
+ top.append(el('span','',state.view==='latest'&&p.issue_release?`最新号刊行 ${formatDate(p.issue_release)}`:`オンライン公開 ${formatDate(p.published)}`));
  body.append(top,link(p.title,p.url,'title-link'));
  const meta=el('div','paper-meta');const j=el('strong','',p.journal||'掲載媒体不明');meta.append(j);
  const bits=[truncateAuthors(p.authors),p.volume?`Vol. ${p.volume}`:'',p.issue?`No. ${p.issue}`:''].filter(Boolean);
  if(bits.length)meta.append(document.createTextNode(' · '+bits.join(' · ')));
  if(p.doi){meta.append(document.createTextNode(' · '));meta.append(link('DOI',`https://doi.org/${p.doi}`));}
  if(validUrl(p.oa_url)){meta.append(document.createTextNode(' · '));meta.append(link('OA版',p.oa_url));}
+ if(state.view==='latest'&&p.published)meta.append(document.createTextNode(' · 初回公開 '+formatDate(p.published)));
+ if(state.view==='latest'&&validUrl(p.issue_source_url)){meta.append(document.createTextNode(' · '));meta.append(link('出版社の最新号',p.issue_source_url));}
  body.append(meta);
  if(p.summary_ja){const sum=el('p','summary-ja',p.summary_ja);body.append(sum);}
  else{body.append(el('p','summary-unavailable','日本語要約なし（抄録未取得・未処理）'));}

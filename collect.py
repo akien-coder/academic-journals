@@ -9,6 +9,8 @@ import re
 import time
 from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
+from concurrent.futures import ThreadPoolExecutor
+from urllib.parse import urlparse
 from pathlib import Path
 from urllib.parse import quote, urljoin
 import xml.etree.ElementTree as ET
@@ -35,6 +37,18 @@ SUMMARY_START_DATE = date(2026, 10, 29)  # JST. No automatic backfill of old rec
 FEED_LIMIT = 30
 MAX_ABSTRACT_LOOKUPS = 120
 RECENT_DAYS = 90
+ISSUE_CACHE_DAYS = 14  # A recent publisher confirmation survives temporary HTTP failures.
+
+# Confirmed against the publisher's "Current issue" page on 2026-11-04.
+# Temporary safety net for this specific journal when the publisher blocks an
+# automated request; it expires, so it cannot silently become stale.
+ISSUE_VERIFICATION_SEED = {
+    'european-planning': {
+        'volume': '34', 'issue': '10', 'verified_at': '2026-11-04',
+        'issue_release': '2026-10',
+        'source_url': 'https://www.tandfonline.com/toc/ceps20/current',
+    },
+}
 
 
 def read_json(path, default):
@@ -335,41 +349,171 @@ def is_recent(paper):
     return bool(published and TODAY - timedelta(days=RECENT_DAYS) <= published <= TODAY + timedelta(days=7))
 
 
-def newest_issue_keys(papers):
-    """Most recently dated *observed* issue by journal; no false TOC claim."""
-    latest = {}
-    for p in papers:
-        if not p.get('journal_id') or not p.get('volume') or not p.get('issue'):
-            continue
-        dated = pub_date(p.get('issue_published'))
-        if not dated or dated > TODAY + timedelta(days=7):
-            continue
-        journal = p['journal_id']
-        key = (journal, str(p['volume']), str(p['issue']))
-        current = latest.get(journal)
-        if not current or dated > current[0] or (dated == current[0] and key > current[1]):
-            latest[journal] = (dated, key)
-    return {value[1] for value in latest.values()}
+def official_issue_url(journal):
+    """Return a stable *publisher* current-issue URL, not a Crossref guess."""
+    home = journal.get('home', '')
+    if journal.get('source') == 'jstage' and journal.get('cdjournal'):
+        return f"https://www.jstage.jst.go.jp/browse/{journal['cdjournal']}/-char/ja"
+    if 'tandfonline.com/journals/' in home:
+        code = home.rstrip('/').rsplit('/', 1)[-1]
+        return f'https://www.tandfonline.com/toc/{code}/current'
+    if 'academic.oup.com/' in home:
+        return home.rstrip('/') + '/issue'
+    if 'onlinelibrary.wiley.com/journal/' in home:
+        code = home.rstrip('/').rsplit('/', 1)[-1]
+        return f'https://onlinelibrary.wiley.com/toc/{code}/current'
+    return ''  # Other publishers need a verified current-issue source first.
 
 
-def keep_recent_and_latest_issue(papers):
-    issue_keys = newest_issue_keys(papers)
+def parse_official_issue(html, url):
+    """Parse a current-issue heading from a publisher page; fail closed."""
+    soup = BeautifulSoup(html, 'html.parser')
+    host = (urlparse(url).hostname or '').lower()
+    # Restrict to the issue heading so past/forthcoming issues in the navigation
+    # cannot be promoted to 'latest'. The /current or /issue URL is authoritative.
+    if 'jstage.jst.go.jp' in host:
+        main = soup.get_text(' ', strip=True)
+        main = main.split('月間アクセス数ランキング', 1)[0]
+        m = re.search(r'(20\d{2})\s*年\s*(\d+)\s*巻(?:\s*(\d+)\s*号)?', main)
+        if not m:
+            return None
+        year, vol, issue = m.groups()
+        return {'volume': vol, 'issue': issue or '', 'issue_release': year}
+
+    # Page titles and H1/H2 are safer than arbitrary body text where older
+    # volume/issue numbers appear in navigation, article citations and menus.
+    headings = []
+    if soup.title:
+        headings.append(soup.title.get_text(' ', strip=True))
+    for meta in soup.select('meta[property="og:title"], meta[name="twitter:title"]'):
+        headings.append(meta.get('content', ''))
+    headings += [x.get_text(' ', strip=True) for x in soup.select('h1, h2')[:12]]
+    # Oxford's /issue page puts the current volume/issue after a 'Browse by
+    # volume' header; the title itself sometimes simply says 'Issues'.
+    if 'academic.oup.com' in host and not any(re.search(r'(?:Volume|Vol\.?)\s*\d+\s*,?\s*(?:Issue|No\.?)', x, re.I) for x in headings):
+        body = soup.get_text(' ', strip=True)
+        marker = body.find('Browse by volume')
+        if marker >= 0:
+            headings.append(body[marker:marker + 450])
+    for heading in headings:
+        if re.search(r'\b(in progress|forthcoming|coming soon)\b', heading, re.I):
+            continue
+        m = re.search(r'\b(?:Volume|Vol\.?)\s*(\d+)\s*[,;:]?\s*(?:Issue|No\.?)\s*(\d+)\b', heading, re.I)
+        if not m:
+            continue
+        volume, issue = m.groups()
+        issue_release = ''
+        month = re.search(r'\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(20\d{2})\b', heading, re.I)
+        if month:
+            month_no = ['january','february','march','april','may','june','july','august','september','october','november','december'].index(month.group(1).lower()) + 1
+            issue_release = f'{month.group(2)}-{month_no:02d}'
+        return {'volume': volume, 'issue': issue, 'issue_release': issue_release}
+    return None
+
+
+def _fetch_publisher_issue(journal):
+    """Fetch one journal's official issue page (parallel to avoid slow builds)."""
+    url = official_issue_url(journal)
+    if not url:
+        return url, None, 'No publisher current-issue source configured'
+    try:
+        response = requests.get(url, headers=HEADERS, timeout=10)
+        response.raise_for_status()
+        issue = parse_official_issue(response.text, url)
+        if not issue:
+            raise ValueError('No unambiguous current issue heading')
+        return url, issue, ''
+    except (requests.RequestException, ValueError) as exc:
+        return url, None, str(exc)[:160]
+
+
+def verified_current_issues(journals, state, report):
+    """Only publisher-verified issues may be called New Issue.
+
+    A cached verification is reused for up to ISSUE_CACHE_DAYS when the
+    publisher is temporarily unreachable. We never infer 'current' from a
+    Crossref issue number, published-print date or article deposit date.
+    """
+    cache = state.setdefault('verified_issues', {})
+    result = {}
+    audit = report.setdefault('official_issues', {})
+    # Each request uses its own connection; no shared requests.Session across threads.
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        checks = list(pool.map(_fetch_publisher_issue, journals))
+    for journal, (url, data, error) in zip(journals, checks):
+        jid = journal['id']
+        record = None
+        if data:
+            record = {**data, 'verified_at': TODAY.isoformat(), 'source_url': url}
+            cache[jid] = record
+        else:
+            for old in (cache.get(jid), ISSUE_VERIFICATION_SEED.get(jid)):
+                if not old:
+                    continue
+                try:
+                    checked = date.fromisoformat(old['verified_at'])
+                    if timedelta(0) <= TODAY - checked <= timedelta(days=ISSUE_CACHE_DAYS):
+                        record = old
+                        break
+                except (ValueError, KeyError, TypeError):
+                    pass
+        if record:
+            result[jid] = record
+            audit[jid] = {'ok': True, 'volume': record['volume'],
+                          'issue': record['issue'], 'verified_at': record['verified_at'],
+                          'source_url': record['source_url'],
+                          'cached': record['verified_at'] != TODAY.isoformat()}
+        else:
+            audit[jid] = {'ok': False, 'reason': error or 'No valid confirmation'}
+    return result
+
+
+def newest_issue_keys(papers, verified_issues=None):
+    """Issue keys independently confirmed on a publisher's current-issue page."""
+    verified_issues = verified_issues or {}
+    return {(jid, str(info['volume']), str(info.get('issue', '')))
+            for jid, info in verified_issues.items()}
+
+
+def issue_is_ahead(paper, official):
+    """Assigned to a future issue, despite already being online."""
+    if not official or not paper.get('volume') or not paper.get('issue'):
+        return False
+    try:
+        paper_v, actual_v = int(paper['volume']), int(official['volume'])
+        paper_i, actual_i = int(paper['issue']), int(official.get('issue') or 0)
+        return paper_v > actual_v or (paper_v == actual_v and paper_i > actual_i)
+    except (ValueError, TypeError):
+        return False
+
+
+def keep_recent_and_latest_issue(papers, verified_issues=None):
+    issue_keys = newest_issue_keys(papers, verified_issues)
     kept = []
     for p in papers:
         key = (p.get('journal_id'), str(p.get('volume', '')), str(p.get('issue', '')))
-        if is_recent(p) or key in issue_keys:
-            p['latest_issue'] = key in issue_keys
+        match = key in issue_keys
+        p['latest_issue'] = match
+        p['ahead_of_current_issue'] = issue_is_ahead(p, verified_issues.get(p.get('journal_id')))
+        if match:
+            info = verified_issues.get(p.get('journal_id'), {})
+            p['issue_release'] = info.get('issue_release', '')
+            p['issue_source_url'] = info.get('source_url', '')
+            p['issue_confirmed_at'] = info.get('verified_at', '')
+        else:
+            for field in ('issue_release', 'issue_source_url', 'issue_confirmed_at'):
+                p.pop(field, None)
+        if is_recent(p) or match:
             kept.append(p)
     return kept
 
-
 def is_online_first(paper):
     """No confirmed volume/issue assignment (an imperfect but conservative proxy)."""
-    return paper.get('kind') != 'working-paper' and not (paper.get('volume') and paper.get('issue'))
+    return (paper.get('kind') != 'working-paper' and not paper.get('latest_issue') and (paper.get('ahead_of_current_issue') or not (paper.get('volume') and paper.get('issue'))))
 
 
 def is_latest_issue_article(paper):
-    return bool(paper.get('latest_issue') and paper.get('volume') and paper.get('issue'))
+    return bool(paper.get('latest_issue') and paper.get('volume') and paper.get('issue_source_url'))
 
 
 def top_feed_papers(papers):
@@ -378,7 +522,7 @@ def top_feed_papers(papers):
                     key=lambda p: (pub_date(p.get('published')) or date.min,
                                    p.get('first_seen') or '', p.get('id') or ''), reverse=True)[:FEED_LIMIT]
     issue = sorted((p for p in papers if is_latest_issue_article(p)),
-                   key=lambda p: (pub_date(p.get('issue_published')) or pub_date(p.get('published')) or date.min,
+                   key=lambda p: (pub_date(p.get('issue_release')) or pub_date(p.get('issue_published')) or pub_date(p.get('published')) or date.min,
                                   pub_date(p.get('published')) or date.min,
                                   p.get('first_seen') or '', p.get('id') or ''), reverse=True)[:FEED_LIMIT]
     return online, issue
@@ -589,12 +733,13 @@ def main():
         raise SystemExit('All providers failed; existing data not overwritten')
 
     candidates = list(mapping.values())
-    recent = sorted(keep_recent_and_latest_issue(candidates),
+    official = verified_current_issues(journals, state, report)
+    recent = sorted(keep_recent_and_latest_issue(candidates, official),
                     key=lambda p: (p.get('first_seen') or '', p.get('published') or ''),
                     reverse=True)[:MAX_RECORDS]
     report['retention_days'] = RECENT_DAYS
     report['removed_out_of_window'] = len(candidates) - len(recent)
-    report['latest_issues_observed'] = len(newest_issue_keys(candidates))
+    report['latest_issues_verified'] = len(newest_issue_keys(candidates, official))
     online_top, issue_top = top_feed_papers(recent)
     report['online_first_top'] = len(online_top)
     report['latest_issue_top'] = len(issue_top)
