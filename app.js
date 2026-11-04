@@ -1,6 +1,6 @@
 'use strict';
 const CREDENTIALS={settings:'rpw_sync_settings_v1',rememberedToken:'rpw_sync_device_token_v1',sessionToken:'rpw_sync_session_token_v1'};
-const state={papers:[],archive:{},journals:[],status:null,view:'online',visible:30,search:'',journal:'',range:'',sort:'added',saved:new Set(),ack:'1970-01-01T00:00:00Z'};
+const state={papers:[],archive:{},journals:[],status:null,view:'online',visible:30,search:'',journal:'',range:'',sort:'added',saved:new Set(),issueCandidates:new Set(),ack:'1970-01-01T00:00:00Z'};
 const sync={gateway:null,connected:false,busy:false,message:'未接続',error:false};
 function load(k,fallback){try{const x=localStorage.getItem(k);return x?JSON.parse(x):fallback}catch{return fallback}}
 function store(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}}
@@ -21,6 +21,34 @@ function recentlyPublished(p){
 function isNew(p){return (isOnlineFirst(p)||isLatestIssue(p))&&recentlyPublished(p)&&asDate(p.first_seen)>asDate(state.ack)}
 function isOnlineFirst(p){return p.kind!=='working-paper'&&!p.latest_issue&&(p.ahead_of_current_issue||!(p.volume&&p.issue))}
 function isLatestIssue(p){return !!(p.latest_issue&&p.volume&&p.issue_source_url)}
+function isIssueCandidate(p){return state.issueCandidates.has(p.id)}
+// A publisher can block automated "current issue" checks. In that case
+// keep the interface useful without claiming the issue has been published.
+// Only the most recent *metadata-assigned* volume/issue per journal is shown
+// as an explicitly unverified candidate; future-dated or known-ahead issues
+// are excluded. These never acquire the confirmed latest_issue flag.
+function issueCandidateIds(papers){
+ const best=new Map();
+ const today=Date.now()+86400000;
+ for(const p of papers){
+  if(p.kind==='working-paper'||isLatestIssue(p)||p.ahead_of_current_issue||!p.volume||!p.issue)continue;
+  const printDate=exactOrMonthEnd(p.issue_published);
+  if(printDate>today)continue;
+  const journal=p.journal_id||p.journal;
+  const vol=Number(p.volume),issue=Number(p.issue);
+  if(!journal||!Number.isFinite(vol)||!Number.isFinite(issue))continue;
+  const key=[vol,issue];
+  const old=best.get(journal);
+  if(!old||key[0]>old.key[0]||(key[0]===old.key[0]&&key[1]>old.key[1]))best.set(journal,{key});
+ }
+ const ids=new Set();
+ for(const p of papers){
+  if(p.kind==='working-paper'||isLatestIssue(p)||p.ahead_of_current_issue||!p.volume||!p.issue)continue;
+  const v=best.get(p.journal_id||p.journal);
+  if(v&&Number(p.volume)===v.key[0]&&Number(p.issue)===v.key[1]&&exactOrMonthEnd(p.issue_published)<=today)ids.add(p.id);
+ }
+ return ids;
+}
 function feedIssueDate(p){return exactOrMonthEnd(p.issue_release)||exactOrMonthEnd(p.issue_published)||exactOrMonthEnd(p.published)}
 function truncateAuthors(list){const arr=(list||[]).filter(Boolean);return arr.slice(0,4).join(', ')+(arr.length>4?' ほか':'')}
 function el(tag,className,text){const o=document.createElement(tag);if(className)o.className=className;if(text!==undefined)o.textContent=text;return o}
@@ -30,6 +58,7 @@ function paperItem(p){
  const card=el('article','paper'),body=el('div','paper-main'),top=el('div','paper-top');
  if(isNew(p))top.append(badge('NEW','new'));
  if(p.kind==='working-paper')top.append(badge('WORKING PAPER','wp'));
+ if(state.view==='latest'&&isIssueCandidate(p))top.append(badge('刊行未確認・巻号候補',''));
  top.append(el('span','',state.view==='latest'&&p.issue_release?`最新号刊行 ${formatDate(p.issue_release)}`:`オンライン公開 ${formatDate(p.published)}`));
  body.append(top,link(p.title,p.url,'title-link'));
  const meta=el('div','paper-meta');const j=el('strong','',p.journal||'掲載媒体不明');meta.append(j);
@@ -57,7 +86,7 @@ function selectedPapers(){
  }
  let list=available.filter(p=>{
   if(state.view==='online'&&!isOnlineFirst(p))return false;
-  if(state.view==='latest'&&!isLatestIssue(p))return false;
+  if(state.view==='latest'&&!isLatestIssue(p)&&!isIssueCandidate(p))return false;
   if(state.view==='saved'&&!state.saved.has(p.id))return false;
   if(state.journal&&p.journal_id!==state.journal)return false;
   if(state.range&&asDate(p.first_seen)<Date.now()-Number(state.range)*864e5)return false;
@@ -95,17 +124,18 @@ function render(){
  $('papers').replaceChildren();$('empty').hidden=true;
  const list=selectedPapers();const headline=(state.view==='online'||state.view==='latest');
  const limit=headline?30:state.visible;
- $('result-count').textContent=headline?` 最新30本（該当 ${list.length.toLocaleString('ja-JP')}件）`:` ${list.length.toLocaleString('ja-JP')}件`;
+ const pending=state.view==='latest'?list.filter(isIssueCandidate).length:0;
+ $('result-count').textContent=state.view==='latest'&&pending?` 最大30本（公式確認 ${list.length-pending}件／巻号候補・未確認 ${pending}件）`:headline?` 最新30本（該当 ${list.length.toLocaleString('ja-JP')}件）`:` ${list.length.toLocaleString('ja-JP')}件`;
  $('sort').disabled=headline;
  for(const p of list.slice(0,limit))$('papers').append(paperItem(p));
  $('more').hidden=headline||list.length<=state.visible;
- if(!list.length)showEmpty(total?'該当する論文はありません':'まだ論文データがありません',total?'雑誌を変更するか「すべて」で確認してください。':'初回はGitHub Actionsの「Collect research papers」を手動実行してください。');
+ if(!list.length)showEmpty(total?'該当する論文はありません':'まだ論文データがありません',total?'公式な最新号を確認できず、巻号候補も取得できていません。「すべて」の論文を確認してください。':'初回はGitHub Actionsの「Collect research papers」を手動実行してください。');
 }
 function makeOptions(select,rows){for(const p of rows){const op=el('option','',p.title||p.label);op.value=p.id;select.append(op);}}
 async function init(){
  try{
   const [papers,journals,status]=await Promise.all(['data/papers.json','config/journals.json','data/status.json'].map(async name=>{const res=await fetch(name+'?v='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error(name+' HTTP '+res.status);return res.json()}));
-  state.papers=Array.isArray(papers)?papers:[];state.journals=journals;state.status=status;
+  state.papers=Array.isArray(papers)?papers:[];state.issueCandidates=issueCandidateIds(state.papers);state.journals=journals;state.status=status;
   makeOptions($('journal'),journals);
   if(status.updated_at){$('update').textContent='最終収集 '+new Date(status.updated_at).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});}else $('update').textContent='初回収集前';
   const problems=Object.entries(status.sources||{}).filter(([,v])=>!v.ok);
