@@ -1,5 +1,126 @@
 [
   {
+    "title": "Entrepreneurial citizenship at the urban frontier: civic micropolitics under climate governance in Istanbul and Noord-Holland",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2757046",
+    "doi": "10.1080/09654313.2026.2757046",
+    "authors": [
+      "Ebru Kurt-Özman",
+      "Tuna Taşan-Kok",
+      "Ayşe Burcu Kısacık"
+    ],
+    "published": "2026-11-05",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-05T22:36:35+00:00",
+    "issue_published": "",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2757046",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-06"
+  },
+  {
+    "title": "Path Dependence and Path Breakthrough: Evolutionary Dynamics of Innovation Networks in China's Semiconductor Industry",
+    "journal": "Growth and Change",
+    "url": "https://doi.org/10.1111/grow.70162",
+    "doi": "10.1111/grow.70162",
+    "authors": [
+      "Xiaofei Chen",
+      "Yiqiao Wang",
+      "Yonggui Hu",
+      "Linsen Miao"
+    ],
+    "published": "2026-11-05",
+    "volume": "57",
+    "issue": "4",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-05T22:36:35+00:00",
+    "issue_published": "2026-12",
+    "journal_id": "growth-change",
+    "id": "doi:10.1111/grow.70162",
+    "latest_issue": false
+  },
+  {
+    "title": "When investment becomes religion: anxiety, quasi-religious practices, and household financialization",
+    "journal": "Socio-Economic Review",
+    "url": "https://doi.org/10.1093/ser/mwag063",
+    "doi": "10.1093/ser/mwag063",
+    "authors": [
+      "Kyungmo Chun"
+    ],
+    "published": "2026-11-05",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-05T22:36:35+00:00",
+    "issue_published": "",
+    "journal_id": "socio-economic-review",
+    "id": "doi:10.1093/ser/mwag063",
+    "latest_issue": false,
+    "summary_ja": "若年 層の個人投資家が直面する二重の不安（将来への不安と価格変動への不安）への対処法を解明するため、韓国のテスラ個人株主41人へのインタビューと20か月のデジタル民族誌調査を実施した。その結果、投資家間に日常的儀礼などの準宗教的実践が生じ、損失にもかかわらず株式の買い増しが継続されることが見出された。",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Developing technological expertise through ecosystem orchestration for industrial circularity",
+    "journal": "Industry and Innovation",
+    "url": "https://doi.org/10.1080/13662716.2026.2755487",
+    "doi": "10.1080/13662716.2026.2755487",
+    "authors": [
+      "Debadrita Panda",
+      "Shamima Haque"
+    ],
+    "published": "2026-11-04",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-05T22:36:35+00:00",
+    "issue_published": "",
+    "journal_id": "industry-innovation",
+    "id": "doi:10.1080/13662716.2026.2755487",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-06"
+  },
+  {
+    "title": "Place leadership in emerging industries: navigating the controversy and complexities of blockchain technology",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2426990",
+    "doi": "10.1080/00343404.2024.2426990",
+    "authors": [
+      "Arnault Morisson",
+      "Huiwen Gong"
+    ],
+    "published": "2024-12-11",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-05T22:36:35+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2426990",
+    "latest_issue": true
+  },
+  {
     "title": "Towards an Ambivalence framework: decision-making on skills and training in global reproduction networks",
     "journal": "Journal of Economic Geography",
     "url": "https://doi.org/10.1093/jeg/lbag074",
@@ -9647,51 +9768,6 @@
     "latest_issue": false
   },
   {
-    "title": "Local public actors as agents of change? How public (de-)legitimation practices create new economic paths",
-    "journal": "Cambridge Journal of Regions, Economy and Society",
-    "url": "https://doi.org/10.1093/cjres/rsag024",
-    "doi": "10.1093/cjres/rsag024",
-    "authors": [
-      "Sabrina Fredin",
-      "Ida Nilsson"
-    ],
-    "published": "2026-08-07",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "cambridge-regions",
-    "id": "doi:10.1093/cjres/rsag024",
-    "latest_issue": false
-  },
-  {
-    "title": "Vanishing populations, contested futures: regional imagination, lexical convergence and policy translation in Japan’s ageing society",
-    "journal": "Cambridge Journal of Regions, Economy and Society",
-    "url": "https://doi.org/10.1093/cjres/rsag025",
-    "doi": "10.1093/cjres/rsag025",
-    "authors": [
-      "Natsuki Kamakura",
-      "Kojiro Sho",
-      "Sebastián Baeza-González"
-    ],
-    "published": "2026-08-07",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "cambridge-regions",
-    "id": "doi:10.1093/cjres/rsag025",
-    "latest_issue": false
-  },
-  {
     "title": "Editorial: Keeping Dented Geography Together",
     "journal": "Tijdschrift voor Economische en Sociale Geografie",
     "url": "https://doi.org/10.1111/tesg.70104",
@@ -9733,28 +9809,6 @@
     "id": "doi:10.1177/0308518x261474721",
     "issue_published": "2026-10",
     "latest_issue": true
-  },
-  {
-    "title": "State debtcraft under illiberalism: rethinking financial repression and (de)financialization in Orban’s Hungary",
-    "journal": "Socio-Economic Review",
-    "url": "https://doi.org/10.1093/ser/mwag036",
-    "doi": "10.1093/ser/mwag036",
-    "authors": [
-      "Edgars Eihmanis",
-      "Cornel Ban"
-    ],
-    "published": "2026-08-07",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "socio-economic-review",
-    "id": "doi:10.1093/ser/mwag036",
-    "latest_issue": false
   },
   {
     "title": "Response to ‘Military Gap Years’",
