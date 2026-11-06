@@ -1,5 +1,200 @@
 [
   {
+    "title": "Legal geographies and strategic coupling: an analysis of the medicinal cannabis industry in Colombia",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2026.2726962",
+    "doi": "10.1080/00343404.2026.2726962",
+    "authors": [
+      "Diana Morales",
+      "Tiago Teixeira"
+    ],
+    "published": "2026-11-06",
+    "volume": "60",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-06T22:27:45+00:00",
+    "issue_published": "2026-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2026.2726962",
+    "latest_issue": false
+  },
+  {
+    "title": "When does digital transformation pay off? A contingent knowledge-combination logic of digital breadth and depth in SME innovation",
+    "journal": "Industry and Innovation",
+    "url": "https://doi.org/10.1080/13662716.2026.2759652",
+    "doi": "10.1080/13662716.2026.2759652",
+    "authors": [
+      "Jiayi Li",
+      "Jingjie Zhao"
+    ],
+    "published": "2026-11-05",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-06T22:27:45+00:00",
+    "issue_published": "",
+    "journal_id": "industry-innovation",
+    "id": "doi:10.1080/13662716.2026.2759652",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-07"
+  },
+  {
+    "title": "Licensing liberal imperialism: The ‘rogue recruiter’ and the racial logic of low-wage labor supply chains",
+    "journal": "Environment and Planning A: Economy and Space",
+    "url": "https://doi.org/10.1177/0308518x261489455",
+    "doi": "10.1177/0308518x261489455",
+    "authors": [
+      "Michelle Buckley",
+      "Paula Chakravartty"
+    ],
+    "published": "2026-11-05",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-06T22:27:45+00:00",
+    "issue_published": "",
+    "journal_id": "environment-planning-a",
+    "id": "doi:10.1177/0308518x261489455",
+    "latest_issue": false,
+    "summary_ja": "現代のインドにおける低賃金労働者の募集規制と、19世紀の英国植民地時代における年季奉公制度の募集ネットワークの構造を比較。公文書データ等を基に、許可証発行やピラミッド型下請けといった規制メカニズムが、いかにして現代に至るまで低賃金労働供給網における仲介者を「規則違反者」として位置づけ、規制の失敗を繰り返させてきたかを明らかにする。（149字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "An evolutionary approach to regional development traps in Europe",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2586708",
+    "doi": "10.1080/00343404.2025.2586708",
+    "authors": [
+      "Pierre-Alex Balland",
+      "Ron Boschma"
+    ],
+    "published": "2025-12-19",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-06T22:27:45+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2586708",
+    "latest_issue": true
+  },
+  {
+    "title": "Urban innovation structures and economic productivity of Chinese cities",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2579626",
+    "doi": "10.1080/00343404.2025.2579626",
+    "authors": [
+      "Yingcheng Li",
+      "Zhenghua Ren",
+      "Manya Tu"
+    ],
+    "published": "2025-11-28",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-06T22:27:45+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2579626",
+    "latest_issue": true
+  },
+  {
+    "title": "Understanding leadership in city and regional development: towards multiple perspectives of sub-national (place) leadership",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2570009",
+    "doi": "10.1080/00343404.2025.2570009",
+    "authors": [
+      "John Gibney",
+      "Joyce Liddle",
+      "John Shutt",
+      "Markku Sotarauta"
+    ],
+    "published": "2025-11-10",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-06T22:27:45+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2570009",
+    "latest_issue": true
+  },
+  {
+    "title": "Towards studying the developmental consequences of regional industrial path development",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2517884",
+    "doi": "10.1080/00343404.2025.2517884",
+    "authors": [
+      "Moritz Breul",
+      "Miguel Atienza",
+      "Markus Grillitsch",
+      "Rhiannon Pugh"
+    ],
+    "published": "2025-07-11",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-06T22:27:45+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2517884",
+    "latest_issue": true
+  },
+  {
+    "title": "Place leadership in the geography of opportunities: survival of small industrial localities when industrial giants fall",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2479108",
+    "doi": "10.1080/00343404.2025.2479108",
+    "authors": [
+      "Markku Sotarauta",
+      "Heli Kurikka",
+      "Jari Kolehmainen",
+      "Sami Sopanen",
+      "Sami Moisio"
+    ],
+    "published": "2025-04-10",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-06T22:27:45+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2479108",
+    "latest_issue": true
+  },
+  {
     "title": "Entrepreneurial citizenship at the urban frontier: civic micropolitics under climate governance in Istanbul and Noord-Holland",
     "journal": "European Planning Studies",
     "url": "https://doi.org/10.1080/09654313.2026.2757046",
@@ -4683,7 +4878,8 @@
     "first_seen": "2026-10-27T22:24:50+00:00",
     "journal_id": "regional-studies",
     "id": "doi:10.1080/00343404.2023.2168637",
-    "latest_issue": true
+    "latest_issue": true,
+    "issue_published": "2025-12-31"
   },
   {
     "title": "The dark side of the geography of innovation: relatedness, complexity and regional inequality in Europe",
@@ -9699,72 +9895,6 @@
     "first_seen": "2026-10-27T13:36:19+00:00",
     "journal_id": "industry-innovation",
     "id": "doi:10.1080/13662716.2026.2710698",
-    "latest_issue": false
-  },
-  {
-    "title": "Road to integration? Unraveling the impact of high-speed rail expansion on cross-city government procurement in China",
-    "journal": "Journal of Economic Geography",
-    "url": "https://doi.org/10.1093/jeg/lbag059",
-    "doi": "10.1093/jeg/lbag059",
-    "authors": [
-      "Wei Tang",
-      "Yuan Wang",
-      "Jiameng Wu"
-    ],
-    "published": "2026-08-08",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "journal-economic-geography",
-    "id": "doi:10.1093/jeg/lbag059",
-    "latest_issue": false
-  },
-  {
-    "title": "Elective affinities: growth models as structured sector–demand configurations",
-    "journal": "Socio-Economic Review",
-    "url": "https://doi.org/10.1093/ser/mwag039",
-    "doi": "10.1093/ser/mwag039",
-    "authors": [
-      "Lucio Baccaro",
-      "Sinisa Hadziabdic"
-    ],
-    "published": "2026-08-08",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "socio-economic-review",
-    "id": "doi:10.1093/ser/mwag039",
-    "latest_issue": false
-  },
-  {
-    "title": "“The Amazon warehouse within my store”: e-commerce adoption and conflicted industrialization in Southern California’s grocery industry",
-    "journal": "Socio-Economic Review",
-    "url": "https://doi.org/10.1093/ser/mwag041",
-    "doi": "10.1093/ser/mwag041",
-    "authors": [
-      "Katy Habr"
-    ],
-    "published": "2026-08-08",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "socio-economic-review",
-    "id": "doi:10.1093/ser/mwag041",
     "latest_issue": false
   },
   {
