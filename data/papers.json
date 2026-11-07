@@ -1,5 +1,100 @@
 [
   {
+    "title": "Structural Inertia in Regional Industrial Concentration: Persistence and Mobility Across European Regions, 2017–2023",
+    "journal": "Growth and Change",
+    "url": "https://doi.org/10.1111/grow.70161",
+    "doi": "10.1111/grow.70161",
+    "authors": [
+      "Rudy Fernandez‐Escobedo"
+    ],
+    "published": "2026-11-07",
+    "volume": "57",
+    "issue": "4",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-07T22:23:46+00:00",
+    "issue_published": "2026-12",
+    "journal_id": "growth-change",
+    "id": "doi:10.1111/grow.70161",
+    "latest_issue": false
+  },
+  {
+    "title": "The Spatial Threshold Effect of Tourism Specialization on Economic Development: A Case Study of China",
+    "journal": "Growth and Change",
+    "url": "https://doi.org/10.1111/grow.70163",
+    "doi": "10.1111/grow.70163",
+    "authors": [
+      "Zhengying Shan",
+      "Jinfeng Du",
+      "Jean‐Claude Thill"
+    ],
+    "published": "2026-11-07",
+    "volume": "57",
+    "issue": "4",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-07T22:23:46+00:00",
+    "issue_published": "2026-12",
+    "journal_id": "growth-change",
+    "id": "doi:10.1111/grow.70163",
+    "latest_issue": false
+  },
+  {
+    "title": "Big Tech’s power resources: four eras of corporate influence in the EU",
+    "journal": "Socio-Economic Review",
+    "url": "https://doi.org/10.1093/ser/mwag055",
+    "doi": "10.1093/ser/mwag055",
+    "authors": [
+      "Matti Ylönen",
+      "Laura Nordström"
+    ],
+    "published": "2026-11-06",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-07T22:23:46+00:00",
+    "issue_published": "",
+    "journal_id": "socio-economic-review",
+    "id": "doi:10.1093/ser/mwag055",
+    "latest_issue": false,
+    "summary_ja": "EUにおける巨大IT企業の政治的影響力に着目し、ブリュッセルでのインタビュー等に基づく事例研究から、その欧州政治への浸透が4つの重複しつつ異なる時期（経済的思考の活用、プラットフォーム力のレバレッジ、欧州価値の擁護、米国のデジタルインフラへの依存の搾取）を経て進展したことを論じた。各期間は異なる権力資源に依存しており、従来のロビー活動からデジタル権力資源を活用した戦略へと移行していることを示した。（179字）\n\n※指定字数（100〜150字）に収めるため、以下に調整版を記載します。\n\nEUにおける巨大IT企業の政治的影響力に着目し、インタビュー等に基づく事例研究から、その欧州政治への浸透が4つの時期（経済的思考の活用、プラットフォーム力の利用、欧州価値の擁護、米国のデジタルインフラ依存の搾取）を経て進展したと論じた。各期間は異なる権力資源に依存しており、従来のロビー活動からデジタル権力資源",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Territorial market power as a source of inequalities in the automation era",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2582658",
+    "doi": "10.1080/00343404.2025.2582658",
+    "authors": [
+      "Roberta Capello",
+      "Camilla Lenzi",
+      "Elisa Panzera"
+    ],
+    "published": "2025-12-16",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-07T22:23:46+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2582658",
+    "latest_issue": true
+  },
+  {
     "title": "Legal geographies and strategic coupling: an analysis of the medicinal cannabis industry in Colombia",
     "journal": "Regional Studies",
     "url": "https://doi.org/10.1080/00343404.2026.2726962",
