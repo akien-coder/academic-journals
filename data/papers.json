@@ -1,5 +1,28 @@
 [
   {
+    "title": "The contribution of European cities and regions to the circular economy: an analysis of territorial strategies",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2563888",
+    "doi": "10.1080/00343404.2025.2563888",
+    "authors": [
+      "Sebastien Bourdin",
+      "Nicolas Jacquet"
+    ],
+    "published": "2025-10-30",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-08T22:24:32+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2563888",
+    "latest_issue": true
+  },
+  {
     "title": "Structural Inertia in Regional Industrial Concentration: Persistence and Mobility Across European Regions, 2017–2023",
     "journal": "Growth and Change",
     "url": "https://doi.org/10.1111/grow.70161",
@@ -9902,94 +9925,6 @@
     "first_seen": "2026-10-27T13:36:19+00:00",
     "journal_id": "socio-economic-review",
     "id": "doi:10.1093/ser/mwag042",
-    "latest_issue": false
-  },
-  {
-    "title": "Cultural (mis)alignment and its influence on green regional industrial path development",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2714957",
-    "doi": "10.1080/09654313.2026.2714957",
-    "authors": [
-      "Maria Tønnessen Frivold"
-    ],
-    "published": "2026-08-10",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2714957",
-    "latest_issue": false
-  },
-  {
-    "title": "The role of planning in street evolution in Mersin, Türkiye",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2714963",
-    "doi": "10.1080/09654313.2026.2714963",
-    "authors": [
-      "Züleyha Sara Belge",
-      "Burak Belge"
-    ],
-    "published": "2026-08-10",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2714963",
-    "latest_issue": false
-  },
-  {
-    "title": "A GIS–AHP-based assessment of visual landscape in multi-component rural areas",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2712379",
-    "doi": "10.1080/09654313.2026.2712379",
-    "authors": [
-      "Tuğba Kiper",
-      "Nazife Yeşilçimen",
-      "Şule Gündüz"
-    ],
-    "published": "2026-08-10",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2712379",
-    "latest_issue": false
-  },
-  {
-    "title": "Differentiation of R&D organisations and inventors’ networks: effects on knowledge generation and transfer",
-    "journal": "Industry and Innovation",
-    "url": "https://doi.org/10.1080/13662716.2026.2710698",
-    "doi": "10.1080/13662716.2026.2710698",
-    "authors": [
-      "Tomoyuki Shimbo",
-      "Motohiro Nakauchi"
-    ],
-    "published": "2026-08-10",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "industry-innovation",
-    "id": "doi:10.1080/13662716.2026.2710698",
     "latest_issue": false
   },
   {
