@@ -1,5 +1,105 @@
 [
   {
+    "title": "Constrained opportunities for path development: how misaligned agencies and structures shape Southern regional value chains",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2442009",
+    "doi": "10.1080/00343404.2024.2442009",
+    "authors": [
+      "Emma Galbraith",
+      "Carolin Hulke",
+      "Javier Revilla Diez"
+    ],
+    "published": "2025-01-29",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-10T22:28:53+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2442009",
+    "latest_issue": true
+  },
+  {
+    "title": "Understanding the interconnectedness of house prices between cities and regions during COVID-19: evidence from Australia",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2425215",
+    "doi": "10.1080/00343404.2024.2425215",
+    "authors": [
+      "Nirodha Jayawardena",
+      "Eduardo Roca",
+      "Prabath S. Morawakage",
+      "Benjamín Liu",
+      "George Earl",
+      "Vikkram Singh"
+    ],
+    "published": "2024-12-10",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-10T22:28:53+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2425215",
+    "latest_issue": true
+  },
+  {
+    "title": "Life satisfaction and the variety and intensity of cultural participation in Italy: disentangling the individual and regional dimensions",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2417701",
+    "doi": "10.1080/00343404.2024.2417701",
+    "authors": [
+      "Enrico Bertacchini",
+      "Alessandra Venturini",
+      "Roberto Zotti",
+      "Roberta Misuraca"
+    ],
+    "published": "2024-11-25",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-10T22:28:53+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2417701",
+    "latest_issue": true
+  },
+  {
+    "title": "Nation-state influence on tourism path creation in Southern Africa",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2393685",
+    "doi": "10.1080/00343404.2024.2393685",
+    "authors": [
+      "Mfundo Mlilo",
+      "Michael Bollig",
+      "Javier Revilla Diez"
+    ],
+    "published": "2024-09-09",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-10T22:28:53+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2393685",
+    "latest_issue": true
+  },
+  {
     "title": "Constructing Hybrid Futures: Fossil-Green Interpath Governance in a Global South Resource Periphery",
     "journal": "Economic Geography",
     "url": "https://doi.org/10.1080/00130095.2026.2747931",
@@ -9835,51 +9935,6 @@
     "id": "doi:10.1093/jeg/lbag061",
     "issue_published": "2026-09-01",
     "latest_issue": true
-  },
-  {
-    "title": "Social network benefits for cluster firms: A co-worker mobility approach",
-    "journal": "Environment and Planning A: Economy and Space",
-    "url": "https://doi.org/10.1177/0308518x261470975",
-    "doi": "10.1177/0308518x261470975",
-    "authors": [
-      "Balázs Lengyel",
-      "László Lőrincz",
-      "Guilherme Kenji Chihaya",
-      "Rikard Eriksson"
-    ],
-    "published": "2026-08-12",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "environment-planning-a",
-    "id": "doi:10.1177/0308518x261470975",
-    "latest_issue": false
-  },
-  {
-    "title": "Explaining inequality: economic elite narratives across Latin America",
-    "journal": "Socio-Economic Review",
-    "url": "https://doi.org/10.1093/ser/mwag043",
-    "doi": "10.1093/ser/mwag043",
-    "authors": [
-      "Pilar Manzi"
-    ],
-    "published": "2026-08-12",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "socio-economic-review",
-    "id": "doi:10.1093/ser/mwag043",
-    "latest_issue": false
   },
   {
     "title": "Transformative policy for climate change adaptation: scaling local climate responses",
