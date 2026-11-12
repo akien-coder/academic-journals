@@ -1,5 +1,151 @@
 [
   {
+    "title": "Odd couples: how neighboring average places diverge",
+    "journal": "ZFW – Advances in Economic Geography",
+    "url": "https://doi.org/10.1515/zfw-2026-0011",
+    "doi": "10.1515/zfw-2026-0011",
+    "authors": [
+      "Howard Hao Wang",
+      "Harald Bathelt"
+    ],
+    "published": "2026-11-13",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-12T22:33:29+00:00",
+    "issue_published": "",
+    "journal_id": "zfw",
+    "id": "doi:10.1515/zfw-2026-0011",
+    "latest_issue": false,
+    "summary_ja": "米国の中小規模の平均的所得を持つ4つの都市圏を対象に、質的ケーススタディを実施した。1993年時点で類似した所得水準や構造を持ちながら異なる成長を遂げた2つの隣接地域ペアを比較し、構造的・制度的条件の差異を検証した。その結果、地域的な制度的文脈と主要アクターの戦略的選択が、経済成長の軌道を形作る上で決定的な役割を果たしていることが示された。（148字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Safe bonds, risky debt? Covered bonds and the financialisation of housing in Sweden",
+    "journal": "Environment and Planning A: Economy and Space",
+    "url": "https://doi.org/10.1177/0308518x261499187",
+    "doi": "10.1177/0308518x261499187",
+    "authors": [
+      "Viktor Skyrman",
+      "Timothy Blackwell",
+      "Juan Barredo",
+      "Luis Buendía"
+    ],
+    "published": "2026-11-12",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-12T22:33:29+00:00",
+    "issue_published": "",
+    "journal_id": "environment-planning-a",
+    "id": "doi:10.1177/0308518x261499187",
+    "latest_issue": false,
+    "summary_ja": "本論文は、スウェーデンを事例に、カバードボンドが住宅の金融化に果たす役割を検証する。規制変更の歴史や政策論争、ステークホルダーへのインタビュー等を用い、金融ロビイストが国際競争力の維持を名目に法制化を実現した過程を調査した。その結果、同債券が投資家に高い保護を提供する一方で、住宅ローン信用の供給を激化させ、国内銀行のバランスシートに信用リスクを集中させることを明らかにした。",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Income inequality, individual income, trust in government, and long-term individual concerns",
+    "journal": "Socio-Economic Review",
+    "url": "https://doi.org/10.1093/ser/mwag075",
+    "doi": "10.1093/ser/mwag075",
+    "authors": [
+      "Juan J Fernández",
+      "Tobias Wiß",
+      "Hayley James"
+    ],
+    "published": "2026-11-12",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-12T22:33:29+00:00",
+    "issue_published": "",
+    "journal_id": "socio-economic-review",
+    "id": "doi:10.1093/ser/mwag075",
+    "latest_issue": false,
+    "summary_ja": "27の高所得国における代表的調査とマルチレベルモデルを用い、将来に対する7つの懸念領域を分析した。その結果、懸念は経済面と健康面に大別され、所得格差が高く政府への信頼が低い国ほど、市民の長期的な懸念全体が高まることが示された。格差縮小と政府への信頼向上の政策が、将来への物質的不安や心理的負担を軽減しうると論じている。",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Financialization and Local Statecraft: Introduction to the book review forum",
+    "journal": "Environment and Planning A: Economy and Space",
+    "url": "https://doi.org/10.1177/0308518x261483258",
+    "doi": "10.1177/0308518x261483258",
+    "authors": [
+      "Desiree Fields"
+    ],
+    "published": "2026-11-11",
+    "volume": "58",
+    "issue": "8",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-12T22:33:29+00:00",
+    "issue_published": "2026-11",
+    "journal_id": "environment-planning-a",
+    "id": "doi:10.1177/0308518x261483258",
+    "latest_issue": false
+  },
+  {
+    "title": "The case for place-based policy: economic divergence, governance integrity and climate change mitigation",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2485126",
+    "doi": "10.1080/00343404.2025.2485126",
+    "authors": [
+      "Enrique Garcilazo",
+      "Philip McCann"
+    ],
+    "published": "2025-05-06",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-12T22:33:29+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2485126",
+    "latest_issue": true
+  },
+  {
+    "title": "The role of regional governance modes and system-level agency in evolutionary paths of regional industries",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2435524",
+    "doi": "10.1080/00343404.2024.2435524",
+    "authors": [
+      "Jiří Blažek",
+      "Viktor Květoň"
+    ],
+    "published": "2025-01-15",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-12T22:33:29+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2435524",
+    "latest_issue": true
+  },
+  {
     "title": "Regional development trajectories and the political geography of the far-right",
     "journal": "Regional Studies",
     "url": "https://doi.org/10.1080/00343404.2026.2741179",
@@ -2433,31 +2579,6 @@
     "issue_published": "2026-12-31",
     "journal_id": "regional-studies",
     "id": "doi:10.1080/00343404.2026.2718333",
-    "latest_issue": false,
-    "abstract_checked_at": "2026-10-28"
-  },
-  {
-    "title": "Activating territorial circular ecosystems through intermediaries",
-    "journal": "Regional Studies",
-    "url": "https://doi.org/10.1080/00343404.2026.2701254",
-    "doi": "10.1080/00343404.2026.2701254",
-    "authors": [
-      "Thibaut Joltreau",
-      "Sebastien Bourdin",
-      "Christian Gnekpe"
-    ],
-    "published": "2026-08-14",
-    "volume": "60",
-    "issue": "1",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-28T13:31:41+00:00",
-    "issue_published": "2026-12-31",
-    "journal_id": "regional-studies",
-    "id": "doi:10.1080/00343404.2026.2701254",
     "latest_issue": false,
     "abstract_checked_at": "2026-10-28"
   },
@@ -9919,72 +10040,6 @@
     "id": "doi:10.1111/grow.70150",
     "issue_published": "2026-09",
     "latest_issue": true
-  },
-  {
-    "title": "Territorial drivers of social innovations",
-    "journal": "Regional Studies",
-    "url": "https://doi.org/10.1080/00343404.2026.2702581",
-    "doi": "10.1080/00343404.2026.2702581",
-    "authors": [
-      "Filippo Berti Mecocci",
-      "Roberto Dellisanti",
-      "Amir Maghssudipour"
-    ],
-    "published": "2026-08-14",
-    "volume": "60",
-    "issue": "1",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "regional-studies",
-    "id": "doi:10.1080/00343404.2026.2702581",
-    "issue_published": "2026-12-31",
-    "latest_issue": false
-  },
-  {
-    "title": "EU policies and soft urban regeneration via multi-level planning and governance for circular cities",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2713156",
-    "doi": "10.1080/09654313.2026.2713156",
-    "authors": [
-      "Eduardo Medeiros"
-    ],
-    "published": "2026-08-14",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2713156",
-    "latest_issue": false
-  },
-  {
-    "title": "Instituting civics: the Spanish social mobilization for housing justice",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2698005",
-    "doi": "10.1080/09654313.2026.2698005",
-    "authors": [
-      "Eva Álvarez de Andrés"
-    ],
-    "published": "2026-08-14",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2698005",
-    "latest_issue": false
   },
   {
     "title": "Correction to: Medium-run local economic effects of a major earthquake",
