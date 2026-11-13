@@ -1,5 +1,77 @@
 [
   {
+    "title": "Editorial: Making Geography Matter",
+    "journal": "Tijdschrift voor Economische en Sociale Geografie",
+    "url": "https://doi.org/10.1111/tesg.70123",
+    "doi": "10.1111/tesg.70123",
+    "authors": [
+      "Federica Bono"
+    ],
+    "published": "2026-11-13",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-13T22:33:19+00:00",
+    "issue_published": "",
+    "journal_id": "tesg",
+    "id": "doi:10.1111/tesg.70123",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-14"
+  },
+  {
+    "title": "Geostrategic coupling: regional development and geopolitical competition in global production networks",
+    "journal": "Cambridge Journal of Regions, Economy and Society",
+    "url": "https://doi.org/10.1093/cjres/rsag044",
+    "doi": "10.1093/cjres/rsag044",
+    "authors": [
+      "Steve Rolf",
+      "Seth Schindler"
+    ],
+    "published": "2026-11-12",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-13T22:33:19+00:00",
+    "issue_published": "",
+    "journal_id": "cambridge-regions",
+    "id": "doi:10.1093/cjres/rsag044",
+    "latest_issue": false,
+    "summary_ja": "地域開発は地政学的大競争の場となっているが、既存研究は市場論理に基づく戦略的結合プロセスとして捉えてきた。本研究では、国家安全保障の観点から国家が世界生産ネットワークに介入する現象を説明するため、「地政学的結合」という概念を提唱し、ベトナムとアメリカの事例を用いて、地政学が企業・地域の関係や地域開発に与える影響を論じる。（149字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Constructive and destructive agency, regional path development and critical junctures: the case of cruise tourism in Nuuk, Greenland",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2461755",
+    "doi": "10.1080/00343404.2025.2461755",
+    "authors": [
+      "Laura James",
+      "Henrik Halkier",
+      "Heidi Vorre"
+    ],
+    "published": "2025-03-06",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-13T22:33:19+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2461755",
+    "latest_issue": true
+  },
+  {
     "title": "Odd couples: how neighboring average places diverge",
     "journal": "ZFW – Advances in Economic Geography",
     "url": "https://doi.org/10.1515/zfw-2026-0011",
