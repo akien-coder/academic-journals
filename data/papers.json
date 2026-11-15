@@ -1,5 +1,81 @@
 [
   {
+    "title": "Being(s) there(s)—geographies of tacit knowledge through avatars, telepresence robots, and holograms",
+    "journal": "Journal of Economic Geography",
+    "url": "https://doi.org/10.1093/jeg/lbag083",
+    "doi": "10.1093/jeg/lbag083",
+    "authors": [
+      "Johanna Hautala",
+      "Marianne Mäntyoja"
+    ],
+    "published": "2026-11-14",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-15T22:26:22+00:00",
+    "issue_published": "",
+    "journal_id": "journal-economic-geography",
+    "id": "doi:10.1093/jeg/lbag083",
+    "latest_issue": false,
+    "summary_ja": "先端リモートワーク技術を用いた暗黙知の地理的共有を理解するため、インタビューと自己民族誌を用いて調査を実施した。その結果、各技術は他所での特定の空間的行為主体性を付与することが判明した。知的主義の観点からは、調査したすべての技術で一部の暗黙知の共有が可能であり、バーチャルアバターは現象学的観点からも一部の暗黙知の共有を可能にしていた。（150文字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "The resurgence of symbolic environmental management through imprinting effects",
+    "journal": "Socio-Economic Review",
+    "url": "https://doi.org/10.1093/ser/mwag066",
+    "doi": "10.1093/ser/mwag066",
+    "authors": [
+      "Yuki Torida",
+      "Hitoshi Mitsuhashi",
+      "Keisuke Ogihara",
+      "Akitsu Oe"
+    ],
+    "published": "2026-11-14",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-15T22:26:22+00:00",
+    "issue_published": "",
+    "journal_id": "socio-economic-review",
+    "id": "doi:10.1093/ser/mwag066",
+    "latest_issue": false,
+    "summary_ja": "組織の象徴的適応の歴史的起源を刻印理論から解明するため、2000〜2010年代の日本の企業リーダーを対象に分析を行った。その結果、1960年代の環境問題の高まりの中で前任者の象徴的適応を経験したリーダーは、後に象徴的環境経営を行いやすいことが示された。ただし、この効果は社外取締役の監督やアクティビスト株主の介入により弱まる。（148字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Markets embedded in publics: information-processing social systems under the attention economy",
+    "journal": "Socio-Economic Review",
+    "url": "https://doi.org/10.1093/ser/mwag076",
+    "doi": "10.1093/ser/mwag076",
+    "authors": [
+      "Tuukka Ylä-Anttila"
+    ],
+    "published": "2026-11-14",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-15T22:26:22+00:00",
+    "issue_published": "",
+    "journal_id": "socio-economic-review",
+    "id": "doi:10.1093/ser/mwag076",
+    "latest_issue": false,
+    "summary_ja": "本論文は、金融市場と民主的公共圏を共通の通信インフラに依拠する情報処理システムと捉え、効率的市場仮説やハーバーマスの公共圏論等から多様性、独立性、集約、是正の4つの認識論的条件を特定した。注意経済によるメディア環境の劣化が、情報の質より感情的喚起を優先させ、意見の相関化や是正の抑制を通じて市場とアイデアの双方を損ねることを論じ、市場は取引とメディア通信の両方で是正される一方、公共圏はメディアにより依存するため脆弱であるとした。",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
     "title": "Does Breakthrough Innovation in Key Core Technologies Always Enhance Urban Economic Resilience? Evidence From Diverse Resource‐Based Cities",
     "journal": "Growth and Change",
     "url": "https://doi.org/10.1111/grow.70164",
@@ -10065,50 +10141,6 @@
     "first_seen": "2026-10-27T13:36:19+00:00",
     "journal_id": "zfw",
     "id": "doi:10.1515/zfw-2026-0016",
-    "latest_issue": false
-  },
-  {
-    "title": "Modelling spatial density: Data, methods, and R applications in statistics, econometrics, and machine learning",
-    "journal": "Regional Studies",
-    "url": "https://doi.org/10.1080/00343404.2026.2702720",
-    "doi": "10.1080/00343404.2026.2702720",
-    "authors": [
-      "Jean Dubé"
-    ],
-    "published": "2026-08-17",
-    "volume": "60",
-    "issue": "1",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "regional-studies",
-    "id": "doi:10.1080/00343404.2026.2702720",
-    "issue_published": "2026-12-31",
-    "latest_issue": false
-  },
-  {
-    "title": "Institutional change in the civic-institutional relation: outlining enabling conditions",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2713155",
-    "doi": "10.1080/09654313.2026.2713155",
-    "authors": [
-      "Elena Ostanel",
-      "Martina Bovo"
-    ],
-    "published": "2026-08-17",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2713155",
     "latest_issue": false
   },
   {
