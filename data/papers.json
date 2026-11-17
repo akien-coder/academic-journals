@@ -1,5 +1,196 @@
 [
   {
+    "title": "Economic resilience and pandemic response",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2026.2756777",
+    "doi": "10.1080/00343404.2026.2756777",
+    "authors": [
+      "Chiara Burlina"
+    ],
+    "published": "2026-11-16",
+    "volume": "60",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-17T04:15:48+00:00",
+    "issue_published": "2026-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2026.2756777",
+    "latest_issue": false
+  },
+  {
+    "title": "Emergence of relatedness: offshore oil and gas and offshore wind energy in Esbjerg",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2026.2750385",
+    "doi": "10.1080/00343404.2026.2750385",
+    "authors": [
+      "Mads Bruun Ingstrup",
+      "Max-Peter Menzel"
+    ],
+    "published": "2026-11-16",
+    "volume": "60",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-17T04:15:48+00:00",
+    "issue_published": "2026-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2026.2750385",
+    "latest_issue": false
+  },
+  {
+    "title": "Indigenous communities and the shaping of a lithium labour regime in Jujuy’s salt-flat ecologies",
+    "journal": "Journal of Economic Geography",
+    "url": "https://doi.org/10.1093/jeg/lbag086",
+    "doi": "10.1093/jeg/lbag086",
+    "authors": [
+      "Nuria Giniger",
+      "Solana Renosto"
+    ],
+    "published": "2026-11-16",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-17T04:15:48+00:00",
+    "issue_published": "",
+    "journal_id": "journal-economic-geography",
+    "id": "doi:10.1093/jeg/lbag086",
+    "latest_issue": false,
+    "summary_ja": "本論文は、アルゼンチン・フフイ州のアタカマ・プーナにおける先住民族が、リチウム採掘の労働体制をどのように形作 っているかを民族誌的研究から検証する。その結果、土地所有権や地域交渉、下請け構造、生態系などを通じて、独自の採用慣行や労働の分断、不平等な職業リスク、ジェンダー化された負担が生み出されていることが示され、先住民族の政治組織や生活史がエネルギー移行期の労働体制を能動的に構築していることを明らかにした。",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Measuring digital technology adoption: a multidimensional scale development and validation",
+    "journal": "Industry and Innovation",
+    "url": "https://doi.org/10.1080/13662716.2026.2760943",
+    "doi": "10.1080/13662716.2026.2760943",
+    "authors": [
+      "Mosarrat Farhana",
+      "Emre Yildiz",
+      "Ulf Andersson"
+    ],
+    "published": "2026-11-16",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-17T04:15:48+00:00",
+    "issue_published": "",
+    "journal_id": "industry-innovation",
+    "id": "doi:10.1080/13662716.2026.2760943",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-17"
+  },
+  {
+    "title": "Absorbing shocks by accumulating risk: do financially stressed households take on underinsurance risk to manage liquidity constraint?",
+    "journal": "Socio-Economic Review",
+    "url": "https://doi.org/10.1093/ser/mwag068",
+    "doi": "10.1093/ser/mwag068",
+    "authors": [
+      "Antonia Settle",
+      "Maxim Ananyev"
+    ],
+    "published": "2026-11-16",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-17T04:15:48+00:00",
+    "issue_published": "",
+    "journal_id": "socio-economic-review",
+    "id": "doi:10.1093/ser/mwag068",
+    "latest_issue": false,
+    "summary_ja": "オーストラリアのパネルデータを用い、家計がショック後にコスト削減として保険を縮小させるかを調査した。その結果、債務返済等で可処分所得が少ない家計ほど保険削減の度合いが大きく、支出と保険の間に代替効果が存在することが示された。この研究は、財政的ストレスから生じるリスク蓄積の動学を実証し、過小保険の新たな駆動要因を明らかにした。（149字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Feminist Geographies of Housekeeping Work: Locating Intra‐Labour Agency",
+    "journal": "Tijdschrift voor Economische en Sociale Geografie",
+    "url": "https://doi.org/10.1111/tesg.70122",
+    "doi": "10.1111/tesg.70122",
+    "authors": [
+      "Chih‐Chen Trista Lin",
+      "Maartje Roelofsen"
+    ],
+    "published": "2026-11-15",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-17T04:15:48+00:00",
+    "issue_published": "",
+    "journal_id": "tesg",
+    "id": "doi:10.1111/tesg.70122",
+    "latest_issue": false,
+    "summary_ja": "本研究は、フェミニストおよび労働地理学の議論に基づき、オランダ・アムステルダムのホテル清掃業における労働者間の力関係と主体性を探求した。主に女性移民労働者である清掃員やその第一線監督者が、資本主義的な職場管理に対して示す 「回復力」「再構築」「抵抗」という3つの応答を分析し、労働者間の力関係を再構築しようとする彼女たちの行為主体性と感情労働の実践の限界と可能性を示した。（167字）※文字数調整の必要があればご指示ください。上記は150字以内に収まるよう以下に再調整します。\n\n本研究は、フェミニストおよび労働地理学に基づき、アムステルダムのホテル清掃業における労働者間の力関係と主体性を探求した。主に女性移民の清掃員や監督者が、資本主義的な職場管理に対して示す「回復力」「再構築」「抵抗」の3つの応答を分析し、労働者間の力関係を再構築しようとする彼女たちの行為主体性と感情労働の実践における限界と",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Decentralisation, unfunded mandates and the regional response to the COVID-19 pandemic",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2023.2279105",
+    "doi": "10.1080/00343404.2023.2279105",
+    "authors": [
+      "Andrés Rodríguez-Pose",
+      "Miquel Vidal-Bover"
+    ],
+    "published": "2023-12-04",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-17T04:15:48+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2023.2279105",
+    "latest_issue": true
+  },
+  {
+    "title": "Greening through digitalisation? Evidence from cities in China",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2023.2215824",
+    "doi": "10.1080/00343404.2023.2215824",
+    "authors": [
+      "Yue-Jun Zhang",
+      "Mengfan Du"
+    ],
+    "published": "2023-06-19",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-17T04:15:48+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2023.2215824",
+    "latest_issue": true
+  },
+  {
     "title": "Being(s) there(s)—geographies of tacit knowledge through avatars, telepresence robots, and holograms",
     "journal": "Journal of Economic Geography",
     "url": "https://doi.org/10.1093/jeg/lbag083",
@@ -10097,51 +10288,6 @@
     "id": "doi:10.1111/grow.70149",
     "issue_published": "2026-09",
     "latest_issue": true
-  },
-  {
-    "title": "Mission impossible? On the (in)commensurability of mission-oriented industrial policy and balanced regional development in contemporary Japan",
-    "journal": "Regional Studies",
-    "url": "https://doi.org/10.1080/00343404.2026.2707136",
-    "doi": "10.1080/00343404.2026.2707136",
-    "authors": [
-      "Natsuki Kamakura",
-      "Kean Fan Lim"
-    ],
-    "published": "2026-08-18",
-    "volume": "60",
-    "issue": "1",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "regional-studies",
-    "id": "doi:10.1080/00343404.2026.2707136",
-    "issue_published": "2026-12-31",
-    "latest_issue": false
-  },
-  {
-    "title": "Divergent cities/regions: plea for a comparative urban-regional research agenda",
-    "journal": "ZFW – Advances in Economic Geography",
-    "url": "https://doi.org/10.1515/zfw-2026-0016",
-    "doi": "10.1515/zfw-2026-0016",
-    "authors": [
-      "Harald Bathelt",
-      "Howard Hao Wang"
-    ],
-    "published": "2026-08-18",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "zfw",
-    "id": "doi:10.1515/zfw-2026-0016",
-    "latest_issue": false
   },
   {
     "title": "What Drives the Price of a Big Mac? Evidence From Local Market Conditions",
