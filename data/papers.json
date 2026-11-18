@@ -1,5 +1,77 @@
 [
   {
+    "title": "Global value chains and the rate of incarceration in rich democracies",
+    "journal": "Socio-Economic Review",
+    "url": "https://doi.org/10.1093/ser/mwag071",
+    "doi": "10.1093/ser/mwag071",
+    "authors": [
+      "Matthew C Mahutga",
+      "Manjing Gao",
+      "Sharon S Oselin"
+    ],
+    "published": "2026-11-17",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-18T03:15:08+00:00",
+    "issue_published": "",
+    "journal_id": "socio-economic-review",
+    "id": "doi:10.1093/ser/mwag071",
+    "latest_issue": false,
+    "summary_ja": "先進民主主義国における収監率の上昇とグローバル・バリュー・チェーン（GVC）の拡大、国内労働市場制度との関係を解明する。1963年から2017年の22カ国を対象としたプール横断時系列回帰分析を実施した結果、南部からの輸入増加は収監率を上昇させ、GVCの世界的定着に伴いその影響は強まる一方、労働組合組織率や賃金協調が強い国では影響が緩和されることが示された。",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "From Lisbonisation to Hyper-Lisbonisation: the long goodbye to EU Cohesion Policy’s original goals",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2540361",
+    "doi": "10.1080/00343404.2025.2540361",
+    "authors": [
+      "Francesco Molica",
+      "Alessandra de Renzis",
+      "Sebastien Bourdin"
+    ],
+    "published": "2025-09-02",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-18T03:15:08+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2540361",
+    "latest_issue": true
+  },
+  {
+    "title": "Medical reterritorialisation: the spatial interests of healthcare, financialisation and hospitals in a city-region",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2534690",
+    "doi": "10.1080/00343404.2025.2534690",
+    "authors": [
+      "Xuanyi Nie"
+    ],
+    "published": "2025-08-21",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-18T03:15:08+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2534690",
+    "latest_issue": true
+  },
+  {
     "title": "Economic resilience and pandemic response",
     "journal": "Regional Studies",
     "url": "https://doi.org/10.1080/00343404.2026.2756777",
@@ -10218,52 +10290,6 @@
     "id": "doi:10.1111/grow.70151",
     "issue_published": "2026-09",
     "latest_issue": true
-  },
-  {
-    "title": "Local conditions, perceived fairness and political trust: disentangling the effects of neighbourhood deprivation and distributive perceptions",
-    "journal": "Regional Studies",
-    "url": "https://doi.org/10.1080/00343404.2026.2696386",
-    "doi": "10.1080/00343404.2026.2696386",
-    "authors": [
-      "Anne-Kathrin Stroppe"
-    ],
-    "published": "2026-08-19",
-    "volume": "60",
-    "issue": "1",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "regional-studies",
-    "id": "doi:10.1080/00343404.2026.2696386",
-    "issue_published": "2026-12-31",
-    "latest_issue": false
-  },
-  {
-    "title": "The impacts of high-speed Internet access on monopsony power",
-    "journal": "Journal of Economic Geography",
-    "url": "https://doi.org/10.1093/jeg/lbag053",
-    "doi": "10.1093/jeg/lbag053",
-    "authors": [
-      "Li Yu",
-      "Yurou Wang",
-      "Jingxiang Song",
-      "Mengjun Yang"
-    ],
-    "published": "2026-08-19",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "journal-economic-geography",
-    "id": "doi:10.1093/jeg/lbag053",
-    "latest_issue": false
   },
   {
     "title": "When Administrative Reform Misleads: Reclassification and Artificial Urbanization Signals in Provincial Economic Structure—Evidence From Türkiye",
