@@ -1,5 +1,274 @@
 [
   {
+    "title": "Navigating industrial diversification in megacities: interconnections between industrial dynamics and changing commuting patterns in Shanghai",
+    "journal": "Journal of Economic Geography",
+    "url": "https://doi.org/10.1093/jeg/lbag070",
+    "doi": "10.1093/jeg/lbag070",
+    "authors": [
+      "Zhan Cao",
+      "Shijia Lin",
+      "Ben Derudder",
+      "Dieter F Kogler",
+      "Xinyi Niu"
+    ],
+    "published": "2026-11-18",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-19T02:53:31+00:00",
+    "issue_published": "",
+    "journal_id": "journal-economic-geography",
+    "id": "doi:10.1093/jeg/lbag070",
+    "latest_issue": false,
+    "summary_ja": "上海の164の小地区における企業と移動のミクロデータを用い、都市内産業の多様化が通勤パターンに与える影響を進化経済地理学の枠組みで分析した。その結果、無関係で複雑な産業への多様化は通勤時間と距離を増加させることが示され、経済成長をもたらす一方で生活の質や社会的不平等への懸念が生じる可能性が示唆された。",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Participation as epistemic practice in planning: solutionism, populism and technocratic closure",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2757746",
+    "doi": "10.1080/09654313.2026.2757746",
+    "authors": [
+      "Joar Skrede",
+      "Bengt Andersen"
+    ],
+    "published": "2026-11-18",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-19T02:53:31+00:00",
+    "issue_published": "",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2757746",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-19"
+  },
+  {
+    "title": "Between client and public: Perceptions of a professional ethos among consultants in Swedish planning",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2746060",
+    "doi": "10.1080/09654313.2026.2746060",
+    "authors": [
+      "Jenny Lindblad",
+      "Jonathan Metzger",
+      "Maria Håkansson"
+    ],
+    "published": "2026-11-18",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-19T02:53:31+00:00",
+    "issue_published": "",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2746060",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-19"
+  },
+  {
+    "title": "P2P accommodation pressure across European Mediterranean cities: invasion, parasitism or resistance?",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2762172",
+    "doi": "10.1080/09654313.2026.2762172",
+    "authors": [
+      "Adrián Mendieta-Aragón",
+      "Julio Navío-Marco",
+      "Claudia Sevilla-Sevilla",
+      "Laura Vidal-Serrano"
+    ],
+    "published": "2026-11-18",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-19T02:53:31+00:00",
+    "issue_published": "",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2762172",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-19"
+  },
+  {
+    "title": "Regional innovation systems beyond innovation: configurational evidence from European regions",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2759879",
+    "doi": "10.1080/09654313.2026.2759879",
+    "authors": [
+      "Nikolaos Filippopoulos",
+      "Georgios Fotopoulos"
+    ],
+    "published": "2026-11-18",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-19T02:53:31+00:00",
+    "issue_published": "",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2759879",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-19"
+  },
+  {
+    "title": "Actors, arenas and aims in developer-organised participation: lessons from two municipally tendered densification projects in Eindhoven",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2758890",
+    "doi": "10.1080/09654313.2026.2758890",
+    "authors": [
+      "Qi Han",
+      "Li Dai",
+      "Ilke Klasen"
+    ],
+    "published": "2026-11-17",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-19T02:53:31+00:00",
+    "issue_published": "",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2758890",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-19"
+  },
+  {
+    "title": "From-lab-to-market in EU regions: unravelling the effect of institutional quality on R&D investment efficiency",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2761487",
+    "doi": "10.1080/09654313.2026.2761487",
+    "authors": [
+      "Cristina Carrillo-Pulido",
+      "Bienvenido Ortega-Aguaza",
+      "Juan Carlos Rodríguez-Cohard"
+    ],
+    "published": "2026-11-17",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-19T02:53:31+00:00",
+    "issue_published": "",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2761487",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-19"
+  },
+  {
+    "title": "Hidden Empire of Finance: How Wall Street Profits from Our Cities and Fuels Global Inequality",
+    "journal": "Economic Geography",
+    "url": "https://doi.org/10.1080/00130095.2026.2682798",
+    "doi": "10.1080/00130095.2026.2682798",
+    "authors": [
+      "Robert Beauregard"
+    ],
+    "published": "2026-07-06",
+    "volume": "102",
+    "issue": "4",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-19T02:53:31+00:00",
+    "issue_published": "2026-07-04",
+    "journal_id": "economic-geography",
+    "id": "doi:10.1080/00130095.2026.2682798",
+    "latest_issue": true
+  },
+  {
+    "title": "Place-based leadership: advancing feminist, intersectional and anti-racist approaches",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2545309",
+    "doi": "10.1080/00343404.2025.2545309",
+    "authors": [
+      "Emma Ormerod"
+    ],
+    "published": "2025-09-01",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-19T02:53:31+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2545309",
+    "latest_issue": true
+  },
+  {
+    "title": "Transcending borders: conceptualising and empirically grasping individual readiness in cross-border collaboration in the Dutch–German borderland",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2522796",
+    "doi": "10.1080/00343404.2025.2522796",
+    "authors": [
+      "Max Klöters",
+      "Ward Ooms",
+      "Marjolein C. J. Caniëls",
+      "Vincent Pijnenburg"
+    ],
+    "published": "2025-08-04",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-19T02:53:31+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2522796",
+    "latest_issue": true
+  },
+  {
+    "title": "Old habits die hard: pushing the frontiers of entrepreneurship persistence since 1926",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2355986",
+    "doi": "10.1080/00343404.2024.2355986",
+    "authors": [
+      "Korneliusz Pylak",
+      "Sergey Sosnovskikh"
+    ],
+    "published": "2024-06-07",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-19T02:53:31+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2355986",
+    "latest_issue": true
+  },
+  {
     "title": "Global value chains and the rate of incarceration in rich democracies",
     "journal": "Socio-Economic Review",
     "url": "https://doi.org/10.1093/ser/mwag071",
@@ -5321,32 +5590,6 @@
     "latest_issue": false
   },
   {
-    "title": "Integrating Geoeconomics into the GPN Framework: The Internationalization of Chinese EV Battery Firms amid China–EU Strategic Interaction",
-    "journal": "Economic Geography",
-    "url": "https://doi.org/10.1080/00130095.2026.2630648",
-    "doi": "10.1080/00130095.2026.2630648",
-    "authors": [
-      "Huiwen Gong",
-      "Yue Guo",
-      "Yijia Chen",
-      "Bjørn Asheim"
-    ],
-    "published": "2026-03-10",
-    "volume": "102",
-    "issue": "3",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-28T12:39:48+00:00",
-    "journal_id": "economic-geography",
-    "id": "doi:10.1080/00130095.2026.2630648",
-    "abstract_checked_at": "2026-10-28",
-    "issue_published": "2026-05-04",
-    "latest_issue": true
-  },
-  {
     "title": "Spain, split and talk: quantifying regional independence",
     "journal": "Regional Studies",
     "url": "https://doi.org/10.1080/00343404.2024.2437501",
@@ -5999,8 +6242,8 @@
       "Tiago Teixeira"
     ],
     "published": "2026-10-27",
-    "volume": "",
-    "issue": "",
+    "volume": "102",
+    "issue": "4",
     "kind": "article",
     "sources": [
       "Crossref"
@@ -6009,8 +6252,9 @@
     "first_seen": "2026-10-27T13:36:19+00:00",
     "journal_id": "economic-geography",
     "id": "doi:10.1080/00130095.2026.2732942",
-    "latest_issue": false,
-    "abstract_checked_at": "2026-10-28"
+    "latest_issue": true,
+    "abstract_checked_at": "2026-10-28",
+    "issue_published": "2026-07-04"
   },
   {
     "title": "Robust public governance in a turbulent era: Theoretical framework and empirical experiences",
@@ -8524,8 +8768,8 @@
       "Rosina Moreno"
     ],
     "published": "2026-09-17",
-    "volume": "",
-    "issue": "",
+    "volume": "102",
+    "issue": "4",
     "kind": "article",
     "sources": [
       "Crossref"
@@ -8534,8 +8778,9 @@
     "first_seen": "2026-10-27T13:36:19+00:00",
     "journal_id": "economic-geography",
     "id": "doi:10.1080/00130095.2026.2701018",
-    "latest_issue": false,
-    "abstract_checked_at": "2026-10-28"
+    "latest_issue": true,
+    "abstract_checked_at": "2026-10-28",
+    "issue_published": "2026-07-04"
   },
   {
     "title": "Flood Protection and Adaptation Labor in Jakarta, Indonesia",
@@ -8550,8 +8795,8 @@
       "Abyan Madani"
     ],
     "published": "2026-09-17",
-    "volume": "",
-    "issue": "",
+    "volume": "102",
+    "issue": "4",
     "kind": "article",
     "sources": [
       "Crossref"
@@ -8560,8 +8805,9 @@
     "first_seen": "2026-10-27T13:36:19+00:00",
     "journal_id": "economic-geography",
     "id": "doi:10.1080/00130095.2026.2718196",
-    "latest_issue": false,
-    "abstract_checked_at": "2026-10-28"
+    "latest_issue": true,
+    "abstract_checked_at": "2026-10-28",
+    "issue_published": "2026-07-04"
   },
   {
     "title": "Refining Transit‐Oriented Development Assessment: Ecological Conditions as a Critical Supplement",
@@ -10225,30 +10471,6 @@
     "latest_issue": false
   },
   {
-    "title": "Gender quotas and female entrepreneurship: evidence from Italian municipalities",
-    "journal": "Journal of Economic Geography",
-    "url": "https://doi.org/10.1093/jeg/lbag062",
-    "doi": "10.1093/jeg/lbag062",
-    "authors": [
-      "Enrique Carreras",
-      "Elena Grinza",
-      "Alessandro Manello",
-      "Noemi Oggero"
-    ],
-    "published": "2026-08-20",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "journal-economic-geography",
-    "id": "doi:10.1093/jeg/lbag062",
-    "latest_issue": false
-  },
-  {
     "title": "Issue Information",
     "journal": "Tijdschrift voor Economische en Sociale Geografie",
     "url": "https://doi.org/10.1111/tesg.70069",
@@ -10613,55 +10835,6 @@
     "latest_issue": true
   },
   {
-    "title": "The Spatial Limits to Weaponizing Interdependence: TSMC in the US–China Chip War",
-    "journal": "Economic Geography",
-    "url": "https://doi.org/10.1080/00130095.2026.2689124",
-    "doi": "10.1080/00130095.2026.2689124",
-    "authors": [
-      "Joseph Baines",
-      "Steve Rolf",
-      "Julian Germann"
-    ],
-    "published": "2026-07-10",
-    "volume": "102",
-    "issue": "3",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "economic-geography",
-    "id": "doi:10.1080/00130095.2026.2689124",
-    "issue_published": "2026-05-04",
-    "latest_issue": true
-  },
-  {
-    "title": "Geopolitical Rivalry and the New Global Economic Geography: Dynamics, Networks, and Territories of Global Disorder",
-    "journal": "Economic Geography",
-    "url": "https://doi.org/10.1080/00130095.2026.2692442",
-    "doi": "10.1080/00130095.2026.2692442",
-    "authors": [
-      "Steve Rolf",
-      "Seth Schindler",
-      "Kean Fan Lim",
-      "Jeffrey Henderson"
-    ],
-    "published": "2026-07-10",
-    "volume": "102",
-    "issue": "3",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "economic-geography",
-    "id": "doi:10.1080/00130095.2026.2692442",
-    "issue_published": "2026-05-04",
-    "latest_issue": true
-  },
-  {
     "title": "Tax Administration Digitalization and Entrepreneurship: A Perspective on Reducing Local Government Discretion in Tax Enforcement",
     "journal": "Growth and Change",
     "url": "https://doi.org/10.1111/grow.70146",
@@ -10775,30 +10948,6 @@
     "latest_issue": true
   },
   {
-    "title": "Economic Statecraft of the Hinge State : Industrialization Paths for the Electric Vehicle (EV) and Battery Industry in Hungary, Mexico, and Thailand",
-    "journal": "Economic Geography",
-    "url": "https://doi.org/10.1080/00130095.2026.2687516",
-    "doi": "10.1080/00130095.2026.2687516",
-    "authors": [
-      "Yuko Aoyama",
-      "Luis F. Alvarez León",
-      "Shan-yu Wang"
-    ],
-    "published": "2026-07-02",
-    "volume": "102",
-    "issue": "3",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "economic-geography",
-    "id": "doi:10.1080/00130095.2026.2687516",
-    "issue_published": "2026-05-04",
-    "latest_issue": true
-  },
-  {
     "title": "Value struggles in the foundational economy: Reclaiming marketplaces as foundational infrastructure",
     "journal": "Environment and Planning A: Economy and Space",
     "url": "https://doi.org/10.1177/0308518x261454066",
@@ -10894,30 +11043,6 @@
     "journal_id": "cambridge-regions",
     "id": "doi:10.1093/cjres/rsag020",
     "issue_published": "2026-10-10",
-    "latest_issue": true
-  },
-  {
-    "title": "Universities’ Offshore Campuses as a Geopolitical Strategy Under the Knowledge-Based Economy",
-    "journal": "Economic Geography",
-    "url": "https://doi.org/10.1080/00130095.2026.2673883",
-    "doi": "10.1080/00130095.2026.2673883",
-    "authors": [
-      "Tim Rottleb",
-      "Marc P. Schulze",
-      "Jana M. Kleibert"
-    ],
-    "published": "2026-06-22",
-    "volume": "102",
-    "issue": "3",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "economic-geography",
-    "id": "doi:10.1080/00130095.2026.2673883",
-    "issue_published": "2026-05-04",
     "latest_issue": true
   },
   {
@@ -11198,31 +11323,6 @@
     "journal_id": "tesg",
     "id": "doi:10.1111/tesg.70092",
     "issue_published": "2026-09",
-    "latest_issue": true
-  },
-  {
-    "title": "Mundane Geopolitics, Strategic (De)Coupling, and Chinese Infrastructure Investment in Europe",
-    "journal": "Economic Geography",
-    "url": "https://doi.org/10.1080/00130095.2026.2666417",
-    "doi": "10.1080/00130095.2026.2666417",
-    "authors": [
-      "Giles Mohan",
-      "Weiwei Chen",
-      "Philipp Katsinas",
-      "Florian Schaefer"
-    ],
-    "published": "2026-05-27",
-    "volume": "102",
-    "issue": "3",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "economic-geography",
-    "id": "doi:10.1080/00130095.2026.2666417",
-    "issue_published": "2026-05-04",
     "latest_issue": true
   },
   {
