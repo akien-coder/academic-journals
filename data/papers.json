@@ -1,5 +1,104 @@
 [
   {
+    "title": "Incorporating technological discontinuity and cognitive coherence: Extra-regional knowledge spillovers and the New Energy Vehicle (NEV) innovation in the US",
+    "journal": "Environment and Planning A: Economy and Space",
+    "url": "https://doi.org/10.1177/0308518x261491189",
+    "doi": "10.1177/0308518x261491189",
+    "authors": [
+      "Junyang Liu",
+      "Shengjun Zhu",
+      "Yongyuan Huang",
+      "Canfei He"
+    ],
+    "published": "2026-11-20",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-21T02:56:16+00:00",
+    "issue_published": "",
+    "journal_id": "environment-planning-a",
+    "id": "doi:10.1177/0308518x261491189",
+    "latest_issue": false,
+    "summary_ja": "1990から2019年の米国特許庁のデータに基づき、米国における新エネルギー車（NEV）のイノベーションに対する地域外知識スピルオーバーの役割を検証した。技術領域と認知次元の側面からその構造を分析し、技術的不連続性と認知的一貫性が技術変化のプロセスにおいて果たす役割を実証的に明らかにし、新興技術のイノベーションに必要な知識スピルオーバーへの理解を深めた。",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "The moral infrastructure of financial markets: public regulatory discourse and the pillars of market justification",
+    "journal": "Socio-Economic Review",
+    "url": "https://doi.org/10.1093/ser/mwag073",
+    "doi": "10.1093/ser/mwag073",
+    "authors": [
+      "Galit Ailon"
+    ],
+    "published": "2026-11-20",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-21T02:56:16+00:00",
+    "issue_published": "",
+    "journal_id": "socio-economic-review",
+    "id": "doi:10.1093/ser/mwag073",
+    "latest_issue": false,
+    "summary_ja": "本論文は、実践的社会学と金融市場の社会的研究を組み合わせ、平時においても道徳的推論が規制論理を動的に形作ると主張する。金融市場の「公正性」と「社会的有益性」という正当化の二本柱を維持する要請が規制を構造化し、2016年から2022年の米国規制機関の文書分析を通じて、道徳、規制、政治的論争の絡み合いを明らかにした。",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "The pre-oil boomtown: The anticipatory politics of oil in Uganda and urban transformation in Hoima City",
+    "journal": "Environment and Planning A: Economy and Space",
+    "url": "https://doi.org/10.1177/0308518x261499537",
+    "doi": "10.1177/0308518x261499537",
+    "authors": [
+      "Alexander Dodge",
+      "Mercy Arinaitwe"
+    ],
+    "published": "2026-11-19",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-21T02:56:16+00:00",
+    "issue_published": "",
+    "journal_id": "environment-planning-a",
+    "id": "doi:10.1177/0308518x261499537",
+    "latest_issue": false,
+    "summary_ja": "本研究は 、ウガンダのホイマ市を事例に、石油生産開始前の資源フロンティア都市における都市変容を調査した。関係者へのインタビューから、直接的な経済的つながりは少ない一方で、開発の想像や投機によって都市が急成長する一方、地域住民の間では不平等や生活コスト上昇への不安が存在することが明らかになった。（144文字）",
+    "summary_model": "gemini-3.5-flash-lite"
+  },
+  {
+    "title": "Role of universities in early graduate entrepreneurship: enablers or constrainers of ‘missing’ entrepreneurs?",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2532585",
+    "doi": "10.1080/00343404.2025.2532585",
+    "authors": [
+      "Maria Abreu",
+      "Vadim Grinevich"
+    ],
+    "published": "2025-08-28",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-21T02:56:16+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2532585",
+    "latest_issue": true
+  },
+  {
     "title": "Hierarchical migration of university graduates: the role of higher education as a springboard or retainer",
     "journal": "Regional Studies",
     "url": "https://doi.org/10.1080/00343404.2025.2568672",
