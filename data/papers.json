@@ -1,5 +1,53 @@
 [
   {
+    "title": "The impact of the financial crisis on subregional productivity in the UK",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2026.2733317",
+    "doi": "10.1080/00343404.2026.2733317",
+    "authors": [
+      "Ben Gardiner",
+      "Bernard Fingleton",
+      "Ron Martin"
+    ],
+    "published": "2026-11-23",
+    "volume": "60",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-24T05:41:29+00:00",
+    "issue_published": "2026-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2026.2733317",
+    "latest_issue": false
+  },
+  {
+    "title": "Special economic zones and inter-prefecture collaborative innovation: evidence from China",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2434658",
+    "doi": "10.1080/00343404.2024.2434658",
+    "authors": [
+      "Xiaoshu Xu",
+      "Bohan Li",
+      "Xuechen Meng"
+    ],
+    "published": "2025-01-08",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-24T05:41:29+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2434658",
+    "latest_issue": true
+  },
+  {
     "title": "Social network benefits for cluster firms: A co-worker mobility approach",
     "journal": "Environment and Planning A: Economy and Space",
     "url": "https://doi.org/10.1177/0308518x261470975",
@@ -10614,97 +10662,6 @@
     "journal_id": "regional-studies",
     "id": "doi:10.1080/00343404.2026.2713475",
     "issue_published": "2026-12-31",
-    "latest_issue": false
-  },
-  {
-    "title": "Transport mode and the geography of exchange rate pass-through",
-    "journal": "Journal of Economic Geography",
-    "url": "https://doi.org/10.1093/jeg/lbag056",
-    "doi": "10.1093/jeg/lbag056",
-    "authors": [
-      "Davide Del Prete",
-      "Aminur Rahman",
-      "Edoardo Tolva"
-    ],
-    "published": "2026-08-25",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "journal-economic-geography",
-    "id": "doi:10.1093/jeg/lbag056",
-    "latest_issue": false
-  },
-  {
-    "title": "Innovation modes in micro firms: evidence from Portugal",
-    "journal": "European Planning Studies",
-    "url": "https://doi.org/10.1080/09654313.2026.2721328",
-    "doi": "10.1080/09654313.2026.2721328",
-    "authors": [
-      "Sara Martins Gonçalves",
-      "Manuel Laranja"
-    ],
-    "published": "2026-08-25",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "european-planning",
-    "id": "doi:10.1080/09654313.2026.2721328",
-    "latest_issue": false
-  },
-  {
-    "title": "Strategising AI innovation: boosting firm productivity through discontinuous jumps between exploration and exploitation",
-    "journal": "Industry and Innovation",
-    "url": "https://doi.org/10.1080/13662716.2026.2722653",
-    "doi": "10.1080/13662716.2026.2722653",
-    "authors": [
-      "Dayuan Li",
-      "Chen Huang",
-      "Tianjiao Yu"
-    ],
-    "published": "2026-08-25",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "industry-innovation",
-    "id": "doi:10.1080/13662716.2026.2722653",
-    "latest_issue": false
-  },
-  {
-    "title": "Legitimacy and green innovation: the mediating role of green alliance partners",
-    "journal": "Industry and Innovation",
-    "url": "https://doi.org/10.1080/13662716.2026.2722658",
-    "doi": "10.1080/13662716.2026.2722658",
-    "authors": [
-      "Jingyu Bi",
-      "Shibin Sheng",
-      "En Xie"
-    ],
-    "published": "2026-08-25",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "industry-innovation",
-    "id": "doi:10.1080/13662716.2026.2722658",
     "latest_issue": false
   },
   {
