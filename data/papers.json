@@ -1,5 +1,77 @@
 [
   {
+    "title": "European metropolitan logistics hubs: spatial planning and the geography of investment attractiveness",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2763651",
+    "doi": "10.1080/09654313.2026.2763651",
+    "authors": [
+      "Katarzyna Budzyńska",
+      "Łukasz Wiechetek"
+    ],
+    "published": "2026-11-24",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-25T04:43:09+00:00",
+    "issue_published": "",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2763651",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-25"
+  },
+  {
+    "title": "Telework and establishment location: employee influence and regional heterogeneity",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2025.2570010",
+    "doi": "10.1080/00343404.2025.2570010",
+    "authors": [
+      "Torben Dall Schmidt",
+      "Wenzel Matiaske",
+      "Martina Maas"
+    ],
+    "published": "2025-11-17",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-25T04:43:09+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2025.2570010",
+    "latest_issue": true
+  },
+  {
+    "title": "KIBS’ and non-KIBS’ business creation and closure: evidence from the urban micro-space",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2024.2438323",
+    "doi": "10.1080/00343404.2024.2438323",
+    "authors": [
+      "Korneliusz Pylak",
+      "Tomasz Mickiewicz",
+      "Tasos Kitsos"
+    ],
+    "published": "2025-01-22",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-25T04:43:09+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2024.2438323",
+    "latest_issue": true
+  },
+  {
     "title": "The impact of the financial crisis on subregional productivity in the UK",
     "journal": "Regional Studies",
     "url": "https://doi.org/10.1080/00343404.2026.2733317",
@@ -10637,31 +10709,6 @@
     "first_seen": "2026-10-27T13:36:19+00:00",
     "journal_id": "industry-innovation",
     "id": "doi:10.1080/13662716.2026.2725013",
-    "latest_issue": false
-  },
-  {
-    "title": "Demographic change and entrepreneurship across regions",
-    "journal": "Regional Studies",
-    "url": "https://doi.org/10.1080/00343404.2026.2713475",
-    "doi": "10.1080/00343404.2026.2713475",
-    "authors": [
-      "Federico Barbiellini Amidei",
-      "Matteo Gomellini",
-      "Lorenzo Incoronato",
-      "Paolo Piselli"
-    ],
-    "published": "2026-08-26",
-    "volume": "60",
-    "issue": "1",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "regional-studies",
-    "id": "doi:10.1080/00343404.2026.2713475",
-    "issue_published": "2026-12-31",
     "latest_issue": false
   },
   {
