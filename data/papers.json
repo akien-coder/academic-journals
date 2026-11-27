@@ -1,5 +1,148 @@
 [
   {
+    "title": "Configurations of regional left-behindness across Europe: a multidimensional comparison of Western and post-socialist regions",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2026.2747624",
+    "doi": "10.1080/00343404.2026.2747624",
+    "authors": [
+      "Josef Bernard",
+      "Martin Refisch",
+      "Anna Grzelak",
+      "Michał Konopski",
+      "Tomáš Kostelecký",
+      "Andreas Klärner"
+    ],
+    "published": "2026-11-26",
+    "volume": "60",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-27T03:53:30+00:00",
+    "issue_published": "2026-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2026.2747624",
+    "latest_issue": false
+  },
+  {
+    "title": "Ecological transition at the cross-border scale. A discourse analysis in the Luxembourg metropolitan region",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2759873",
+    "doi": "10.1080/09654313.2026.2759873",
+    "authors": [
+      "Frédéric Durand",
+      "Umberto Sconfienza"
+    ],
+    "published": "2026-11-26",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-27T03:53:30+00:00",
+    "issue_published": "",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2759873",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-27"
+  },
+  {
+    "title": "Issue Information",
+    "journal": "Tijdschrift voor Economische en Sociale Geografie",
+    "url": "https://doi.org/10.1111/tesg.70070",
+    "doi": "10.1111/tesg.70070",
+    "authors": [],
+    "published": "2026-11-26",
+    "volume": "117",
+    "issue": "5",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-27T03:53:30+00:00",
+    "issue_published": "2026-12",
+    "journal_id": "tesg",
+    "id": "doi:10.1111/tesg.70070",
+    "latest_issue": false
+  },
+  {
+    "title": "Old habits die hard: chairmen’s collectivist cultural orientation and firm innovation in China",
+    "journal": "Industry and Innovation",
+    "url": "https://doi.org/10.1080/13662716.2026.2762957",
+    "doi": "10.1080/13662716.2026.2762957",
+    "authors": [
+      "Xin Huang",
+      "Jun Huang",
+      "Shi Chen"
+    ],
+    "published": "2026-11-26",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-27T03:53:30+00:00",
+    "issue_published": "",
+    "journal_id": "industry-innovation",
+    "id": "doi:10.1080/13662716.2026.2762957",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-27"
+  },
+  {
+    "title": "Institutional marginality and EU cohesion in the outermost regions",
+    "journal": "European Planning Studies",
+    "url": "https://doi.org/10.1080/09654313.2026.2765316",
+    "doi": "10.1080/09654313.2026.2765316",
+    "authors": [
+      "Moustapha Aladji"
+    ],
+    "published": "2026-11-25",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-27T03:53:30+00:00",
+    "issue_published": "",
+    "journal_id": "european-planning",
+    "id": "doi:10.1080/09654313.2026.2765316",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-27"
+  },
+  {
+    "title": "Spatio-sectoral heterogeneity and population–employment dynamics: some implications for territorial development",
+    "journal": "Regional Studies",
+    "url": "https://doi.org/10.1080/00343404.2022.2088725",
+    "doi": "10.1080/00343404.2022.2088725",
+    "authors": [
+      "Luisa Alamá-Sabater",
+      "Miguel Á. Márquez",
+      "Emili Tortosa-Ausina"
+    ],
+    "published": "2022-09-12",
+    "volume": "59",
+    "issue": "1",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-27T03:53:30+00:00",
+    "issue_published": "2025-12-31",
+    "journal_id": "regional-studies",
+    "id": "doi:10.1080/00343404.2022.2088725",
+    "latest_issue": true
+  },
+  {
     "title": "Leveraging on circular economy technologies for recombinant dynamics: do localised knowledge and digital complementarities matter?",
     "journal": "Regional Studies",
     "url": "https://doi.org/10.1080/00343404.2024.2329255",
@@ -1249,15 +1392,15 @@
       "Federica Bono"
     ],
     "published": "2026-11-13",
-    "volume": "",
-    "issue": "",
+    "volume": "117",
+    "issue": "5",
     "kind": "article",
     "sources": [
       "Crossref"
     ],
     "tags": [],
     "first_seen": "2026-11-13T22:33:19+00:00",
-    "issue_published": "",
+    "issue_published": "2026-12",
     "journal_id": "tesg",
     "id": "doi:10.1111/tesg.70123",
     "latest_issue": false,
@@ -7268,8 +7411,8 @@
       "Jakub Rok"
     ],
     "published": "2026-10-16",
-    "volume": "",
-    "issue": "",
+    "volume": "117",
+    "issue": "5",
     "kind": "article",
     "sources": [
       "Crossref"
@@ -7280,7 +7423,8 @@
     "id": "doi:10.1111/tesg.70116",
     "latest_issue": false,
     "summary_ja": "ワルシャワの1,684国勢調査区と利害関係者22名への調査を基に、PM2.5、PM10、NO2への曝露に関する環境格差と解釈を分析した。その結果、特に交通由来のNO2で顕著な社会的勾配が示され、失業率が曝露の最も堅固な相関変数であった。また、環境格差は多様に解釈され、西欧のパターンの一部がポスト社会主義都市に移行可能であることが示された。（146字）",
-    "summary_model": "gemini-3.5-flash-lite"
+    "summary_model": "gemini-3.5-flash-lite",
+    "issue_published": "2026-12"
   },
   {
     "title": "Contesting the code: labor–management conflicts over AI adoption and the role of power resources under German codetermination",
@@ -9078,8 +9222,8 @@
       "Marius Angstmann"
     ],
     "published": "2026-09-22",
-    "volume": "",
-    "issue": "",
+    "volume": "117",
+    "issue": "5",
     "kind": "article",
     "sources": [
       "Crossref"
@@ -9090,7 +9234,8 @@
     "id": "doi:10.1111/tesg.70105",
     "latest_issue": false,
     "summary_ja": "本研究は、ドイツの鉄鋼・セメント業の代表者へのインタビューに基づき、成熟産業の脱炭素化パスが、パス間の解消・再構築・形成という3つの動態を通じて、相互接続された産業に与える影響を明らかにした。知見として、個別産業の脱炭素化戦略は地域内の他産業の発展と密接に絡み合っており、技術変革が既存の地域産業構造に直接影響を与え、産業間連関に多様な結果をもたらすことが示された。",
-    "summary_model": "gemini-3.5-flash-lite"
+    "summary_model": "gemini-3.5-flash-lite",
+    "issue_published": "2026-12"
   },
   {
     "title": "The future of work in creativity and innovation: perspectives on on-site versus remote work policies and practices",
@@ -9335,8 +9480,8 @@
       "Ziyue Feng"
     ],
     "published": "2026-09-17",
-    "volume": "",
-    "issue": "",
+    "volume": "117",
+    "issue": "5",
     "kind": "article",
     "sources": [
       "Crossref"
@@ -9347,7 +9492,8 @@
     "id": "doi:10.1111/tesg.70108",
     "latest_issue": false,
     "summary_ja": "香港の92駅周辺を対象に、従来のTOD評価指標に多次元の生態学的要素を統合した「NPDE診断」を開発し分析した。4つの駅プロファイルは交通や歩行者設計等の異なる組み合わせを示し、生態系は中心部から離れるほど改善する一方、交通網で重要な駅ほど生態スコアが低い傾向が明らかになった。（147字）",
-    "summary_model": "gemini-3.5-flash-lite"
+    "summary_model": "gemini-3.5-flash-lite",
+    "issue_published": "2026-12"
   },
   {
     "title": "Silent deindustrialisation: a qualitative account of regional industrial decline in Gongju, South Korea",
@@ -10690,27 +10836,6 @@
     "id": "doi:10.1111/grow.70153",
     "issue_published": "2026-09",
     "latest_issue": true
-  },
-  {
-    "title": "Sunset chasers: The labour and rhythms of game service workers",
-    "journal": "Environment and Planning A: Economy and Space",
-    "url": "https://doi.org/10.1177/0308518x261479428",
-    "doi": "10.1177/0308518x261479428",
-    "authors": [
-      "Magnus Andersen"
-    ],
-    "published": "2026-08-28",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "environment-planning-a",
-    "id": "doi:10.1177/0308518x261479428",
-    "latest_issue": false
   },
   {
     "title": "Mapping nascent rare earth global production networks in a time of geopolitical contestation",
