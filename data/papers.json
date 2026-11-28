@@ -1,5 +1,31 @@
 [
   {
+    "title": "Tracking pathways towards a bioeconomy: a sequence analysis of regional patent portfolios",
+    "journal": "Industry and Innovation",
+    "url": "https://doi.org/10.1080/13662716.2026.2768289",
+    "doi": "10.1080/13662716.2026.2768289",
+    "authors": [
+      "Sebastian Losacker",
+      "Nicolas Befort",
+      "Lukas Kriesch",
+      "Stéphane Lhuillery"
+    ],
+    "published": "2026-11-26",
+    "volume": "",
+    "issue": "",
+    "kind": "article",
+    "sources": [
+      "Crossref"
+    ],
+    "tags": [],
+    "first_seen": "2026-11-28T03:39:14+00:00",
+    "issue_published": "",
+    "journal_id": "industry-innovation",
+    "id": "doi:10.1080/13662716.2026.2768289",
+    "latest_issue": false,
+    "abstract_checked_at": "2026-11-28"
+  },
+  {
     "title": "Configurations of regional left-behindness across Europe: a multidimensional comparison of Western and post-socialist regions",
     "journal": "Regional Studies",
     "url": "https://doi.org/10.1080/00343404.2026.2747624",
@@ -10788,29 +10814,6 @@
     "id": "doi:10.1515/zfw-2025-0077",
     "issue_published": "2026-09-25",
     "latest_issue": true
-  },
-  {
-    "title": "How evolving institutions shaped China’s economic geography",
-    "journal": "Journal of Economic Geography",
-    "url": "https://doi.org/10.1093/jeg/lbag055",
-    "doi": "10.1093/jeg/lbag055",
-    "authors": [
-      "Wen-Tai Hsu",
-      "Jing Li",
-      "Lin Ma"
-    ],
-    "published": "2026-08-29",
-    "volume": "",
-    "issue": "",
-    "kind": "article",
-    "sources": [
-      "Crossref"
-    ],
-    "tags": [],
-    "first_seen": "2026-10-27T13:36:19+00:00",
-    "journal_id": "journal-economic-geography",
-    "id": "doi:10.1093/jeg/lbag055",
-    "latest_issue": false
   },
   {
     "title": "From University to Work: Graduate Migration Across Urban Hierarchy and the Roles of Economic Opportunities and Urban Amenities",
